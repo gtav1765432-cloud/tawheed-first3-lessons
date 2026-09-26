@@ -2,2548 +2,1338 @@
 <html dir="rtl" lang="ar">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>🕌 دروس التوحيد — السمعيات</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#064e3b">
+<title>📖 التوحيد — السمعيات | الموسوعة الشاملة</title>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Aref+Ruqaa:wght@400;700&family=Cairo:wght@300;400;600;700;900&family=Tajawal:wght@300;400;500;700;900&family=Lateef&family=Scheherazade+New:wght@400;700&display=swap');
+  /* ═══ خطوط النظام (سريعة جداً) ═══ */
+  @font-face {
+    font-family: 'ArabicTitle';
+    src: local('Arial'), local('Segoe UI'), local('Tahoma');
+  }
 
-  * { margin: 0; padding: 0; box-sizing: border-box; }
+  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
 
   :root {
-    --emerald: #0d7a5f;
+    --emerald: #0e7a5f;
     --emerald-deep: #064e3b;
     --emerald-light: #10b981;
-    --emerald-pale: #d1fae5;
     --gold: #b8860b;
     --gold-rich: #d4af37;
     --gold-light: #f0d98c;
     --gold-pale: #fdf6e3;
     --cream: #fbf8f1;
-    --cream-warm: #f5efe2;
     --night: #0f1a2e;
-    --night-mid: #1a2c4a;
-    --ink: #1c1917;
-    --ink-soft: #44403c;
     --text: #292524;
     --text-dim: #78716c;
-    --white: #ffffff;
-    --paper: #fffef9;
+    --paper: #ffffff;
+    --green-ok: #16a34a;
+    --green-bg: #dcfce7;
+    --red-no: #dc2626;
+    --red-bg: #fee2e2;
   }
 
   html { scroll-behavior: smooth; }
 
   body {
-    font-family: 'Tajawal', 'Cairo', sans-serif;
+    font-family: 'Tajawal', 'Segoe UI', 'Arial', sans-serif;
     background: var(--cream);
     color: var(--text);
-    line-height: 1.9;
+    line-height: 1.85;
+    font-size: 15px;
     min-height: 100vh;
-    padding: 0 0 40px;
-    -webkit-font-smoothing: antialiased;
-    position: relative;
     overflow-x: hidden;
   }
 
-  /* ═══════════ Islamic Geometric Pattern Background ═══════════ */
-  body::before {
-    content: '';
-    position: fixed;
-    inset: 0;
-    z-index: 0;
-    opacity: 0.035;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cg fill='none' stroke='%230d7a5f' stroke-width='1'%3E%3Cpath d='M60 0 L120 60 L60 120 L0 60 Z'/%3E%3Cpath d='M60 15 L105 60 L60 105 L15 60 Z'/%3E%3Cpath d='M60 30 L90 60 L60 90 L30 60 Z'/%3E%3Cpath d='M60 0 L60 15 M60 105 L60 120 M0 60 L15 60 M105 60 L120 60'/%3E%3C/g%3E%3C/svg%3E");
-    pointer-events: none;
-  }
-
-  body::after {
-    content: '';
-    position: fixed;
-    inset: 0;
-    z-index: 0;
-    pointer-events: none;
-    background: 
-      radial-gradient(ellipse at top right, rgba(184, 134, 11, 0.06), transparent 50%),
-      radial-gradient(ellipse at bottom left, rgba(13, 122, 95, 0.06), transparent 50%);
-  }
-
-  .container {
-    max-width: 880px;
-    margin: 0 auto;
-    padding: 0 14px;
-    position: relative;
-    z-index: 1;
-  }
-
-  /* ═══════════ Floating Decorations ═══════════ */
-  .floating-deco {
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    z-index: 0;
-    overflow: hidden;
-  }
-
-  .deco-star {
-    position: absolute;
-    opacity: 0.08;
-    color: var(--gold);
-    animation: decoFloat linear infinite;
-  }
-
-  @keyframes decoFloat {
-    0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
-    10% { opacity: 0.1; }
-    90% { opacity: 0.1; }
-    100% { transform: translateY(-100px) rotate(360deg); opacity: 0; }
-  }
-
-  /* ═══════════ Header ═══════════ */
+  /* ═══ HEADER (بدون بلور، بلون ثابت) ═══ */
   .header {
-    background: 
-      radial-gradient(ellipse at top, rgba(240, 217, 140, 0.15), transparent 60%),
-      linear-gradient(135deg, var(--emerald-deep) 0%, var(--emerald) 50%, var(--emerald-deep) 100%);
-    border-radius: 0 0 40px 40px;
-    padding: 55px 30px 50px;
+    background: var(--emerald-deep);
+    color: #fff;
+    padding: 40px 20px 35px;
     text-align: center;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 
-      0 20px 50px rgba(6, 78, 59, 0.25),
-      0 5px 15px rgba(6, 78, 59, 0.15),
-      inset 0 -3px 0 rgba(212, 175, 55, 0.3);
-    margin: 0 -14px 30px;
+    border-radius: 0 0 28px 28px;
+    margin-bottom: 15px;
   }
 
-  /* نقشة هندسية إسلامية داخل الهيدر */
-  .header::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    opacity: 0.1;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%23f0d98c' stroke-width='1.2'%3E%3Cpolygon points='40,5 75,25 75,55 40,75 5,55 5,25'/%3E%3Cpolygon points='40,15 65,29 65,51 40,65 15,51 15,29'/%3E%3Cpolygon points='40,25 55,33 55,47 40,55 25,47 25,33'/%3E%3C/g%3E%3C/svg%3E");
-    animation: patternShift 30s linear infinite;
-  }
-
-  @keyframes patternShift {
-    to { background-position: 80px 80px; }
-  }
-
-  .header::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 200px;
-    height: 3px;
-    background: linear-gradient(90deg, transparent, var(--gold-rich), transparent);
-  }
-
-  .header-content { position: relative; z-index: 2; }
-
-  /* زخرفة أعلى الهيدر */
-  .header-ornament-top {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 18px;
+  .header-orn {
     color: var(--gold-light);
-    font-size: 18px;
+    font-size: 14px;
     letter-spacing: 4px;
+    margin-bottom: 12px;
     opacity: 0.85;
   }
 
-  .header-ornament-top::before,
-  .header-ornament-top::after {
-    content: '';
-    width: 60px;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, var(--gold-light), transparent);
-  }
-
-  .header-emoji-wrap {
-    position: relative;
-    display: inline-block;
-    margin-bottom: 18px;
-  }
-
   .header-emoji {
-    font-size: 62px;
+    font-size: 48px;
     display: inline-block;
-    animation: gentleWiggle 4s ease-in-out infinite;
-    filter: drop-shadow(0 8px 20px rgba(0,0,0,0.3));
-    position: relative;
-    z-index: 2;
-  }
-
-  @keyframes gentleWiggle {
-    0%, 100% { transform: rotate(-6deg) translateY(0) scale(1); }
-    25% { transform: rotate(6deg) translateY(-6px) scale(1.02); }
-    50% { transform: rotate(-4deg) translateY(-3px) scale(1); }
-    75% { transform: rotate(4deg) translateY(-6px) scale(1.02); }
-  }
-
-  .header-glow {
-    position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
-    width: 120px;
-    height: 120px;
-    background: radial-gradient(circle, rgba(240, 217, 140, 0.4), transparent 70%);
-    border-radius: 50%;
-    animation: glowPulse 3s ease-in-out infinite;
-    z-index: 1;
-  }
-
-  @keyframes glowPulse {
-    0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.6; }
-    50% { transform: translate(-50%, -50%) scale(1.3); opacity: 0.9; }
+    margin-bottom: 12px;
   }
 
   .header-title {
-    font-family: 'Aref Ruqaa', serif;
-    font-size: clamp(30px, 6vw, 46px);
-    color: var(--white);
-    margin-bottom: 14px;
-    line-height: 1.3;
+    font-family: 'Arial', 'Segoe UI', sans-serif;
+    font-size: 24px;
     font-weight: 700;
-    letter-spacing: 1.5px;
-    text-shadow: 
-      0 2px 10px rgba(0,0,0,0.3),
-      0 0 40px rgba(240, 217, 140, 0.3);
+    margin-bottom: 10px;
+    line-height: 1.3;
   }
 
-  .header-subtitle {
-    font-size: clamp(14px, 2.2vw, 17px);
+  .header-sub {
+    font-size: 13.5px;
     color: var(--gold-light);
-    font-weight: 400;
-    letter-spacing: 1.5px;
     line-height: 1.9;
-    margin-bottom: 6px;
   }
 
-  .header-line {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    margin: 20px 0 0;
-    color: var(--gold-rich);
+  .header-basmala {
     font-size: 20px;
-    letter-spacing: 8px;
+    color: var(--gold-rich);
+    margin-top: 14px;
+    letter-spacing: 3px;
   }
 
-  .header-line::before,
-  .header-line::after {
-    content: '';
-    width: 70px;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, var(--gold-rich), transparent);
-  }
-
-  /* ═══════════ Tabs Navigation ═══════════ */
-  .tabs-nav-wrap {
+  /* ═══ TABS (بدون blur) ═══ */
+  .tabs-wrap {
     position: sticky;
     top: 0;
-    z-index: 100;
-    background: rgba(251, 248, 241, 0.95);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    margin: 0 -14px 25px;
-    padding: 12px 14px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.04);
-    border-bottom: 1px solid rgba(184, 134, 11, 0.1);
+    background: var(--cream);
+    border-bottom: 1px solid #e7e0d0;
+    z-index: 10;
+    padding: 8px 0;
+    margin-bottom: 18px;
   }
 
-  .tabs-nav {
+  .tabs {
     display: flex;
-    gap: 8px;
+    gap: 6px;
     overflow-x: auto;
-    padding: 4px 2px;
+    padding: 4px 12px;
     scrollbar-width: none;
     -webkit-overflow-scrolling: touch;
   }
 
-  .tabs-nav::-webkit-scrollbar { display: none; }
+  .tabs::-webkit-scrollbar { display: none; }
 
   .tab-btn {
     flex-shrink: 0;
-    padding: 11px 20px;
-    background: var(--white);
-    border: 1.5px solid rgba(13, 122, 95, 0.15);
-    border-radius: 30px;
-    font-family: 'Tajawal', sans-serif;
-    font-size: 14px;
-    font-weight: 600;
+    padding: 9px 16px;
+    background: #fff;
+    border: 1.5px solid #e0d9c8;
+    border-radius: 25px;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 700;
     color: var(--text);
     cursor: pointer;
-    transition: all 0.35s cubic-bezier(0.2, 0.9, 0.3, 1.2);
     white-space: nowrap;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
-    display: flex;
-    align-items: center;
-    gap: 6px;
-  }
-
-  .tab-btn:hover {
-    border-color: var(--emerald);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(13, 122, 95, 0.12);
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
   }
 
   .tab-btn.active {
-    background: linear-gradient(135deg, var(--emerald), var(--emerald-deep));
-    color: var(--white);
+    background: var(--emerald-deep);
+    color: #fff;
     border-color: var(--emerald-deep);
-    box-shadow: 
-      0 6px 20px rgba(13, 122, 95, 0.3),
-      0 2px 0 rgba(0,0,0,0.1);
-    transform: translateY(-1px);
   }
 
-  .tab-btn .tab-emoji {
-    display: inline-block;
-    font-size: 1.05em;
-    transition: transform 0.35s ease;
+  /* ═══ MAIN CONTAINER ═══ */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 12px 40px;
   }
 
-  .tab-btn.active .tab-emoji {
-    animation: gentleWiggle 1.2s ease-in-out infinite;
-  }
-
-  /* ═══════════ Tab Content ═══════════ */
-  .tab-content {
-    display: none;
-    animation: tabFadeIn 0.6s ease;
-  }
-
+  .tab-content { display: none; }
   .tab-content.active { display: block; }
 
-  @keyframes tabFadeIn {
-    from { opacity: 0; transform: translateY(18px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-
-  /* ═══════════ Card ═══════════ */
+  /* ═══ CARD ═══ */
   .card {
     background: var(--paper);
-    border-radius: 24px;
-    padding: 35px 28px;
-    margin-bottom: 25px;
-    box-shadow: 
-      0 10px 30px rgba(0,0,0,0.05),
-      0 2px 5px rgba(0,0,0,0.02),
-      inset 0 1px 0 rgba(255,255,255,0.9);
-    border: 1px solid rgba(184, 134, 11, 0.12);
-    position: relative;
-    overflow: hidden;
+    border-radius: 16px;
+    padding: 22px 18px;
+    margin-bottom: 16px;
+    border: 1px solid #efe8d8;
   }
 
-  /* Corner ornaments */
-  .card::before,
-  .card::after {
-    content: '';
-    position: absolute;
-    width: 45px;
-    height: 45px;
-    border: 2px solid var(--gold-rich);
-    opacity: 0.25;
-  }
-
-  .card::before {
-    top: 15px;
-    right: 15px;
-    border-left: none;
-    border-bottom: none;
-    border-radius: 0 8px 0 0;
-  }
-
-  .card::after {
-    bottom: 15px;
-    left: 15px;
-    border-right: none;
-    border-top: none;
-    border-radius: 0 0 0 8px;
-  }
-
-  /* ═══════════ Section Title ═══════════ */
-  .section-title {
-    font-family: 'Aref Ruqaa', serif;
-    font-size: clamp(24px, 4vw, 34px);
+  /* ═══ TITLES ═══ */
+  .card-title {
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
     color: var(--emerald-deep);
-    margin-bottom: 8px;
-    line-height: 1.35;
     font-weight: 700;
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    padding-bottom: 18px;
-    position: relative;
-    flex-wrap: wrap;
+    margin-bottom: 18px;
+    padding-bottom: 12px;
+    border-bottom: 2px dashed #d4af37;
+    line-height: 1.4;
   }
 
-  .section-title::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    height: 3px;
-    background: linear-gradient(90deg, var(--gold-rich), var(--gold-light) 30%, transparent 90%);
-    border-radius: 3px;
-  }
-
-  .title-emoji {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.9em;
-    background: linear-gradient(135deg, var(--gold-pale), var(--gold-light));
-    width: 52px;
-    height: 52px;
-    border-radius: 15px;
-    box-shadow: 
-      0 5px 15px rgba(184, 134, 11, 0.2),
-      inset 0 1px 0 rgba(255,255,255,0.6);
-    animation: gentleWiggle 3.5s ease-in-out infinite;
-    flex-shrink: 0;
-  }
-
-  /* ═══════════ Sub Title ═══════════ */
   .sub-title {
-    font-family: 'Tajawal', sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    color: var(--emerald);
-    margin: 30px 0 15px;
-    padding-right: 18px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .sub-title::before {
-    content: '';
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 5px;
-    height: 28px;
-    background: linear-gradient(180deg, var(--gold-rich), var(--gold-light));
-    border-radius: 3px;
-  }
-
-  .sub-emoji {
-    display: inline-block;
-    animation: gentleWiggle 3s ease-in-out infinite;
-  }
-
-  /* ═══════════ Paragraphs ═══════════ */
-  p {
-    font-size: 16px;
-    line-height: 2.05;
-    color: var(--text);
-    margin-bottom: 14px;
-    text-align: justify;
-    font-weight: 400;
-  }
-
-  p strong {
-    color: var(--emerald-deep);
-    font-weight: 700;
-  }
-
-  /* ═══════════ Lists ═══════════ */
-  ul, ol {
-    margin: 12px 28px 18px 0;
-    font-size: 16px;
-    line-height: 2.05;
-  }
-
-  li {
-    margin-bottom: 10px;
-    padding-right: 6px;
-    color: var(--text);
-    position: relative;
-  }
-
-  ul li::marker {
-    color: var(--emerald);
-    content: '◆ ';
-    font-size: 0.8em;
-  }
-
-  ol li::marker {
-    color: var(--gold-rich);
-    font-weight: 700;
-  }
-
-  /* ═══════════ Definition Box — Islamic Arch Style ═══════════ */
-  .definition {
-    background: 
-      linear-gradient(135deg, var(--emerald-deep) 0%, var(--emerald) 100%);
-    color: var(--white);
-    padding: 32px 30px 28px;
-    border-radius: 20px 20px 20px 20px;
-    margin: 25px 0;
-    box-shadow: 
-      0 15px 40px rgba(6, 78, 59, 0.25),
-      inset 0 1px 0 rgba(255,255,255,0.15);
-    position: relative;
-    overflow: hidden;
-  }
-
-  /* نقشة داخل التعريف */
-  .definition::before {
-    content: '';
-    position: absolute;
-    top: -30px;
-    left: -30px;
-    width: 140px;
-    height: 140px;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cg fill='none' stroke='%23f0d98c' stroke-width='0.8' opacity='0.3'%3E%3Cpolygon points='50,5 90,30 90,70 50,95 10,70 10,30'/%3E%3Cpolygon points='50,20 78,35 78,65 50,80 22,65 22,35'/%3E%3Cpolygon points='50,35 68,45 68,55 50,65 32,55 32,45'/%3E%3C/g%3E%3C/svg%3E");
-    background-size: contain;
-    background-repeat: no-repeat;
-    opacity: 0.6;
-    pointer-events: none;
-  }
-
-  .definition::after {
-    content: '❦';
-    position: absolute;
-    top: 12px;
-    right: 20px;
-    color: var(--gold-light);
-    font-size: 22px;
-    opacity: 0.7;
-    animation: gentleWiggle 3s ease-in-out infinite;
-  }
-
-  .definition-title {
-    font-family: 'Aref Ruqaa', serif;
-    font-size: 20px;
-    color: var(--gold-light);
-    margin-bottom: 14px;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    position: relative;
-    z-index: 1;
-  }
-
-  .definition-title::before {
-    content: '✦';
-    color: var(--gold-rich);
-    font-size: 16px;
-  }
-
-  .definition p {
-    color: rgba(255, 255, 255, 0.96);
     font-size: 16.5px;
-    margin-bottom: 0;
-    line-height: 2.1;
-    position: relative;
-    z-index: 1;
+    font-weight: 700;
+    color: var(--emerald);
+    margin: 20px 0 10px;
+    padding-right: 12px;
+    border-right: 4px solid var(--gold-rich);
+    line-height: 1.5;
   }
 
-  .definition p strong {
+  .mini-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--emerald-deep);
+    margin: 16px 0 8px;
+    padding-right: 10px;
+    border-right: 3px solid var(--gold-rich);
+  }
+
+  /* ═══ TEXT ═══ */
+  p {
+    font-size: 14.5px;
+    line-height: 1.9;
+    margin-bottom: 10px;
+    text-align: justify;
+  }
+
+  p strong { color: var(--emerald-deep); font-weight: 700; }
+
+  ul, ol {
+    margin: 8px 22px 12px 0;
+    font-size: 14.5px;
+    line-height: 1.9;
+  }
+
+  li { margin-bottom: 6px; }
+  ul li::marker { color: var(--emerald); content: '◆ '; font-size: 0.75em; }
+  ol li::marker { color: var(--gold-rich); font-weight: 700; }
+
+  /* ═══ DEFINITION ═══ */
+  .def {
+    background: var(--emerald-deep);
+    color: #fff;
+    padding: 18px 18px 16px;
+    border-radius: 14px;
+    margin: 15px 0;
+  }
+
+  .def-title {
+    font-size: 15px;
     color: var(--gold-light);
+    margin-bottom: 8px;
+    font-weight: 700;
   }
 
-  /* ═══════════ Verse Box ═══════════ */
+  .def p { color: #fff; margin-bottom: 6px; font-size: 14.5px; }
+  .def p:last-child { margin-bottom: 0; }
+  .def p strong { color: var(--gold-light); }
+
+  /* ═══ VERSE ═══ */
   .verse {
-    background: 
-      radial-gradient(ellipse at top, rgba(212, 175, 55, 0.08), transparent 60%),
-      linear-gradient(135deg, var(--night) 0%, var(--night-mid) 100%);
-    color: var(--white);
-    padding: 38px 30px 30px;
-    border-radius: 22px;
-    margin: 25px 0;
+    background: var(--night);
+    color: #fff;
+    padding: 22px 18px 16px;
+    border-radius: 14px;
+    margin: 15px 0;
     text-align: center;
-    position: relative;
-    box-shadow: 
-      0 15px 40px rgba(15, 26, 46, 0.3),
-      inset 0 1px 0 rgba(212, 175, 55, 0.2);
-    overflow: hidden;
-    border: 1px solid rgba(212, 175, 55, 0.2);
-  }
-
-  /* زخرفة القرآن */
-  .verse::before {
-    content: '';
-    position: absolute;
-    inset: 12px;
-    border: 1px solid rgba(212, 175, 55, 0.25);
-    border-radius: 15px;
-    pointer-events: none;
-  }
-
-  .verse::after {
-    content: '﷽';
-    position: absolute;
-    top: 15px;
-    right: 25px;
-    font-family: 'Amiri', serif;
-    font-size: 26px;
-    color: var(--gold-rich);
-    opacity: 0.35;
+    border: 1px solid #d4af3755;
   }
 
   .verse-text {
-    font-family: 'Scheherazade New', 'Amiri', serif;
-    font-size: 24px;
-    line-height: 2.3;
-    color: var(--white);
-    margin-bottom: 16px;
+    font-size: 18px;
+    line-height: 2.1;
+    color: #fff;
+    margin-bottom: 10px;
     font-weight: 400;
-    direction: rtl;
-    position: relative;
-    z-index: 1;
-    text-shadow: 0 2px 20px rgba(212, 175, 55, 0.2);
+    font-family: 'Arial', sans-serif;
   }
 
   .verse-ref {
     display: inline-block;
-    font-family: 'Tajawal', sans-serif;
-    font-size: 13px;
+    font-size: 12px;
     color: var(--gold-rich);
-    font-weight: 600;
-    letter-spacing: 1.5px;
-    padding: 5px 18px;
-    background: rgba(212, 175, 55, 0.12);
-    border-radius: 30px;
-    border: 1px solid rgba(212, 175, 55, 0.3);
-    position: relative;
-    z-index: 1;
+    font-weight: 700;
+    padding: 3px 14px;
+    background: #d4af3720;
+    border-radius: 20px;
+    border: 1px solid #d4af3750;
   }
 
-  /* ═══════════ Hadith Box ═══════════ */
+  /* ═══ HADITH ═══ */
   .hadith {
-    background: 
-      linear-gradient(135deg, #fffdf5 0%, #fdf6e3 100%);
-    border-right: 5px solid var(--gold-rich);
-    border-radius: 16px;
-    padding: 26px 26px 22px;
-    margin: 22px 0;
-    position: relative;
-    box-shadow: 
-      0 8px 25px rgba(184, 134, 11, 0.08),
-      inset 0 1px 0 rgba(255,255,255,0.9);
-  }
-
-  .hadith::before {
-    content: '☪';
-    position: absolute;
-    top: 14px;
-    left: 18px;
-    font-size: 24px;
-    color: var(--gold-rich);
-    opacity: 0.5;
-    animation: gentleWiggle 3.5s ease-in-out infinite;
+    background: var(--gold-pale);
+    border-right: 4px solid var(--gold-rich);
+    border-radius: 10px;
+    padding: 16px 16px 12px;
+    margin: 12px 0;
   }
 
   .hadith-text {
-    font-family: 'Scheherazade New', 'Amiri', serif;
-    font-size: 22px;
-    line-height: 2.1;
-    color: var(--ink);
-    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 1.95;
+    color: #1c1917;
+    margin-bottom: 6px;
     font-weight: 400;
-    padding-left: 40px;
-    padding-top: 8px;
   }
 
   .hadith-ref {
-    font-family: 'Tajawal', sans-serif;
-    font-size: 13px;
+    font-size: 12px;
     color: var(--emerald);
     font-weight: 700;
-    padding-left: 40px;
-    letter-spacing: 0.5px;
   }
 
-  /* ═══════════ Info Boxes ═══════════ */
-  .info-box {
-    padding: 20px 24px 20px 20px;
-    border-radius: 16px;
-    margin: 20px 0;
-    position: relative;
-    padding-right: 68px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.04);
-    border: 1px solid rgba(0,0,0,0.03);
+  /* ═══ INFO BOXES ═══ */
+  .info {
+    padding: 14px 16px;
+    border-radius: 12px;
+    margin: 14px 0;
+    border-right: 4px solid;
   }
 
-  .info-box::before {
-    position: absolute;
-    right: 18px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 28px;
-    animation: gentleWiggle 2.8s ease-in-out infinite;
-  }
+  .info.tip { background: #e8f7f0; border-color: var(--emerald-light); }
+  .info.warn { background: #fef3e0; border-color: #e89c3a; }
+  .info.note { background: #eaf0f9; border-color: #4a6fa5; }
+  .info.ok { background: #f0f9e8; border-color: #5c9c3a; }
 
-  .info-box.tip {
-    background: linear-gradient(135deg, #e8f7f0 0%, #d1fae5 100%);
-    border-right: 5px solid var(--emerald-light);
-    border-color: rgba(13, 122, 95, 0.15);
-  }
-  .info-box.tip::before { content: '💡'; }
-
-  .info-box.warning {
-    background: linear-gradient(135deg, #fef3e0 0%, #fde5c1 100%);
-    border-right: 5px solid #e89c3a;
-    border-color: rgba(232, 156, 58, 0.2);
-  }
-  .info-box.warning::before { content: '⚠️'; }
-
-  .info-box.note {
-    background: linear-gradient(135deg, #eaf0f9 0%, #d8e4f2 100%);
-    border-right: 5px solid #4a6fa5;
-    border-color: rgba(74, 111, 165, 0.2);
-  }
-  .info-box.note::before { content: '📌'; }
-
-  .info-box.success {
-    background: linear-gradient(135deg, #f0f9e8 0%, #e0f2d1 100%);
-    border-right: 5px solid #5c9c3a;
-    border-color: rgba(92, 156, 58, 0.2);
-  }
-  .info-box.success::before { content: '✅'; }
-
-  .info-box-title {
-    font-family: 'Aref Ruqaa', serif;
+  .info-title {
     font-weight: 700;
-    font-size: 17px;
-    margin-bottom: 8px;
+    font-size: 14.5px;
+    margin-bottom: 5px;
     color: var(--emerald-deep);
-    letter-spacing: 0.3px;
   }
 
-  .info-box p {
-    font-size: 15.5px;
-    margin-bottom: 6px;
-    line-height: 1.95;
-  }
+  .info p { font-size: 14px; margin-bottom: 4px; }
+  .info p:last-child { margin-bottom: 0; }
 
-  /* ═══════════ Ornamental Divider ═══════════ */
-  .divider {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 14px;
-    margin: 32px 0;
-    color: var(--gold-rich);
-    font-family: 'Amiri', serif;
-    font-size: 20px;
-    opacity: 0.7;
-  }
-
-  .divider::before,
-  .divider::after {
-    content: '';
-    flex: 1;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, var(--gold-rich), transparent);
-    max-width: 120px;
-  }
-
-  /* ═══════════ Comparison Boxes ═══════════ */
+  /* ═══ COMPARE BOXES ═══ */
   .compare {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 18px;
-    margin: 25px 0;
+    gap: 10px;
+    margin: 15px 0;
   }
 
-  .compare-box {
-    padding: 25px 22px;
-    border-radius: 18px;
+  .cmp {
+    padding: 14px 12px;
+    border-radius: 12px;
     text-align: center;
-    position: relative;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.06);
-    overflow: hidden;
+    font-size: 13.5px;
+    line-height: 1.75;
   }
 
-  .compare-box::before {
-    content: '';
-    position: absolute;
-    top: -20px;
-    right: -20px;
-    width: 80px;
-    height: 80px;
-    opacity: 0.15;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60'%3E%3Cg fill='none' stroke='%23064e3b' stroke-width='1'%3E%3Cpolygon points='30,5 55,20 55,45 30,60 5,45 5,20'/%3E%3C/g%3E%3C/svg%3E");
-    background-size: contain;
-  }
+  .cmp.left { background: #f0f9e8; border: 1px solid #5c9c3a; }
+  .cmp.right { background: #fdf2f2; border: 1px solid #d64545; }
 
-  .compare-box.left {
-    background: linear-gradient(135deg, #f0f9e8 0%, #dff0d1 100%);
-    border: 2px solid rgba(92, 156, 58, 0.3);
-  }
-
-  .compare-box.right {
-    background: linear-gradient(135deg, #fdf2f2 0%, #fbdede 100%);
-    border: 2px solid rgba(214, 69, 69, 0.3);
-  }
-
-  .compare-title {
-    font-family: 'Aref Ruqaa', serif;
-    font-size: 19px;
-    margin-bottom: 15px;
+  .cmp-title {
+    font-size: 15px;
     font-weight: 700;
+    margin-bottom: 8px;
+  }
+
+  .cmp.left .cmp-title { color: var(--emerald-deep); }
+  .cmp.right .cmp-title { color: #a52a2a; }
+
+  .cmp ul { margin: 0; padding: 0; list-style: none; text-align: right; }
+  .cmp li { margin-bottom: 5px; padding-right: 14px; position: relative; font-size: 13.5px; }
+  .cmp li::before { content: '◆'; position: absolute; right: 0; color: var(--gold-rich); font-size: 9px; top: 6px; }
+
+  /* ═══ WORLD CARDS ═══ */
+  .world-card {
+    background: #fff8f0;
+    border-radius: 14px;
+    padding: 18px 16px;
+    margin: 12px 0;
+    border: 1px solid #e8d5b0;
+  }
+
+  .world-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .world-emoji {
+    background: var(--emerald-deep);
+    color: #fff;
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
-    position: relative;
-    z-index: 1;
+    font-size: 22px;
+    flex-shrink: 0;
   }
 
-  .compare-box.left .compare-title { color: var(--emerald-deep); }
-  .compare-box.right .compare-title { color: #a52a2a; }
-
-  .compare-list {
-    font-size: 14.5px;
-    line-height: 1.95;
-    text-align: right;
-    color: var(--text);
-    position: relative;
-    z-index: 1;
+  .world-title {
+    font-size: 15.5px;
+    font-weight: 700;
+    color: var(--emerald-deep);
+    line-height: 1.45;
+    flex: 1;
   }
 
-  .compare-list li {
-    margin-bottom: 8px;
-    list-style: none;
-    padding-right: 22px;
-    position: relative;
+  .world-body { font-size: 14.5px; line-height: 1.9; }
+  .world-body strong { color: var(--emerald); }
+  .world-body p { font-size: 14.5px; }
+
+  /* ═══ TABLE ═══ */
+  .tbl-wrap {
+    overflow-x: auto;
+    margin: 15px 0;
+    border-radius: 12px;
+    border: 1px solid #e0d9c8;
+    -webkit-overflow-scrolling: touch;
   }
 
-  .compare-list li::before {
-    content: '◆';
-    position: absolute;
-    right: 0;
-    color: var(--gold-rich);
-    font-size: 10px;
-    top: 9px;
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    min-width: 520px;
   }
 
-  /* ═══════════ Quiz Intro ═══════════ */
-  .quiz-intro {
+  th {
+    background: var(--emerald-deep);
+    color: #fff;
+    padding: 10px 8px;
+    font-size: 13px;
     text-align: center;
-    padding: 35px 25px;
-    background: 
-      radial-gradient(ellipse at top, rgba(240, 217, 140, 0.15), transparent 60%),
-      linear-gradient(135deg, var(--emerald-deep), var(--emerald));
-    border-radius: 22px;
-    color: white;
-    margin-bottom: 25px;
-    box-shadow: 0 15px 40px rgba(6, 78, 59, 0.2);
-    position: relative;
-    overflow: hidden;
-  }
-
-  .quiz-intro::before {
-    content: '✦';
-    position: absolute;
-    top: 15px;
-    right: 20px;
-    font-size: 24px;
-    color: var(--gold-light);
-    opacity: 0.5;
-    animation: gentleWiggle 3s ease-in-out infinite;
-  }
-
-  .quiz-intro::after {
-    content: '✦';
-    position: absolute;
-    bottom: 15px;
-    left: 20px;
-    font-size: 24px;
-    color: var(--gold-light);
-    opacity: 0.5;
-    animation: gentleWiggle 3s ease-in-out infinite 0.5s;
-  }
-
-  .quiz-intro h3 {
-    font-family: 'Aref Ruqaa', serif;
-    font-size: 26px;
-    margin-bottom: 12px;
-    color: var(--gold-light);
     font-weight: 700;
   }
 
-  .quiz-intro p {
-    color: rgba(255,255,255,0.9);
-    text-align: center;
-    font-size: 15px;
-    margin-bottom: 0;
-    line-height: 1.8;
+  td {
+    padding: 10px 8px;
+    border-bottom: 1px solid #efe8d8;
+    text-align: right;
+    line-height: 1.7;
+    font-size: 13px;
   }
 
-  /* ═══════════ Quiz Score Bar ═══════════ */
+  tr:nth-child(even) td { background: #fbf8f1; }
+
+  /* ═══ QUIZ ═══ */
+  .quiz-head {
+    background: var(--emerald-deep);
+    color: #fff;
+    padding: 20px 18px;
+    border-radius: 14px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .quiz-head h3 {
+    font-size: 20px;
+    color: var(--gold-light);
+    margin-bottom: 6px;
+    font-weight: 700;
+  }
+
+  .quiz-head p { color: #fff; font-size: 13.5px; margin: 0; text-align: center; }
+
   .quiz-score {
     position: sticky;
-    top: 75px;
-    background: linear-gradient(135deg, var(--gold-rich), var(--gold-light));
-    color: var(--night);
-    padding: 14px 20px;
-    border-radius: 50px;
-    text-align: center;
-    font-weight: 800;
-    font-size: 15px;
-    box-shadow: 
-      0 10px 30px rgba(184, 134, 11, 0.3),
-      inset 0 1px 0 rgba(255,255,255,0.4);
-    z-index: 90;
-    margin-bottom: 22px;
+    top: 62px;
+    background: var(--gold-rich);
+    color: #1a1a1a;
+    padding: 10px 14px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 700;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    margin-bottom: 15px;
+    z-index: 5;
     flex-wrap: wrap;
-    gap: 10px;
-    border: 1px solid rgba(255,255,255,0.3);
-  }
-
-  .quiz-score .score-item {
-    display: flex;
-    align-items: center;
     gap: 6px;
   }
 
-  .quiz-score .score-emoji {
-    animation: gentleWiggle 2.5s ease-in-out infinite;
-    display: inline-block;
-  }
-
-  /* ═══════════ Quiz Items ═══════════ */
-  .quiz-item {
+  .q-item {
     background: var(--paper);
-    border-radius: 18px;
-    padding: 26px 24px;
-    margin-bottom: 18px;
-    box-shadow: 
-      0 6px 20px rgba(0,0,0,0.05),
-      inset 0 1px 0 rgba(255,255,255,0.9);
-    border: 1.5px solid rgba(184, 134, 11, 0.1);
-    transition: all 0.4s ease;
-    position: relative;
-    overflow: hidden;
+    border-radius: 14px;
+    padding: 16px 14px;
+    margin-bottom: 12px;
+    border: 1px solid #efe8d8;
   }
 
-  .quiz-item.correct {
-    border-color: rgba(76, 175, 80, 0.5);
-    background: linear-gradient(135deg, var(--paper) 0%, #f1f9f1 100%);
-    box-shadow: 0 8px 25px rgba(76, 175, 80, 0.1);
-  }
+  .q-item.correct { border-color: #86efac; background: #f5fdf7; }
+  .q-item.wrong { border-color: #fca5a5; background: #fef7f7; }
 
-  .quiz-item.wrong {
-    border-color: rgba(244, 67, 54, 0.5);
-    background: linear-gradient(135deg, var(--paper) 0%, #fdf3f3 100%);
-    box-shadow: 0 8px 25px rgba(244, 67, 54, 0.1);
-  }
-
-  .quiz-question {
+  .q-text {
+    font-size: 14.5px;
     font-weight: 700;
-    font-size: 16.5px;
     color: var(--emerald-deep);
-    margin-bottom: 16px;
-    line-height: 1.85;
+    margin-bottom: 12px;
+    line-height: 1.7;
     display: flex;
-    align-items: flex-start;
-    gap: 12px;
+    gap: 8px;
   }
 
-  .quiz-question .q-num {
-    display: inline-flex;
+  .q-num {
+    background: var(--emerald-deep);
+    color: #fff;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, var(--emerald), var(--emerald-deep));
-    color: white;
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    font-size: 13px;
-    font-weight: 700;
+    font-size: 12px;
     flex-shrink: 0;
-    box-shadow: 0 4px 12px rgba(13, 122, 95, 0.25);
-    margin-top: 2px;
   }
 
-  .quiz-options {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
+  .q-opts { display: flex; flex-direction: column; gap: 6px; }
 
-  .quiz-option {
-    padding: 14px 18px;
-    background: var(--cream);
-    border: 1.5px solid rgba(0,0,0,0.06);
-    border-radius: 12px;
+  .q-opt {
+    padding: 10px 14px;
+    background: #fbf8f1;
+    border: 1.5px solid #e0d9c8;
+    border-radius: 10px;
     cursor: pointer;
-    transition: all 0.3s ease;
-    font-size: 15px;
-    line-height: 1.65;
+    font-family: inherit;
+    font-size: 13.5px;
+    line-height: 1.55;
     text-align: right;
-    font-family: 'Tajawal', sans-serif;
     color: var(--text);
     width: 100%;
     font-weight: 500;
-    position: relative;
-    padding-right: 45px;
+    transition: background 0.15s;
   }
 
-  .quiz-option::before {
-    content: '';
-    position: absolute;
-    right: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    border: 2px solid rgba(13, 122, 95, 0.3);
-    transition: all 0.3s ease;
-  }
+  .q-opt:active:not(.locked) { background: #e8f7f0; }
 
-  .quiz-option:hover:not(.disabled) {
-    background: #e8f7f0;
-    border-color: var(--emerald-light);
-    transform: translateX(-4px);
-    box-shadow: 0 5px 15px rgba(13, 122, 95, 0.1);
-  }
-
-  .quiz-option:hover:not(.disabled)::before {
-    background: var(--emerald-light);
-    box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.2);
-  }
-
-  .quiz-option.correct {
-    background: linear-gradient(135deg, #d4edda, #b8e5c2);
-    border-color: #4caf50;
-    color: #0a4d1a;
+  .q-opt.correct {
+    background: var(--green-bg);
+    border-color: var(--green-ok);
+    color: #14532d;
     font-weight: 700;
   }
 
-  .quiz-option.correct::before {
-    content: '✓';
-    background: #4caf50;
-    border-color: #4caf50;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 13px;
-    font-weight: 900;
+  .q-opt.wrong {
+    background: var(--red-bg);
+    border-color: var(--red-no);
+    color: #7f1d1d;
+    font-weight: 700;
   }
 
-  .quiz-option.wrong {
-    background: linear-gradient(135deg, #f8d7da, #f5c0c4);
-    border-color: #f44336;
-    color: #6d0d16;
-  }
+  .q-opt.locked { cursor: default; }
 
-  .quiz-option.wrong::before {
-    content: '✕';
-    background: #f44336;
-    border-color: #f44336;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 13px;
-    font-weight: 900;
-  }
-
-  .quiz-option.disabled {
-    cursor: default;
-    opacity: 0.85;
-  }
-
-  .quiz-feedback {
-    margin-top: 15px;
-    padding: 14px 18px;
-    border-radius: 12px;
-    font-size: 14.5px;
-    display: none;
+  .q-exp {
+    margin-top: 10px;
+    padding: 12px 14px;
+    border-radius: 10px;
+    font-size: 13.5px;
     line-height: 1.85;
-    font-weight: 500;
-    animation: fbSlide 0.4s ease;
+    display: none;
   }
 
-  @keyframes fbSlide {
-    from { opacity: 0; transform: translateY(-8px); }
-    to { opacity: 1; transform: translateY(0); }
+  .q-exp.show { display: block; }
+  .q-exp.ok { background: var(--green-bg); color: #14532d; border-right: 4px solid var(--green-ok); }
+  .q-exp.no { background: var(--red-bg); color: #7f1d1d; border-right: 4px solid var(--red-no); }
+
+  .q-exp-label { font-weight: 700; margin-bottom: 5px; }
+
+  .q-trap {
+    margin-top: 8px;
+    padding: 8px 12px;
+    background: #fff3cd;
+    border-right: 3px solid #e89c3a;
+    border-radius: 8px;
+    font-size: 13px;
+    line-height: 1.8;
+    color: #664d03;
   }
 
-  .quiz-feedback.show { display: block; }
-
-  .quiz-feedback.correct {
-    background: linear-gradient(135deg, #d4edda, #b8e5c2);
-    color: #0a4d1a;
-    border-right: 4px solid #4caf50;
-  }
-
-  .quiz-feedback.wrong {
-    background: linear-gradient(135deg, #f8d7da, #f5c0c4);
-    color: #6d0d16;
-    border-right: 4px solid #f44336;
-  }
-
-  /* ═══════════ Essay Items ═══════════ */
+  /* ═══ ESSAY ═══ */
   .essay-item {
     background: var(--paper);
-    border-radius: 18px;
-    margin-bottom: 15px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+    border-radius: 14px;
+    margin-bottom: 10px;
+    border: 1px solid #efe8d8;
     overflow: hidden;
-    border: 1.5px solid rgba(184, 134, 11, 0.1);
-    transition: all 0.35s ease;
   }
 
-  .essay-item:hover {
-    box-shadow: 0 8px 25px rgba(184, 134, 11, 0.1);
-  }
-
-  .essay-item.open {
-    border-color: rgba(184, 134, 11, 0.3);
-    box-shadow: 0 10px 30px rgba(184, 134, 11, 0.12);
-  }
-
-  .essay-question {
-    padding: 20px 22px;
+  .essay-q {
+    padding: 14px 16px;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 14px;
-    background: linear-gradient(135deg, #fffdf5, var(--gold-pale));
-    transition: background 0.3s ease;
-    user-select: none;
-  }
-
-  .essay-question:hover {
-    background: linear-gradient(135deg, #fff9e6, #fdf0d0);
-  }
-
-  .essay-q-text {
+    gap: 10px;
+    font-size: 14px;
     font-weight: 700;
     color: var(--emerald-deep);
-    font-size: 15.5px;
-    line-height: 1.75;
-    flex: 1;
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
+    line-height: 1.65;
+    background: var(--gold-pale);
   }
 
-  .essay-q-text .q-num {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(135deg, var(--gold-rich), var(--gold));
-    color: white;
-    min-width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    font-size: 12.5px;
-    font-weight: 700;
-    flex-shrink: 0;
-    box-shadow: 0 4px 10px rgba(184, 134, 11, 0.25);
-    margin-top: 1px;
-  }
+  .essay-q .q-num { margin-left: 6px; }
 
   .essay-toggle {
-    font-size: 22px;
+    font-size: 18px;
     color: var(--emerald);
-    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.2s;
     flex-shrink: 0;
-    line-height: 1;
-    margin-top: 3px;
-    font-weight: 900;
   }
 
-  .essay-item.open .essay-toggle {
-    transform: rotate(180deg);
-  }
+  .essay-item.open .essay-toggle { transform: rotate(180deg); }
 
-  .essay-answer {
+  .essay-a {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.55s cubic-bezier(0.4, 0, 0.2, 1), padding 0.35s ease;
-    background: linear-gradient(180deg, #fefdf9, #fbf8f0);
-    padding: 0 22px;
+    transition: max-height 0.3s ease;
+    padding: 0 16px;
+    background: #fdfcf7;
   }
 
-  .essay-item.open .essay-answer {
-    max-height: 4000px;
-    padding: 22px;
+  .essay-item.open .essay-a {
+    max-height: 3000px;
+    padding: 14px 16px;
   }
 
-  .essay-answer-content {
-    font-size: 15px;
-    line-height: 2;
-    color: var(--text);
-    border-right: 3px solid var(--emerald-light);
-    padding-right: 18px;
+  .essay-a-content {
+    font-size: 13.5px;
+    line-height: 1.9;
+    border-right: 3px solid var(--emerald);
+    padding-right: 12px;
   }
 
-  .essay-answer-content p {
-    margin-bottom: 12px;
-    font-size: 15px;
-    line-height: 2;
+  .essay-a-content p { font-size: 13.5px; margin-bottom: 8px; }
+  .essay-a-content strong { color: var(--emerald-deep); }
+
+  .essay-note {
+    margin-top: 8px;
+    padding: 8px 12px;
+    background: #fff3cd;
+    border-right: 3px solid #e89c3a;
+    border-radius: 8px;
+    font-size: 12.5px;
+    line-height: 1.8;
+    color: #664d03;
   }
 
-  .essay-answer-content p:last-child {
-    margin-bottom: 0;
-  }
-
-  .essay-answer-content strong {
-    color: var(--emerald-deep);
-  }
-
-  /* ═══════════ Tips Cards ═══════════ */
-  .tip-card {
-    background: var(--paper);
-    border-radius: 18px;
-    padding: 28px 26px;
-    margin-bottom: 18px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
-    border: 1.5px solid rgba(184, 134, 11, 0.1);
-    position: relative;
-    transition: all 0.35s ease;
-  }
-
-  .tip-card:hover {
-    box-shadow: 0 10px 30px rgba(184, 134, 11, 0.1);
-    transform: translateY(-2px);
-  }
-
-  .tip-num {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(135deg, var(--gold-rich), var(--gold));
-    color: white;
-    width: 42px;
-    height: 42px;
-    border-radius: 50%;
-    font-weight: 800;
-    font-size: 18px;
-    margin-bottom: 15px;
-    box-shadow: 
-      0 6px 15px rgba(184, 134, 11, 0.3),
-      inset 0 1px 0 rgba(255,255,255,0.3);
-  }
-
-  .tip-title {
-    font-family: 'Aref Ruqaa', serif;
-    font-size: 20px;
-    color: var(--emerald-deep);
-    margin-bottom: 14px;
-    font-weight: 700;
-    line-height: 1.5;
-  }
-
-  .tip-body {
-    font-size: 15.5px;
-    line-height: 2;
-    color: var(--text);
-  }
-
-  .tip-body strong {
-    color: var(--emerald);
-    font-weight: 700;
-  }
-
-  .tip-body ul {
-    margin: 12px 22px 12px 0;
-    font-size: 15.5px;
-  }
-
-  /* ═══════════ Reset Button ═══════════ */
-  .reset-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin: 30px auto 15px;
-    padding: 15px 40px;
-    background: linear-gradient(135deg, var(--emerald), var(--emerald-deep));
-    color: white;
+  /* ═══ BUTTON ═══ */
+  .btn-reset {
+    display: block;
+    margin: 22px auto 10px;
+    padding: 12px 30px;
+    background: var(--emerald-deep);
+    color: #fff;
     border: none;
-    border-radius: 40px;
-    font-family: 'Tajawal', sans-serif;
-    font-size: 16px;
+    border-radius: 30px;
+    font-family: inherit;
+    font-size: 14.5px;
     font-weight: 700;
     cursor: pointer;
-    transition: all 0.35s cubic-bezier(0.2, 0.9, 0.3, 1.2);
-    box-shadow: 
-      0 10px 25px rgba(6, 78, 59, 0.25),
-      inset 0 1px 0 rgba(255,255,255,0.15);
-    letter-spacing: 0.5px;
   }
 
-  .reset-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 
-      0 15px 35px rgba(6, 78, 59, 0.3),
-      inset 0 1px 0 rgba(255,255,255,0.2);
-  }
+  .btn-reset:active { background: var(--emerald); }
 
-  .reset-btn:active { transform: translateY(-1px); }
-
-  /* ═══════════ Footer ═══════════ */
+  /* ═══ FOOTER ═══ */
   .footer {
-    text-align: center;
-    margin: 50px 0 20px;
-    padding: 45px 25px 40px;
-    background: 
-      radial-gradient(ellipse at center, rgba(240, 217, 140, 0.15), transparent 70%),
-      linear-gradient(135deg, var(--emerald-deep), var(--emerald));
-    border-radius: 25px;
-    color: white;
-    box-shadow: 
-      0 20px 50px rgba(6, 78, 59, 0.25),
-      inset 0 1px 0 rgba(255,255,255,0.15);
-    position: relative;
-    overflow: hidden;
-  }
-
-  .footer::before {
-    content: '';
-    position: absolute;
-    inset: 10px;
-    border: 1px solid rgba(240, 217, 140, 0.2);
+    background: var(--emerald-deep);
+    color: #fff;
+    padding: 30px 20px;
     border-radius: 18px;
-    pointer-events: none;
+    text-align: center;
+    margin-top: 30px;
   }
 
-  .footer-ornament-top {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    color: var(--gold-light);
-    margin-bottom: 18px;
-    font-family: 'Amiri', serif;
-    font-size: 16px;
-    letter-spacing: 3px;
-    opacity: 0.85;
-  }
-
-  .footer-emoji {
-    font-size: 46px;
-    display: inline-block;
-    margin-bottom: 15px;
-    animation: gentleWiggle 3s ease-in-out infinite;
-    filter: drop-shadow(0 5px 15px rgba(0,0,0,0.2));
-    position: relative;
-    z-index: 1;
-  }
-
-  .footer-text {
-    font-family: 'Aref Ruqaa', serif;
-    font-size: 24px;
-    margin-bottom: 12px;
+  .footer-emoji { font-size: 36px; margin-bottom: 8px; display: block; }
+  .footer-title {
+    font-size: 19px;
     color: var(--gold-light);
     font-weight: 700;
-    letter-spacing: 1px;
-    position: relative;
-    z-index: 1;
-    text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    margin-bottom: 8px;
   }
-
-  .footer-sub {
-    font-size: 14.5px;
-    color: rgba(255,255,255,0.88);
-    line-height: 2;
-    position: relative;
-    z-index: 1;
-    max-width: 500px;
-    margin: 0 auto;
-  }
-
+  .footer-text { font-size: 13.5px; line-height: 1.9; color: #fff; }
   .footer-dua {
-    font-family: 'Amiri', serif;
-    font-size: 18px;
+    font-size: 15px;
     color: var(--gold-light);
-    margin-top: 20px;
-    position: relative;
-    z-index: 1;
+    margin-top: 12px;
     font-style: italic;
   }
 
-  /* ═══════════ Responsive ═══════════ */
-  @media (max-width: 640px) {
-    .container { padding: 0 10px; }
-    .header { padding: 45px 20px 40px; margin: 0 -10px 25px; border-radius: 0 0 30px 30px; }
-    .header-emoji { font-size: 52px; }
-    .header-title { font-size: 28px; }
-    .tabs-nav-wrap { margin: 0 -10px 20px; padding: 10px; }
-    .tab-btn { padding: 10px 16px; font-size: 13px; }
-    .card { padding: 25px 20px; border-radius: 20px; }
-    .card::before, .card::after { width: 32px; height: 32px; }
-    .section-title { font-size: 20px; gap: 10px; }
-    .title-emoji { width: 42px; height: 42px; font-size: 0.85em; border-radius: 12px; }
-    .sub-title { font-size: 17px; }
-    p { font-size: 15px; }
-    .verse { padding: 30px 20px 25px; }
-    .verse-text { font-size: 20px; }
-    .hadith-text { font-size: 19px; padding-left: 15px; }
-    .hadith-ref { padding-left: 15px; }
-    .hadith::before { display: none; }
+  /* ═══ RESPONSIVE ═══ */
+  @media (max-width: 500px) {
+    .header { padding: 32px 16px 28px; border-radius: 0 0 24px 24px; }
+    .header-emoji { font-size: 42px; }
+    .header-title { font-size: 21px; }
+    .card { padding: 18px 14px; border-radius: 14px; }
+    .card-title { font-size: 17.5px; }
+    .sub-title { font-size: 15.5px; }
+    p { font-size: 14px; }
+    .verse-text { font-size: 16px; }
+    .hadith-text { font-size: 15px; }
     .compare { grid-template-columns: 1fr; }
-    .quiz-score { top: 65px; font-size: 13px; padding: 12px 15px; }
-    .quiz-question { font-size: 15px; }
-    .quiz-option { font-size: 14px; padding: 12px 15px 12px 42px; }
-    .essay-q-text { font-size: 14.5px; }
-    .tip-card { padding: 22px 20px; }
-    .tip-title { font-size: 18px; }
-    .footer { padding: 35px 20px 30px; }
-    .footer-text { font-size: 20px; }
-    .info-box { padding: 18px 18px 18px 18px; padding-right: 58px; }
-    .info-box::before { font-size: 24px; right: 15px; }
-    .info-box-title { font-size: 15.5px; }
-    .info-box p { font-size: 14.5px; }
+    .q-opt { font-size: 13px; padding: 9px 12px; }
+    .quiz-score { top: 60px; font-size: 12px; padding: 8px 12px; }
   }
 
-  @media (max-width: 400px) {
-    .header-title { font-size: 24px; }
-    .section-title { font-size: 18px; }
-    .tab-btn { padding: 9px 14px; font-size: 12.5px; }
-  }
-
+  /* ═══ PRINT ═══ */
   @media print {
-    body { background: white; padding: 0; }
-    body::before, body::after { display: none; }
-    .tabs-nav-wrap, .reset-btn, .floating-deco { display: none; }
+    .tabs-wrap, .btn-reset { display: none; }
     .tab-content { display: block !important; page-break-before: always; }
-    .card { box-shadow: none; border: 1px solid #ddd; break-inside: avoid; }
-    .card::before, .card::after { display: none; }
-    .essay-answer { max-height: none !important; padding: 22px !important; }
-    .essay-toggle { display: none; }
+    .card, .q-item, .essay-item { break-inside: avoid; }
+    .essay-a { max-height: none !important; padding: 14px 16px !important; }
   }
 
-  ::selection {
-    background: var(--gold-light);
-    color: var(--night);
-  }
-
-  ::-webkit-scrollbar { width: 8px; height: 8px; }
-  ::-webkit-scrollbar-track { background: var(--cream); }
-  ::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, var(--emerald-light), var(--emerald));
-    border-radius: 10px;
-  }
-
-  ::-webkit-scrollbar-thumb:hover {
-    background: var(--emerald-deep);
-  }
-
-  /* ═══════════ Smooth Animations ═══════════ */
-  @media (prefers-reduced-motion: reduce) {
-    *, *::before, *::after {
-      animation-duration: 0.01ms !important;
-      transition-duration: 0.01ms !important;
-    }
-  }
+  ::selection { background: var(--gold-light); color: #1a1a1a; }
 </style>
 </head>
 <body>
 
-<!-- Floating decorations -->
-<div class="floating-deco" id="floatingDeco"></div>
+<!-- ═══════ HEADER ═══════ -->
+<header class="header">
+  <div class="header-orn">❦ ✦ ❦</div>
+  <div class="header-emoji">🕌</div>
+  <h1 class="header-title">دروس التوحيد — السمعيات</h1>
+  <p class="header-sub">
+    الصف الثالث الإعدادي الأزهري<br>
+    الموسوعة الشاملة للدروس الثلاثة الأولى
+  </p>
+  <div class="header-basmala">﷽</div>
+</header>
+
+<!-- ═══════ TABS ═══════ -->
+<div class="tabs-wrap">
+  <nav class="tabs" id="tabsNav">
+    <button class="tab-btn active" data-tab="l1">📘 الدرس الأول</button>
+    <button class="tab-btn" data-tab="l2">📗 الدرس الثاني</button>
+    <button class="tab-btn" data-tab="l3">📙 الدرس الثالث</button>
+    <button class="tab-btn" data-tab="world">🌐 شرح من الواقع</button>
+    <button class="tab-btn" data-tab="tbl">📊 المقارنة والمطبات</button>
+    <button class="tab-btn" data-tab="mcq">✅ 50 اختر</button>
+    <button class="tab-btn" data-tab="essay">📝 50 مقالي</button>
+  </nav>
+</div>
 
 <div class="container">
 
-  <!-- ═══════════════════════════════════════════ -->
-  <!-- HEADER -->
-  <!-- ═══════════════════════════════════════════ -->
-  <header class="header">
-    <div class="header-content">
-      <div class="header-ornament-top">❦ ✦ ❦</div>
-      
-      <div class="header-emoji-wrap">
-        <div class="header-glow"></div>
-        <div class="header-emoji">🕌</div>
-      </div>
-      
-      <h1 class="header-title">دروس التوحيد</h1>
-      <div class="header-subtitle">
-        قسم السمعيات — الصف الثالث الإعدادي الأزهري<br>
-        الشرح التفصيلي الشامل · بنك الأسئلة (100 سؤال)
-      </div>
-      
-      <div class="header-line">﷽</div>
+<!-- ═══════════ TAB 1: الدرس الأول ═══════════ -->
+<div class="tab-content active" id="l1">
+  <div class="card">
+    <h2 class="card-title">📘 الدرس الأول: مقدمة السمعيات + سؤال القبر</h2>
+
+    <h3 class="sub-title">أولاً: مقدمة السمعيات</h3>
+
+    <h4 class="mini-title">◆ أقسام علم التوحيد</h4>
+    <p>تنقسم مسائل علم التوحيد إلى ثلاثة أقسام رئيسية:</p>
+    <ol>
+      <li><strong>الإلهيات:</strong> ما يجب وما يجوز وما يستحيل في حق الله تعالى.</li>
+      <li><strong>النبوات:</strong> ما يجب وما يجوز وما يستحيل في حق الرسل عليهم الصلاة والسلام.</li>
+      <li><strong>السمعيات (الغيبيات):</strong> الأمور التي لا تُدرك بالحواس ولا بالعين المباشرة ولا يستقل العقل بإدراكها أو جزم تفاصيلها، وإنما طريق معرفتها الوحيد هو السماع والإخبار الصادق عن النبي ﷺ عن طريق الوحي (الكتاب والسنة).</li>
+    </ol>
+
+    <h4 class="mini-title">◆ تعريف السمعيات</h4>
+    <p>هي الأمور التي لا تؤخذ ولا تُعلم إلا بإخبار النبي ﷺ، ولا مجال للعقل في استقلال إدراكها؛ لأنها من أمور الغيب.</p>
+
+    <h4 class="mini-title">◆ طريق ثبوت السمعيات</h4>
+    <p>تثبت السمعيات حصراً عن طريق: <strong>(الكتاب والسنة معاً)</strong>. لا مجال للاجتهاد العقلي المجرّد في إثبات وجودها أو نفيها، وإنما دور العقل هو فهم النص وإثبات إمكانه العقلي (عدم استحالته).</p>
+
+    <div class="info ok">
+      <div class="info-title">✅ حكم الإيمان بالسمعيات</div>
+      <p>واجب شرعاً؛ لأنه يدخل في أصل الإيمان بالغيب الذي مدح الله به المؤمنين.</p>
     </div>
-  </header>
 
-  <!-- ═══════════════════════════════════════════ -->
-  <!-- TABS NAV -->
-  <!-- ═══════════════════════════════════════════ -->
-  <div class="tabs-nav-wrap">
-    <nav class="tabs-nav" id="tabsNav">
-      <button class="tab-btn active" data-tab="lesson1">
-        <span class="tab-emoji">📘</span> الدرس الأول
-      </button>
-      <button class="tab-btn" data-tab="lesson2">
-        <span class="tab-emoji">📗</span> الدرس الثاني
-      </button>
-      <button class="tab-btn" data-tab="lesson3">
-        <span class="tab-emoji">📙</span> الدرس الثالث
-      </button>
-      <button class="tab-btn" data-tab="tips">
-        <span class="tab-emoji">⚠️</span> المطبات الامتحانية
-      </button>
-      <button class="tab-btn" data-tab="mcq">
-        <span class="tab-emoji">✅</span> الأسئلة الموضوعية
-      </button>
-      <button class="tab-btn" data-tab="essay">
-        <span class="tab-emoji">📝</span> الأسئلة المقالية
-      </button>
-    </nav>
-  </div>
+    <div class="verse">
+      <div class="verse-text">الَّذِينَ يُؤْمِنُونَ بِالْغَيْبِ</div>
+      <div class="verse-ref">[البقرة: 3]</div>
+    </div>
 
-  <!-- ═══════════════════════════════════════════ -->
-  <!-- TAB 1: Lesson 1 -->
-  <!-- ═══════════════════════════════════════════ -->
-  <div class="tab-content active" id="lesson1">
+    <h3 class="sub-title">ثانياً: سؤال القبر</h3>
 
-    <div class="card">
-      <h2 class="section-title">
-        <span class="title-emoji">📘</span>
-        الدرس الأول: مقدمة السمعيات وسؤال القبر
-      </h2>
+    <div class="def">
+      <div class="def-title">✦ تعريف سؤال القبر</div>
+      <p>هو سؤال الملكين (منكر ونكير) للميت في قبره عن ربه ودينه ونبيه الذي بُعث فيه.</p>
+    </div>
 
-      <!-- أولاً: مقدمة السمعيات -->
-      <h3 class="sub-title">
-        <span class="sub-emoji">🌿</span>
-        أولاً: مقدمة في علم السمعيات (الغيبيات)
-      </h3>
+    <h4 class="mini-title">◆ تنبيه هام حول إطلاق لفظ "القبر"</h4>
+    <p>سُمّي بسؤال القبر نظراً <strong>للغالب</strong>؛ لأن غالب الموتى يُدفنون في القبور.</p>
+    <p>ولكن التكليف بالسؤال يتناول <strong>كل ميت</strong>، سواء دُفن في قبر، أم لم يُدفن (كأن أكلته السباع، أو غرق في البحر فأكلته الأسماك، أو احترق وصار رماداً تتذراه الرياح، أو تفتت في انفجار). يوصل الله القدرة والعقل للروح والجسد أينما كان ليسمع السؤال ويجيب.</p>
 
-      <div class="definition">
-        <div class="definition-title">تعريف السمعيات</div>
-        <p>
-          هي الأمور التي لا تُدرَك بالحواس الظاهرة (كالسمع والبصر واللمس)،
-          ولا بالمشاهدة والرؤية، ولا يستقل العقل البشري بالوصول إليها أو معرفة تفاصيلها بنفسه.
-        </p>
+    <h4 class="mini-title">◆ كيفية سؤال القبر</h4>
+    <p>بعد انصراف الناس من دفن الميت (أو عقيب موته)، يأتيه ملكان يقال لأحدهما <strong>"مُنكَر"</strong> وللآخر <strong>"نَكِير"</strong> (وسُمّيا بذلك لأن الميت يرى منهما صورة غير مألوفة ولم يرَ مثلها من قبل)، فيقعدانه ويعيد الله الروح فيه حياة برزخية متوسطة، ويُرَدّ إليه من العقل والحواس ما يتوقف عليه فهم الخطاب ورد الجواب.</p>
+
+    <p>فيسألانه: <strong>"من ربك؟ وما دينك؟ وما تقول في الرجل الذي بُعث فيكم؟"</strong></p>
+
+    <div class="compare">
+      <div class="cmp left">
+        <div class="cmp-title">✅ المؤمن الموفق</div>
+        <ul>
+          <li>يقول: "ربي الله، وديني الإسلام، والذي بُعث فينا هو محمد ﷺ"</li>
+          <li>فيقولان له: "قد علمنا إن كنت لمؤمناً، انظر إلى مقعدك من النار قد أبدلك الله به مقعداً من الجنة"</li>
+          <li>فيراهما جميعاً ويفسح له في قبره</li>
+        </ul>
       </div>
-
-      <p>
-        <strong>طريق ثبوتها الوحيد:</strong> هو إخبار النبي ﷺ عنها،
-        والذي وصل إلينا عن طريق الوحي الإلهي في <strong>(الكتاب والسنة)</strong>.
-      </p>
-
-      <p>
-        <strong>سبب التسمية بـ "السمعيات":</strong> لأن طريق التلقي والوصول إليها
-        يتوقف على السماع والنقل الصحيح من الرسول ﷺ.
-      </p>
-
-      <div class="divider">❦ ✦ ❦</div>
-
-      <!-- حكم الإيمان بالسمعيات -->
-      <h3 class="sub-title">
-        <span class="sub-emoji">⚖️</span>
-        حكم الإيمان بالسمعيات
-      </h3>
-
-      <div class="info-box success">
-        <div class="info-box-title">✅ حكم الإيمان بالسمعيات</div>
-        <p>
-          واجب شرعاً على كل مسلم ومسلمة، وهي ركن أساسي من أركان الإيمان
-          (الإيمان بالغيب).
-        </p>
+      <div class="cmp right">
+        <div class="cmp-title">❌ الكافر / المنافق</div>
+        <ul>
+          <li>يقول: "هَاهْ هَاهْ لا أَدْرِي! كُنْتُ أَقُولُ مَا يَقُولُ النَّاسُ!"</li>
+          <li>فيقولان له: "لا دريت ولا تليت"</li>
+          <li>فيصيبه من العذاب ما قُدّر له</li>
+        </ul>
       </div>
+    </div>
 
-      <div class="verse">
-        <div class="verse-text">الَّذِينَ يُؤْمِنُونَ بِالْغَيْبِ</div>
-        <div class="verse-ref">[البقرة: 3]</div>
-      </div>
+    <h4 class="mini-title">◆ حكم الإيمان بسؤال القبر</h4>
+    <div class="info ok">
+      <div class="info-title">✅ واجب شرعاً</div>
+      <p>لأنه أمر جائز عقلاً وثابت بالنصوص القطعية والصحيحة من الكتاب والسنة وإجماع السلف.</p>
+    </div>
 
-      <div class="info-box note">
-        <div class="info-box-title">📌 تنبيه عقدي مهم</div>
-        <p>
-          العقل لا يحيل (لا يستبعد) السمعيات، بل يجيزها،
-          ويأتي الشرع ليتوج هذا الجواز بالوجوب والقطع.
-        </p>
-      </div>
+    <h4 class="mini-title">◆ حكم منكر سؤال القبر</h4>
+    <div class="info warn">
+      <div class="info-title">⚠️ مبتدع وضال (ولا يُكفَّر على الراجح)</div>
+      <p>ما دام يؤمن بالجزاء الأخروي والحساب والجنة والنار، وإنما خالف في التوقيت والآلية بسبب تأويل شبهة فاسدة.</p>
+    </div>
 
-      <div class="divider">❦ ✦ ❦</div>
+    <h4 class="mini-title">◆ الأدلة على سؤال القبر</h4>
+    <p><strong>1. من القرآن الكريم:</strong></p>
+    <div class="verse">
+      <div class="verse-text">يُثَبِّتُ اللَّهُ الَّذِينَ آمَنُوا بِالْقَوْلِ الثَّابِتِ فِي الْحَيَاةِ الدُّنْيَا وَفِي الْآخِرَةِ</div>
+      <div class="verse-ref">[إبراهيم: 27]</div>
+    </div>
+    <p>قال عبد الله بن عباس رضي الله عنهما: <em>"الشهادة يُسألون عنها في قبورهم بعد موتهم"</em>.</p>
 
-      <!-- ثانياً: سؤال القبر -->
-      <h3 class="sub-title">
-        <span class="sub-emoji">⚰️</span>
-        ثانياً: سؤال القبر
-      </h3>
+    <p><strong>2. من السنة النبوية الشريفة:</strong></p>
+    <div class="hadith">
+      <div class="hadith-text">«المسلم إذا سُئل في القبر شهد أن لا إله إلا الله وأن محمداً رسول الله، فذلك قوله جل جلاله: {يُثَبِّتُ اللَّهُ الَّذِينَ آمَنُوا بِالْقَوْلِ الثَّابِتِ فِي الْحَيَاةِ الدُّنْيَا وَفِي الْآخِرَةِ}»</div>
+      <div class="hadith-ref">عن البراء بن عازب رضي الله عنه — متفق عليه</div>
+    </div>
 
-      <div class="definition">
-        <div class="definition-title">تعريف سؤال القبر</div>
-        <p>
-          هو سؤال الملكين (المسمَيَيْن بـ: مُنْكَر ونَكِير) للميت في قبره بعد موته
-          وانصراف النافضين عن دفنه، عن: ربه، ودينه، ونبيه.
-        </p>
-      </div>
-
-      <h4 class="sub-title" style="font-size: 17px; margin-top: 25px;">
-        <span class="sub-emoji">🔹</span>
-        شمول وعموم السؤال
-      </h4>
-
-      <p>يستوي في هذا السؤال كل من مات:</p>
-      <ul>
-        <li>سواء دُفن في قبر متعارف عليه.</li>
-        <li>أم لم يُدفَن (كأن أكلته السباع، أو الغرق في البحار فأكلته الأسماك، أو حُرِقَ وصار رماداً في الهواء).</li>
-      </ul>
-
-      <div class="info-box note">
-        <div class="info-box-title">📌 علة التسمية</div>
-        <p>
-          أطلق العلماء عليه اسم "سؤال القبر" بناءً على <strong>الغالب والأكثر</strong>
-          في بني آدم، وهو أن يُدفن الميت في القبر.
-        </p>
-      </div>
-
-      <div class="divider">❦ ✦ ❦</div>
-
-      <!-- حكم الإيمان بسؤال القبر -->
-      <h4 class="sub-title" style="font-size: 17px;">
-        <span class="sub-emoji">⚖️</span>
-        حكم الإيمان بسؤال القبر وحكم منكره
-      </h4>
-
-      <div class="info-box success">
-        <div class="info-box-title">✅ حكم الإيمان به</div>
-        <p>
-          واجب شرعاً؛ لأنه أمر ثابت بالكتاب والسنة الصحيحة،
-          وأجمع عليه أهل العلم، وهو أمر جائز عقلاً.
-        </p>
-      </div>
-
-      <div class="info-box warning">
-        <div class="info-box-title">⚠️ حكم منكره</div>
-        <p>
-          يُعدّ منكره <strong>"مبتدعاً وضالاً"</strong>،
-          ولا يُكفَر على الراجح من أقوال أهل العلم؛
-          ما دام يؤمن بالجزاء الأخروي والحساب العام،
-          وذلك لأن دليل سؤال القبر يحتاج إلى تأويل عند بعض أرباب الشبهات
-          ولم يقع كفره صراحة كمنكر البعث.
-        </p>
-      </div>
-
-      <div class="divider">❦ ✦ ❦</div>
-
-      <!-- الأدلة على ثبوت سؤال القبر -->
-      <h4 class="sub-title" style="font-size: 17px;">
-        <span class="sub-emoji">📜</span>
-        الأدلة على ثبوت سؤال القبر
-      </h4>
-
-      <p><strong>أ) من القرآن الكريم:</strong></p>
-
-      <div class="verse">
-        <div class="verse-text">
-          يُثَبِّتُ اللَّهُ الَّذِينَ آمَنُوا بِالْقَوْلِ الثَّابِتِ
-          فِي الْحَيَاةِ الدُّنْيَا وَفِي الْآخِرَةِ
-        </div>
-        <div class="verse-ref">[إبراهيم: 27]</div>
-      </div>
-
-      <p>
-        <strong>وجه الدلالة:</strong> صرّح سيدنا عبد الله بن عباس رضي الله عنهما
-        في تفسيرها: <em>"فِي الْآخِرَةِ: أي عند الشهادة يُسألون عنها في قبورهم بعد موتهم"</em>.
-      </p>
-
-      <p><strong>ب) من السنة النبوية الشريفة:</strong></p>
-
-      <div class="hadith">
-        <div class="hadith-text">
-          «المسلم إذا سُئِلَ في القبر شَهِدَ أن لا إله إلا الله وأن محمداً رسول الله،
-          فذلك قوله جل جلاله: يُثَبِّتُ اللَّهُ الَّذِينَ آمَنُوا بِالْقَوْلِ الثَّابِتِ...»
-        </div>
-        <div class="hadith-ref">حديث البراء بن عازب رضي الله عنه — متفق عليه</div>
-      </div>
-
-      <div class="hadith">
-        <div class="hadith-text">
-          «استغفروا لأخيكم وسلوا له التثبيت؛ فإنه الآن يُسأل»
-        </div>
-        <div class="hadith-ref">حديث عثمان بن عفان رضي الله عنه — رواه أبو داود وصححه الحاكم</div>
-      </div>
-
-      <div class="divider">❦ ✦ ❦</div>
-
-      <!-- كيفية السؤال -->
-      <h4 class="sub-title" style="font-size: 17px;">
-        <span class="sub-emoji">🔍</span>
-        كيفية السؤال وحال الميت فيه
-      </h4>
-
-      <ul>
-        <li>بعد انصراف الناس من الدفن، يأتيه ملكان أحدهما يسمى <strong>(مُنْكَر)</strong> والآخر <strong>(نَكِير)</strong>.</li>
-        <li>يُقعدان الميت، فيُعيد الله تعالى الروح إليه فيحييه "حياة برزخية متوسطة" بين حياة الدنيا والموت المادي.</li>
-        <li>ويُرَدّ إليه من العقل والحواس ما يتوقف عليه فهم الخطاب ورد الجواب.</li>
-      </ul>
-
-      <p><strong>يسألانه ثلاثة أسئلة رئيسية:</strong></p>
-      <ol>
-        <li>من ربك؟</li>
-        <li>ما دينك؟</li>
-        <li>ما تقول في الرجل الذي بُعث فيكم؟</li>
-      </ol>
-
-      <div class="compare">
-        <div class="compare-box left">
-          <div class="compare-title">
-            <span>✅</span> إجابة المؤمن الثابت
-          </div>
-          <ul class="compare-list">
-            <li>يقول: "ربي الله، وديني الإسلام، والرجل المبعوث فينا هو محمد ﷺ".</li>
-            <li>فيقولان له: "انظر إلى مقعدك من النار قد أبدلك الله به مقعداً من الجنة".</li>
-            <li>فيراهما جميعاً.</li>
-          </ul>
-        </div>
-        <div class="compare-box right">
-          <div class="compare-title">
-            <span>❌</span> إجابة الكافر/المنافق
-          </div>
-          <ul class="compare-list">
-            <li>يتلعثم ويقول: "لا أدري! كنت أقول ما يقوله الناس فيه".</li>
-            <li>فيقولان له: "لا دريت ولا تليت".</li>
-            <li>ثم يصيبه من العذاب ما قُدِّر له.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="info-box note">
-        <div class="info-box-title">📌 ملاحظة مهمة</div>
-        <p>
-          أما من مات غرقاً أو حرقاً أو أكلته السباع، فإن الله تعالى يعيد إليه الروح
-          ويُسأَل بكيفية يعلمها الله تعالى لا ندركها نحن بحواسنا.
-        </p>
-      </div>
-
+    <div class="hadith">
+      <div class="hadith-text">«استغفروا لأخيكم وسلوا له التثبيت؛ فإنه الآن يُسأل»</div>
+      <div class="hadith-ref">عن عثمان بن عفان رضي الله عنه — رواه أبو داود وصححه الحاكم</div>
     </div>
   </div>
+</div>
 
-  <!-- ═══════════════════════════════════════════ -->
-  <!-- TAB 2: Lesson 2 -->
-  <!-- ═══════════════════════════════════════════ -->
-  <div class="tab-content" id="lesson2">
+<!-- ═══════════ TAB 2: الدرس الثاني ═══════════ -->
+<div class="tab-content" id="l2">
+  <div class="card">
+    <h2 class="card-title">📗 الدرس الثاني: نعيم القبر وعذابه</h2>
 
-    <div class="card">
-      <h2 class="section-title">
-        <span class="title-emoji">📗</span>
-        الدرس الثاني: نعيم القبر وعذابه
-      </h2>
+    <div class="def">
+      <div class="def-title">✦ تعريف نعيم القبر وعذابه</div>
+      <p>هو ما يلقاه العبد في قبره (في الحياة البرزخية قبل البعث) من النعيم المقيم أو العذاب الأليم، بحسب حاله من الإيمان والطاعة، أو الكفر والمعصية.</p>
+    </div>
 
-      <h3 class="sub-title">
-        <span class="sub-emoji">📖</span>
-        التعريف
-      </h3>
+    <h4 class="mini-title">◆ لمن يكون النعيم والعذاب؟ (مذهب أهل السنة والجماعة)</h4>
+    <p>النعيم والعذاب يقعان على <strong>"الروح والجسد جميعاً"</strong> عند أهل السنة والجماعة. يفيض الله على الجسد والروح أثراً يدركان به اللذة أو الألم، ولو تفتت الجسد أو صار أجزاءً متناثرة.</p>
 
-      <div class="definition">
-        <div class="definition-title">تعريف نعيم القبر وعذابه</div>
-        <p>
-          نعيم القبر وعذابه: هو ما يتعرض له العبد في قبره أو في مرحلة البرزخ
-          من النعيم المقيم أو العذاب الأليم قبل يوم البعث،
-          وذلك بحسب حاله من الإيمان والكفر، والطاعة والمعصية.
-        </p>
-      </div>
+    <h4 class="mini-title">◆ طبيعة الحياة البرزخية</h4>
+    <p>حياة القبر تُعرف بـ <strong>"الحياة البرزخية"</strong>، وهي مرحلة متوسطة بين الحياة الدنيا والحياة الأخروية.</p>
+    <p>وهي أمر غيبي لا تُدرك حقيقته بالحواس الدنيوية.</p>
+    <p>وتشبه في التقريب العصري حال النائم: فالنائم في فراشه قد يرى رؤيا صالحة فيتنعم ويفرح ويسعد، أو يرى كابوساً مروعاً فيتألم ويتصبب عرقاً ويصرخ، بينما الشخص المستيقظ بجواره على نفس الفراش <strong>لا يشعر بشيء</strong> مما يمر به النائم!</p>
 
-      <div class="divider">❦ ✦ ❦</div>
+    <h4 class="mini-title">◆ حكم الإيمان بنعيم القبر وعذابه</h4>
+    <div class="info ok">
+      <div class="info-title">✅ واجب شرعاً</div>
+      <p>لثبوتهما بالقرآن الكريم والسنة النبوية وإجماع السلف الصالح قبل ظهور أهل البدع والأهواء.</p>
+    </div>
 
-      <h3 class="sub-title">
-        <span class="sub-emoji">⚖️</span>
-        حكم الإيمان بهما وحكم إنكارهما
-      </h3>
+    <h4 class="mini-title">◆ حكم منكرهما</h4>
+    <div class="info warn">
+      <div class="info-title">⚠️ مبتدع وضال</div>
+      <p>خارج عن مذهب أهل السنة والجماعة، ولا يُكفر إن كان مقراً بأصل الثواب والعقاب الأخروي.</p>
+    </div>
 
-      <div class="info-box success">
-        <div class="info-box-title">✅ الإيمان بهما</div>
-        <p>
-          واجب شرعاً بالقرآن الكريم والسنة النبوية الصحيحة،
-          وقد أجمع على وقوعهما السلف الصالح قبل ظهور أهل البدع.
-        </p>
-      </div>
+    <h4 class="mini-title">◆ الأدلة على نعيم القبر وعذابه</h4>
 
-      <div class="info-box warning">
-        <div class="info-box-title">⚠️ إنكارهما</div>
-        <p>
-          يُعتبر بدعة وضلالة (وليس كفراً) طالما كان المنكر مقراً
-          بالحساب والعقاب الأخروي العام.
-        </p>
-      </div>
+    <p><strong>1. من القرآن الكريم — دليل نعيم القبر (للشهداء):</strong></p>
+    <div class="verse">
+      <div class="verse-text">وَلا تَحْسَبَنَّ الَّذِينَ قُتِلُوا فِي سَبِيلِ اللَّهِ أَمْوَاتًا ۚ بَلْ أَحْيَاءٌ عِنْدَ رَبِّهِمْ يُرْزَقُونَ ۞ فَرِحِينَ بِمَا آتَاهُمُ اللَّهُ مِنْ فَضْلِهِ</div>
+      <div class="verse-ref">[آل عمران: 169-170]</div>
+    </div>
 
-      <div class="divider">❦ ✦ ❦</div>
+    <p><strong>2. من القرآن — دليل عذاب القبر (لآل فرعون):</strong></p>
+    <div class="verse">
+      <div class="verse-text">النَّارُ يُعْرَضُونَ عَلَيْهَا غُدُوًّا وَعَشِيًّا ۖ وَيَوْمَ تَقُومُ السَّاعَةُ أَدْخِلُوا آلَ فِرْعَوْنَ أَشَدَّ الْعَذَابِ</div>
+      <div class="verse-ref">[غافر: 46]</div>
+    </div>
 
-      <h3 class="sub-title">
-        <span class="sub-emoji">📜</span>
-        الأدلة النقلية من الكتاب والسنة
-      </h3>
+    <div class="info tip">
+      <div class="info-title">💡 وجه الدلالة في آية آل فرعون (مهم جداً)</div>
+      <p>الآية أثبتت عرضين ونوعين من العذاب:</p>
+      <p><strong>العرض الأول:</strong> الغدو والعشي (صباحاً ومساءً)، وهذا يحدث في القبر قبل قيام الساعة؛ لأنه <strong>لا غدو ولا عشي في يوم القيامة</strong> (إذ لا شمس ولا ليل ولا نهار).</p>
+      <p><strong>العرض الثاني:</strong> قوله {وَيَوْمَ تَقُومُ السَّاعَةُ أَدْخِلُوا آلَ فِرْعَوْنَ أَشَدَّ الْعَذَابِ}، فدل على أن العرض الأول كان في البرزخ (القبر).</p>
+    </div>
 
-      <p><strong>أ) من القرآن الكريم:</strong></p>
-
-      <p><strong>◆ في حق الشهداء (دليل النعيم):</strong></p>
-
-      <div class="verse">
-        <div class="verse-text">
-          وَلَا تَحْسَبَنَّ الَّذِينَ قُتِلُوا فِي سَبِيلِ اللَّهِ أَمْوَاتًا ۚ
-          بَلْ أَحْيَاءٌ عِنْدَ رَبِّهِمْ يُرْزَقُونَ
-        </div>
-        <div class="verse-ref">[آل عمران: 169-170]</div>
-      </div>
-
-      <p><strong>◆ في حق آل فرعون (دليل العذاب):</strong></p>
-
-      <div class="verse">
-        <div class="verse-text">
-          النَّارُ يُعْرَضُونَ عَلَيْهَا غُدُوًّا وَعَشِيًّا ۖ
-          وَيَوْمَ تَقُومُ السَّاعَةُ أَدْخِلُوا آلَ فِرْعَوْنَ أَشَدَّ الْعَذَابِ
-        </div>
-        <div class="verse-ref">[غافر: 46]</div>
-      </div>
-
-      <div class="info-box tip">
-        <div class="info-box-title">💡 وجه الدلالة</div>
-        <p>
-          أثبتت الآية أن آل فرعون يُعرضون على النار صباحاً (غدواً) ومساءً (عشياً)،
-          وهذا العرض يكون في القبر (الحياة البرزخية)؛
-          لأن يوم القيامة ليس فيه غدوٌ ولا عشيٌ،
-          ثم أتت جملة <strong>{وَيَوْمَ تَقُومُ السَّاعَةُ}</strong>
-          لتبين العذاب الأكبر في الآخرة.
-        </p>
-      </div>
-
-      <p><strong>ب) من السنة النبوية:</strong></p>
-
-      <div class="hadith">
-        <div class="hadith-text">
-          «إنهما ليعذبان وما يعذبان في كبير... بلى،
-          أما أحدهما فكان يمشي بالنميمة،
-          وأما الآخر فكان لا يستبرئ من بوله»
-        </div>
-        <div class="hadith-ref">
-          حديث ابن عباس رضي الله عنهما — رواه البخاري ومسلم
-        </div>
-      </div>
-
-      <div class="divider">❦ ✦ ❦</div>
-
-      <h3 class="sub-title">
-        <span class="sub-emoji">🔍</span>
-        حقائق مهمة حول طبيعة نعيم القبر وعذابه
-      </h3>
-
-      <ul>
-        <li>النعيم والعذاب يقعان على <strong>"الروح والجسد جميعاً"</strong> عند أهل السنة والجماعة.</li>
-        <li>حتى لو تفتت الجسد أو صار رماداً أو أكلته الأسماك، فإن الله يوصل أثر النعيم والعذاب إلى ذلك الجسد والروح بكيفية غيبية لا يعلمها إلا الله.</li>
-      </ul>
-
-      <div class="definition">
-        <div class="definition-title">✦ الحياة البرزخية ✦</div>
-        <p>
-          يُطلق على حياة القبر اسم <strong>"الحياة البرزخية"</strong>،
-          وهي المرحلة الفاصلة بين الحياة الدنيا والحياة الآخرة،
-          كما قال تعالى: <strong>{وَمِنْ وَرَائِهِمْ بَرْزَخٌ إِلَى يَوْمِ يُبْعَثُونَ}</strong>
-          [المؤمنون: 100].
-        </p>
-      </div>
-
-      <div class="info-box note">
-        <div class="info-box-title">📌 مثال توضيحي</div>
-        <p>
-          حال الميت في البرزخ كحال <strong>النائم بجوارك</strong>،
-          قد يرى في منامه أحلاماً مفزعة أو نعيماً ولذة شديدة ويتألم أو يفرح،
-          بينما الشخص الجالس بجواره لا يشعر بشيء مما يحدث له!
-        </p>
-      </div>
-
+    <p><strong>3. من السنة النبوية الشريفة:</strong></p>
+    <div class="hadith">
+      <div class="hadith-text">«إِنَّهُمَا لَيُعَذَّبَانِ وَمَا يُعَذَّبَانِ فِي كَبِيرٍ (أي كبير في زعمهم أو شاق على الفعل)، بَلَى إِنَّهُ كَبِيرٌ: أَمَّا أَحَدُهُمَا فَكَانَ يَمْشِي بِالنَّمِيمَةِ، وَأَمَّا الآخَرُ فَكَانَ لا يَسْتَبْرِئُ مِنْ بَوْلِهِ (وفي رواية: لا يستتر من بوله)»</div>
+      <div class="hadith-ref">عن عبد الله بن عباس رضي الله عنهما — رواه البخاري ومسلم</div>
     </div>
   </div>
+</div>
 
-  <!-- ═══════════════════════════════════════════ -->
-  <!-- TAB 3: Lesson 3 -->
-  <!-- ═══════════════════════════════════════════ -->
-  <div class="tab-content" id="lesson3">
+<!-- ═══════════ TAB 3: الدرس الثالث ═══════════ -->
+<div class="tab-content" id="l3">
+  <div class="card">
+    <h2 class="card-title">📙 الدرس الثالث: البعث والنشر</h2>
 
-    <div class="card">
-      <h2 class="section-title">
-        <span class="title-emoji">📙</span>
-        الدرس الثالث: البعث والنشر
-      </h2>
+    <div class="def">
+      <div class="def-title">✦ تعريف البعث والنشر</div>
+      <p>هو إحياء الله تعالى الموتى، وإخراجهم من قبورهم بعد جمع أجزائهم الأصلية من الفناء أو التحلل، لإعادتهم إلى أجسادهم الحقيقية يوم القيامة للسعادة والحساب والجزاء.</p>
+    </div>
 
-      <h3 class="sub-title">
-        <span class="sub-emoji">📖</span>
-        التعريف
-      </h3>
+    <h4 class="mini-title">◆ كيفية البعث والنشر</h4>
+    <p>يجمع الله الأجزاء الأصلية للإنسان (التي تتكون منها بنيته الرئيسية كعجب الذنب)، ثم يعيد الأرواح إلى أجسادها فتنسلخ من الأرض كما تنبت البذور بعد نزول المطر.</p>
 
-      <div class="definition">
-        <div class="definition-title">تعريف البعث والنشر</div>
-        <p>
-          البعث والنشر: هو إحياء الله تعالى للموتى،
-          وإخراجهم بعد جمع أجزائهم الأصلية من قبورهم يوم القيامة بعد فناء الدنيا،
-          وذلك برد أرواح العباد إلى أجسامهم ليحاسَبوا.
-        </p>
-      </div>
+    <h4 class="mini-title">◆ حكم الإيمان بالبعث والنشر</h4>
+    <div class="info ok">
+      <div class="info-title">✅ واجب شرعاً</div>
+      <p>وهو <strong>ركن من أركان الإيمان</strong> المعلومة من الدين بالضرورة.</p>
+    </div>
 
-      <div class="divider">❦ ✦ ❦</div>
+    <h4 class="mini-title">◆ حكم منكر البعث والنشر</h4>
+    <div class="info warn">
+      <div class="info-title">⚠️ كافر مخرج من الملة</div>
+      <p>لأنه أنكر أمراً مقطوعاً به في القرآن والسنة وأجمعت عليه جميع الشرائع السماوية.</p>
+    </div>
 
-      <h3 class="sub-title">
-        <span class="sub-emoji">⚖️</span>
-        حكم الإيمان به وحكم منكره
-      </h3>
+    <h4 class="mini-title">◆ الدليل العقلي على البعث والنشر</h4>
+    <ol>
+      <li>القادر على البدء والإيجاد من العدم قادر على الإعادة بطريق الأولوية، بل الإعادة في الشاهد والعقل أسهل من الإيجاد الأول. (والله تعالى لا يعجزه شيء، فالقوة والقدرة الإلهية واحدة لا تتأثر بصعوبة أو سهولة).</li>
+      <li>مشاهدة إحياء الأرض الميتة بعد نزول المطر؛ فالذي يحيي الأرض بعد موتها قادر على إحياء الأجساد بعد بلائها.</li>
+    </ol>
 
-      <div class="info-box success">
-        <div class="info-box-title">✅ حكم الإيمان به</div>
-        <p>
-          واجب شرعاً، وهو <strong>ركن من أركان الإيمان الستة</strong>.
-        </p>
-      </div>
+    <h4 class="mini-title">◆ الأدلة النقلية على البعث والنشر</h4>
 
-      <div class="info-box warning">
-        <div class="info-box-title">⚠️ حكم منكره</div>
-        <p>
-          <strong>كافر ومشرك وخارج عن ملة الإسلام</strong>؛
-          وذلك لأنه إنكار لأمر معلوم من الدين بالضرورة،
-          وثابت بنصوص قطعية من القرآن والسنة
-          وإجماع جميع الشرائع السماوية.
-        </p>
-      </div>
+    <p><strong>1. من القرآن الكريم:</strong></p>
 
-      <div class="divider">❦ ✦ ❦</div>
+    <div class="verse">
+      <div class="verse-text">وَهُوَ الَّذِي يَبْدَأُ الْخَلْقَ ثُمَّ يُعِيدُهُ وَهُوَ أَهْوَنُ عَلَيْهِ</div>
+      <div class="verse-ref">[الروم: 27]</div>
+    </div>
 
-      <h3 class="sub-title">
-        <span class="sub-emoji">🧠</span>
-        الأدلة العقلية والنقلية
-      </h3>
+    <div class="verse">
+      <div class="verse-text">وَضَرَبَ لَنَا مَثَلا وَنَسِيَ خَلْقَهُ قَالَ مَنْ يُحْيِي الْعِظَامَ وَهِيَ رَمِيمٌ ۞ قُلْ يُحْيِيهَا الَّذِي أَنْشَأَهَا أَوَّلَ مَرَّةٍ وَهُوَ بِكُلِّ خَلْقٍ عَلِيمٌ</div>
+      <div class="verse-ref">[يس: 78-79]</div>
+    </div>
 
-      <p><strong>أ) الدليل العقلي:</strong></p>
+    <div class="verse">
+      <div class="verse-text">زَعَمَ الَّذِينَ كَفَرُوا أَنْ لَنْ يُبْعَثُوا ۚ قُلْ بَلَى وَرَبِّي لَتُبْعَثُنَّ ثُمَّ لَتُنَبَّؤُنَّ بِمَا عَمِلْتُمْ ۚ وَذَلِكَ عَلَى اللَّهِ يَسِيرٌ</div>
+      <div class="verse-ref">[التغابن: 7]</div>
+    </div>
 
-      <ul>
-        <li>ثبت بالدليل القاطع أن الله تعالى خلق الإنسان أول مرة من العدم بقدرته.</li>
-        <li>العقل يقرّ بأن الذي قدر على خلق الإنسان من العدم في المرة الأولى، هو قادر ببساطة وبطريق أولى على إعادته بعد موته وخلقه مرة ثانية.</li>
-        <li>فالإعادة في الشاهد وعند العقول <strong>أسهل من الابتداء</strong>، والقدرة الإلهية المطلقة لا يعجزها شيء في الأرض ولا في السماء.</li>
-      </ul>
+    <div class="verse">
+      <div class="verse-text">وَحَشَرْنَاهُمْ فَلَمْ نُغَادِرْ مِنْهُمْ أَحَدًا</div>
+      <div class="verse-ref">[الكهف: 47]</div>
+    </div>
 
-      <p><strong>ب) الأدلة النقلية من القرآن الكريم:</strong></p>
+    <p><strong>2. من السنة النبوية الشريفة:</strong></p>
+    <p>قصة أبيّ بن خلف الجُمَحي حين أخذ عظماً بالياً وفتّته بيده أمام رسول الله ﷺ ونفخه في الهواء وقال بتهكم:</p>
 
-      <div class="verse">
-        <div class="verse-text">
-          وَهُوَ الَّذِي يَبْدَأُ الْخَلْقَ ثُمَّ يُعِيدُهُ وَهُوَ أَهْوَنُ عَلَيْهِ
-        </div>
-        <div class="verse-ref">[الروم: 27]</div>
-      </div>
+    <p style="text-align: center; font-style: italic;">"يا محمد، أترى أن الله يبعث هذا بعدما رمّ واستحالت عظاماً؟"</p>
 
-      <div class="verse">
-        <div class="verse-text">
-          وَضَرَبَ لَنَا مَثَلًا وَنَسِيَ خَلْقَهُ قَالَ مَنْ يُحْيِي الْعِظَامَ وَهِيَ رَمِيمٌ
-          ۞ قُلْ يُحْيِيهَا الَّذِي أَنْشَأَهَا أَوَّلَ مَرَّةٍ وَهُوَ بِكُلِّ خَلْقٍ عَلِيمٌ
-        </div>
-        <div class="verse-ref">[يس: 78-79]</div>
-      </div>
-
-      <div class="verse">
-        <div class="verse-text">
-          زَعَمَ الَّذِينَ كَفَرُوا أَنْ لَنْ يُبْعَثُوا ۚ
-          قُلْ بَلَى وَرَبِّي لَتُبْعَثُنَّ ثُمَّ لَتُنَبَّؤُنَّ بِمَا عَمِلْتُمْ ۚ
-          وَذَلِكَ عَلَى اللَّهِ يَسِيرٌ
-        </div>
-        <div class="verse-ref">[التغابن: 7]</div>
-      </div>
-
-      <div class="verse">
-        <div class="verse-text">
-          ذَلِكَ بِأَنَّ اللَّهَ هُوَ الْحَقُّ وَأَنَّهُ يُحْيِي الْمَوْتَى
-          وَأَنَّهُ عَلَى كُلِّ شَيْءٍ قَدِيرٌ ۞
-          وَأَنَّ السَّاعَةَ آتِيَةٌ لَا رَيْبَ فِيهَا
-          وَأَنَّ اللَّهَ يَبْعَثُ مَنْ فِي الْقُبُورِ
-        </div>
-        <div class="verse-ref">[الحج: 6-7]</div>
-      </div>
-
-      <div class="divider">❦ ✦ ❦</div>
-
-      <h3 class="sub-title">
-        <span class="sub-emoji">📖</span>
-        القصة النبوية الدالة على البعث
-      </h3>
-
-      <p><strong>قصة أُبيّ بن خلف:</strong></p>
-
-      <p>
-        جاء المشرك أُبيّ بن خلف إلى النبي ﷺ وفي يده عظم قد بَلِيَ ورَمَّ،
-        ففتّ العظم بيده ونفخه في الهواء وقال متعدياً:
-        <em>"يا محمد، أترى أن الله يبعث هذا بعدما رَمّ وصار هباءً؟"</em>.
-      </p>
-
-      <div class="hadith">
-        <div class="hadith-text">
-          «نعم، ويبعثك الله ويدخلك النار»
-        </div>
-        <div class="hadith-ref">رد النبي ﷺ على أُبيّ بن خلف</div>
-      </div>
-
-      <div class="info-box tip">
-        <div class="info-box-title">💡 الآيات النازلة في القصة</div>
-        <p>
-          <strong>{وَضَرَبَ لَنَا مَثَلًا وَنَسِيَ خَلْقَهُ قَالَ مَنْ يُحْيِي الْعِظَامَ وَهِيَ رَمِيمٌ ۞ قُلْ يُحْيِيهَا الَّذِي أَنْشَأَهَا أَوَّلَ مَرَّةٍ وَهُوَ بِكُلِّ خَلْقٍ عَلِيمٌ}</strong>
-          [يس: 78-79].
-        </p>
-      </div>
-
+    <div class="hadith">
+      <div class="hadith-text">«نَعَمْ، وَيَبْعَثُكَ اللهُ وَيُدْخِلُكَ النَّارَ»</div>
+      <div class="hadith-ref">رد النبي ﷺ على أبيّ بن خلف — فنزل القرآن الكريم يوثق الواقعة</div>
     </div>
   </div>
+</div>
 
-  <!-- ═══════════════════════════════════════════ -->
-  <!-- TAB 4: Tips -->
-  <!-- ═══════════════════════════════════════════ -->
-  <div class="tab-content" id="tips">
+<!-- ═══════════ TAB 4: شرح من الواقع ═══════════ -->
+<div class="tab-content" id="world">
+  <div class="card">
+    <h2 class="card-title">🌐 شرح من الواقع — الربط العصري</h2>
+    <p style="text-align: center; font-style: italic; color: var(--text-dim); margin-bottom: 15px;">✦ أمثلة عصرية تقرّب المعنى ✦</p>
 
-    <div class="card">
-      <h2 class="section-title">
-        <span class="title-emoji">⚠️</span>
-        المطبات الامتحانية والفروق العقدية
-      </h2>
-
-      <p style="text-align: center; color: var(--text-dim); font-style: italic; margin-bottom: 30px; font-size: 15px;">
-        ✦ أهم النقاط اللي بيتلخبط فيها الطلاب في الامتحان — ركّز فيها كويس ✦
-      </p>
-
-      <div class="tip-card">
-        <div class="tip-num">1</div>
-        <div class="tip-title">المطب الأول: التفرقة بين حكم منكر سؤال القبر ومنكر البعث</div>
-        <div class="tip-body">
-          <ul style="margin: 12px 22px 0 0;">
-            <li>منكر <strong>سؤال القبر / نعيم وعذاب القبر</strong> = <strong>مبتدع وضال وليس بكافر</strong> (طالما يؤمن بالحساب الأخروي).</li>
-            <li>منكر <strong>البعث والنشر</strong> = <strong>كافر خارج عن ملة الإسلام</strong>؛ لأنه أنكر ركناً صريحاً ومعلوماً من الدين بالضرورة.</li>
-          </ul>
-        </div>
+    <div class="world-card">
+      <div class="world-head">
+        <div class="world-emoji">☁️</div>
+        <div class="world-title">1. كيف يُسأل ويُعذب من أكلته السمك أو احترق وصار غباراً؟</div>
       </div>
-
-      <div class="tip-card">
-        <div class="tip-num">2</div>
-        <div class="tip-title">المطب الثاني: استواء من دُفن ومن لم يُدفن</div>
-        <div class="tip-body">
-          <strong>السؤال:</strong> هل يُسأل في القبر من أكلته السباع أو غرق في البحر؟
-          <br>
-          <strong>الإجابة:</strong> نعم، يُسأل ويُنعم أو يُعذب بكيفية يعلمها الله تعالى،
-          وتسمية الدرس بـ "سؤال القبر" بناءً على غالب حال البشر.
-        </div>
+      <div class="world-body">
+        <p><strong>تشبيه السحابة الإلكترونية (Cloud Storage):</strong></p>
+        <p>تخيل جهاز الكمبيوتر أو الهواتف الذكية. إذا قمت بتفكيك الأجزاء أو مسح الهاردوير أو رفع البيانات إلى "السحابة الإلكترونية"، فإن البيانات والملفات <strong>لم تنعدم</strong>، بل هي مخزنة برقم تسلسلي دقيق جداً ويمكن استرجاع البيانات بالكامل وتجميعها على جهاز جديد في ثوانٍ!</p>
+        <p>الله عز وجل هو خالق المادة والذرات. أجزاء الإنسان الأصلية (DNA أو الذرات المكونة له) موجودة ومحفوظة في علم الله وقدرته، وسواء كانت في بطن حوت، أو جزيئات متناثرة في الهواء، فإن النظام الإلهي يُوصل الشحنة الحية والوعي إلى هذه الذرات في لحظة واحدة لإجراء السؤال والنعيم أو العذاب.</p>
       </div>
+    </div>
 
-      <div class="tip-card">
-        <div class="tip-num">3</div>
-        <div class="tip-title">المطب الثالث: وجه الدلالة من آية آل فرعون</div>
-        <div class="tip-body">
-          <strong>السؤال:</strong> لماذا قلنا إن العرض على النار {غُدُوًّا وَعَشِيًّا} يقع في البرزخ؟
-          <br>
-          <strong>الإجابة:</strong> لأن يوم القيامة سرمدي دائم ليس فيه صباح ولا مساء
-          (لا غدو ولا عشي).
-        </div>
+    <div class="world-card">
+      <div class="world-head">
+        <div class="world-emoji">📡</div>
+        <div class="world-title">2. لماذا لا نرى الملكين ولا نسمع صراخ المعذبين؟</div>
       </div>
-
-      <div class="tip-card">
-        <div class="tip-num">4</div>
-        <div class="tip-title">المطب الرابع: أسماء الملكين وطبيعة الحياة</div>
-        <div class="tip-body">
-          <ul style="margin: 12px 22px 0 0;">
-            <li>اسما الملكين اللذين يسألان في القبر: <strong>(مُنْكَر)</strong> و <strong>(نَكِير)</strong>.</li>
-            <li>الحياة في القبر تسمى <strong>"حياة برزخية متوسطة"</strong> وليست حياة دنيوية كاملة.</li>
-            <li>العذاب والنعيم يقعان على <strong>الروح والجسد معاً</strong> عند أهل السنة.</li>
-          </ul>
-        </div>
+      <div class="world-body">
+        <p><strong>تشبيه موجات Wi-Fi والراديو:</strong></p>
+        <p>الغرفة التي تجلس فيها الآن مليئة بمئات آلاف الإشارات اللاسلكية والصور والبيانات، ولكن عينك وأذنك <strong>لا تلتقطها</strong> لأنها تعمل على "ترددات موجية" مخفية خارج نطاق حواسك المحدودة!</p>
+        <p>إذا استخدمت جهاز استقبال (Receiver) ستلتقط تلك الإشارات فوراً.</p>
+        <p>عالم البرزخ يعمل على "تردد برزخي" خارج شفرة الحواس الدنيوية. الميت ينتقل إلى التردد البرزخي فيرى ويسمع الملكين، بينما الحي المادي الباقي في الدنيا يحجب الله عنه هذا التردد رحمةً به حتى لا يطير عقله من الرعب ولا يتوقف عن ممارسة حياته.</p>
       </div>
+    </div>
 
-      <div class="tip-card">
-        <div class="tip-num">5</div>
-        <div class="tip-title">المطب الخامس: الأدلة ومصادر التلقي</div>
-        <div class="tip-body">
-          <ul style="margin: 12px 22px 0 0;">
-            <li>طريق ثبوت السمعيات هو: <strong>الكتاب والسنة فقط</strong> (العقل يجيزها ولا يستقل بإثبات تفاصيلها).</li>
-            <li>من أسئلة علل: علل "الإعادة أسهل عقلاً من الابتداء" ← لأن الذي قدر على الإيجاد من العدم أول مرة لا تعجزه الإعادة.</li>
-          </ul>
-        </div>
+    <div class="world-card">
+      <div class="world-head">
+        <div class="world-emoji">💭</div>
+        <div class="world-title">3. كيف تلتقي الروح بالجسد المتحلل لتشعر بالنعيم والعذاب؟</div>
       </div>
+      <div class="world-body">
+        <p><strong>مثال النائم في الغرفة المظلمة:</strong></p>
+        <p>اثنان ينامان على سرير واحد في غرفة واحدة. الأول يرى في المنام أنه يُطارد من وحش مفترس وسقط من قمة جبل ويداه تحترقان، فيستيقظ يلهث، يتصبب عرقاً، وقلبه يخفق بشدة وشعر بألم حقيقي.</p>
+        <p>والثاني بجواره يرى أنه في حديقة غناء يستمتع بالفاكهة والطير، وهو يبتسم في نومه!</p>
+        <p>المستيقظ بجوارهما لو نظر إليهما لرآهما جثتين هامدتين ساكنتين لا تتحركان! إذا كان هذا يحدث في حياتنا اليومية بظاهرة النوم (التي هي الموتة الصغرى)، فكيف تستبعد أن يحدث ما هو أعظم وأدق في الموتة الكبرى (البرزخ)؟!</p>
+      </div>
+    </div>
 
+    <div class="world-card">
+      <div class="world-head">
+        <div class="world-emoji">♻️</div>
+        <div class="world-title">4. كيف يُعاد الجسد الذي تحلل وصار تراباً؟</div>
+      </div>
+      <div class="world-body">
+        <p><strong>تشبيه المغناطيس وإعادة التدوير:</strong></p>
+        <p>إذا خلطت برادة حديد مع رمل ناعم جداً، بالعين المجردة لا يمكنك فصلهما. ولكن إذا قربت مغناطيسياً قوياً، سيجذب كل ذرة حديد ويترك الرمل في لحظة واحدة!</p>
+        <p>القدرة الإلهية أعظم بكثير؛ الأجزاء الأصلية للإنسان لها <strong>شفرة خاصة ومميزة</strong> لا تضيع ولا تختلط بغيرها، وفي يوم البعث تنادي القدرة الإلهية تلك الذرات فتتجذب كل ذرة إلى أختها ليعاد تركيب البناء الأصلي للشخص بدقة متناهية.</p>
+      </div>
+    </div>
+
+    <div class="world-card">
+      <div class="world-head">
+        <div class="world-emoji">🧬</div>
+        <div class="world-title">5. إمكانية البعث بلغة التكنولوجيا الحديثة</div>
+      </div>
+      <div class="world-body">
+        <p><strong>الهندسة العكسية والطباعة ثلاثية الأبعاد (DNA):</strong></p>
+        <p>العلماء اليوم يستخرجون عينة صغيرة جداً من الشفرة الوراثية (DNA) من هيكل عظمي يعود لآلاف السنين، ويستطيعون معرفة شكل صاحبها ولون عينيه وبشرته وتركيبه الكامل.</p>
+        <p>إذا كان العقل البشري المحدود وصل إلى إعادة بناء الكائن من خلية أو جين؛ فكيف بنسبة ذلك إلى القدرة الإلهية المطلقة التي تحفظ جينات الإنسان وأصل جسده (عجب الذنب) لتُعيد بناءه ونشره لحظة النفخ في الصور؟!</p>
+      </div>
     </div>
   </div>
+</div>
 
-  <!-- ═══════════════════════════════════════════ -->
-  <!-- TAB 5: MCQ Quiz -->
-  <!-- ═══════════════════════════════════════════ -->
-  <div class="tab-content" id="mcq">
+<!-- ═══════════ TAB 5: المقارنة والمطبات ═══════════ -->
+<div class="tab-content" id="tbl">
+  <div class="card">
+    <h2 class="card-title">📊 جدول المقارنة الذهبي + المطبات الامتحانية</h2>
 
-    <div class="quiz-intro">
-      <h3>✅ اختبار تفاعلي شامل</h3>
-      <p>
-        50 سؤال اختيار من متعدد — دوس على الإجابة وهتعرف فوراً لو صح ولا غلط
-      </p>
+    <h3 class="sub-title">جدول المقارنة بين الدروس الثلاثة</h3>
+
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>وجه المقارنة</th>
+            <th>سؤال القبر</th>
+            <th>نعيم القبر وعذابه</th>
+            <th>البعث والنشر</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>التعريف</strong></td>
+            <td>سؤال الملكين للميت عن ربه ودينه ونبيه</td>
+            <td>ما يلقاه العبد في البرزخ من نعيم أو عذاب قبل البعث</td>
+            <td>إحياء الله الموتى وإخراجهم من القبور بعد جمع أجزائهم</td>
+          </tr>
+          <tr>
+            <td><strong>حكم الإيمان به</strong></td>
+            <td>واجب شرعاً</td>
+            <td>واجب شرعاً</td>
+            <td>واجب شرعاً (ركن إيمان)</td>
+          </tr>
+          <tr>
+            <td><strong>حكم منكره</strong></td>
+            <td>مبتدع وضال</td>
+            <td>مبتدع وضال</td>
+            <td>كافر مخرج من الملة</td>
+          </tr>
+          <tr>
+            <td><strong>علة حكم المنكر</strong></td>
+            <td>لشبهة تأويل مع الإقرار بأصل الجزاء الأخروي</td>
+            <td>لتأويل الأدلة مع الإقرار بأصل الجزاء الأخروي</td>
+            <td>لأنه أنكر أمراً معلوماً من الدين بالضرورة</td>
+          </tr>
+          <tr>
+            <td><strong>المحل / النطاق</strong></td>
+            <td>شامل لجميع الموتى (دُفن أم لا)</td>
+            <td>للروح والجسد جميعاً</td>
+            <td>لجميع الخلائق المكلفة</td>
+          </tr>
+          <tr>
+            <td><strong>أبرز الأدلة</strong></td>
+            <td>{يثبت الله الذين آمنوا} + حديث استغفروا لأخيكم</td>
+            <td>{النار يعرضون عليها غدواً وعشياً} + حديث القبرين</td>
+            <td>{وهو الذي يبدأ الخلق ثم يعيده} + قصة أبيّ بن خلف</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
-    <div class="quiz-score" id="quizScore">
-      <div class="score-item">
-        <span class="score-emoji">📊</span>
-        <span>التقدم: <strong><span id="qProgress">0</span> / 50</strong></span>
-      </div>
-      <div class="score-item">
-        <span class="score-emoji">✅</span>
-        <span>صح: <strong id="qCorrect">0</strong></span>
-      </div>
-      <div class="score-item">
-        <span class="score-emoji">❌</span>
-        <span>غلط: <strong id="qWrong">0</strong></span>
-      </div>
+    <h3 class="sub-title">أبرز المطبات الامتحانية (الأزهر الشريف)</h3>
+
+    <div class="info warn">
+      <div class="info-title">⚠️ المطب الأول: الموتى غير المدفونين</div>
+      <p><strong>السؤال:</strong> هل يُسأل من غرق أو احترق أو أكلته السباع؟</p>
+      <p><strong>الجواب:</strong> نعم، يُسأل بكيفية يعلمها الله؛ لأن لفظ "القبر" خرج مخرج الغالب وليس قيداً حصرياً.</p>
     </div>
 
-    <div id="quizContainer"></div>
+    <div class="info warn">
+      <div class="info-title">⚠️ المطب الثاني: حكم المنكر</div>
+      <p>منكر سؤال القبر أو نعيمه وعذابه = <strong>مبتدع وضال ولا يُكفَّر</strong> (طالما يقر بالجزاء الأخروي).</p>
+      <p>منكر البعث والنشر = <strong>كافر مخرج من الملة</strong>.</p>
+    </div>
 
-    <button class="reset-btn" onclick="resetQuiz()">
-      <span>🔄 إعادة الاختبار من جديد</span>
-    </button>
+    <div class="info warn">
+      <div class="info-title">⚠️ المطب الثالث: وجه دلالة الآيات</div>
+      <p>آية آل فرعون {النَّارُ يُعْرَضُونَ عَلَيْهَا غُدُوًّا وَعَشِيًّا} تدل على <strong>عذاب القبر</strong>؛ لأن القيامة لا غدو فيها ولا عشي.</p>
+      <p>آية الشهداء {بَلْ أَحْيَاءٌ عِنْدَ رَبِّهِمْ يُرْزَقُونَ} تدل على <strong>نعيم القبر</strong>.</p>
+      <p>آية {وَهُوَ الَّذِي يَبْدَأُ الْخَلْقَ ثُمَّ يُعِيدُهُ} تدل على <strong>البعث والنشر</strong>.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ TAB 6: MCQ ═══════════ -->
+<div class="tab-content" id="mcq">
+  <div class="quiz-head">
+    <h3>✅ بنك الأسئلة — 50 سؤال اختر</h3>
+    <p>مع الشرح التفصيلي والمطب الامتحاني</p>
   </div>
 
-  <!-- ═══════════════════════════════════════════ -->
-  <!-- TAB 6: Essay -->
-  <!-- ═══════════════════════════════════════════ -->
-  <div class="tab-content" id="essay">
-
-    <div class="quiz-intro">
-      <h3>📝 الأسئلة المقالية الشاملة</h3>
-      <p>
-        50 سؤال مقالي متنوع — دوس على أي سؤال لتشوف الإجابة النموذجية الكاملة
-      </p>
-    </div>
-
-    <div id="essayContainer"></div>
-
+  <div class="quiz-score">
+    <div>📊 <strong><span id="qProg">0</span>/50</strong></div>
+    <div>✅ <strong id="qOk">0</strong></div>
+    <div>❌ <strong id="qNo">0</strong></div>
   </div>
 
-  <!-- ═══════════════════════════════════════════ -->
-  <!-- FOOTER -->
-  <!-- ═══════════════════════════════════════════ -->
-  <div class="footer">
-    <div class="footer-ornament-top">❦ ✦ ❦</div>
-    <div class="footer-emoji">🌿</div>
-    <div class="footer-text">وفقكِ الله يا رودينا</div>
-    <div class="footer-sub">
-      نسأل الله أن يثبتنا وإياكم بالقول الثابت
-      في الحياة الدنيا وفي الآخرة<br>
-      وأن يجعل هذا العمل خالصاً لوجهه الكريم
-    </div>
-    <div class="footer-dua">🤲 آمين يا رب العالمين 🤲</div>
+  <div id="quizBox"></div>
+
+  <button class="btn-reset" onclick="resetQ()">🔄 إعادة الاختبار</button>
+</div>
+
+<!-- ═══════════ TAB 7: Essay ═══════════ -->
+<div class="tab-content" id="essay">
+  <div class="quiz-head">
+    <h3>📝 50 سؤال مقالي</h3>
+    <p>دوس على أي سؤال لتشوف الإجابة النموذجية والملاحظات</p>
   </div>
+
+  <div id="essayBox"></div>
+</div>
+
+<!-- ═══════ FOOTER ═══════ -->
+<footer class="footer">
+  <span class="footer-emoji">🌿</span>
+  <div class="footer-title">وفقكِ الله يا رودينا</div>
+  <p class="footer-text">
+    نسأل الله أن يثبتنا وإياكِ بالقول الثابت<br>
+    في الحياة الدنيا وفي الآخرة
+  </p>
+  <div class="footer-dua">🤲 آمين يا رب العالمين 🤲</div>
+</footer>
 
 </div>
 
 <script>
-/* ═══════════════════════════════════════════ */
-/* Floating Decorations */
-/* ═══════════════════════════════════════════ */
-const decoContainer = document.getElementById('floatingDeco');
-const decoIcons = ['✦', '❦', '◆', '✧', '❈', '✺'];
-
-function createDeco() {
-  const el = document.createElement('div');
-  el.className = 'deco-star';
-  el.textContent = decoIcons[Math.floor(Math.random() * decoIcons.length)];
-  el.style.left = Math.random() * 100 + '%';
-  const duration = 18 + Math.random() * 15;
-  el.style.animationDuration = duration + 's';
-  el.style.fontSize = (14 + Math.random() * 16) + 'px';
-  decoContainer.appendChild(el);
-  setTimeout(() => el.remove(), duration * 1000);
-}
-
-for (let i = 0; i < 5; i++) setTimeout(createDeco, i * 2500);
-setInterval(createDeco, 3500);
-
-/* ═══════════════════════════════════════════ */
-/* Tabs */
-/* ═══════════════════════════════════════════ */
-const tabBtns = document.querySelectorAll('.tab-btn');
-const tabContents = document.querySelectorAll('.tab-content');
-
-tabBtns.forEach(btn => {
-  btn.addEventListener('click', () => {
-    const target = btn.dataset.tab;
-    
-    tabBtns.forEach(b => b.classList.remove('active'));
-    tabContents.forEach(c => c.classList.remove('active'));
-    
-    btn.classList.add('active');
+/* ═══ Tabs ═══ */
+var tabBtns = document.querySelectorAll('.tab-btn');
+var tabContents = document.querySelectorAll('.tab-content');
+for (var i = 0; i < tabBtns.length; i++) {
+  tabBtns[i].addEventListener('click', function() {
+    var target = this.getAttribute('data-tab');
+    for (var j = 0; j < tabBtns.length; j++) tabBtns[j].classList.remove('active');
+    for (var k = 0; k < tabContents.length; k++) tabContents[k].classList.remove('active');
+    this.classList.add('active');
     document.getElementById(target).classList.add('active');
-    
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
-});
+}
 
-/* ═══════════════════════════════════════════ */
-/* MCQ DATA */
-/* ═══════════════════════════════════════════ */
-const mcqData = [
-  { q: 'طريق ثبوت الأمور السمعية هو:', opts: ['العقل وحده', 'الحواس والمشاهدة', 'الكتاب والسنة فقط', 'التجارب العلمية'], correct: 2 },
-  { q: 'حكم الإيمان بالسمعيات:', opts: ['مستحب', 'واجب وهو ركن إيمان', 'جائز', 'سنة مؤكدة'], correct: 1 },
-  { q: 'الملكان الموكلان بسؤال الميت في القبر هما:', opts: ['هاروت وماروت', 'رقيب وعتيد', 'منكر ونكير', 'مالك ورضوان'], correct: 2 },
-  { q: 'حكم الإيمان بسؤال القبر:', opts: ['سنة', 'واجب', 'جائز', 'مستحب'], correct: 1 },
-  { q: 'حكم من أنكر سؤال القبر مع إيمانه بالجزاء الأخروي على الراجح:', opts: ['كافر', 'مبتدع وضال', 'لا شيء عليه', 'فاسق مرتد'], correct: 1 },
-  { q: 'أُطلق على سؤال الميت "سؤال القبر" لأن:', opts: ['السؤال لا يكون إلا داخل التراب', 'الغالب في الموتى أن يدفنوا في القبور', 'غير المدفون لا يسأل', 'جميع ما سبق'], correct: 1 },
-  { q: 'يثبت سؤال القبر لمن مات غرقاً أو حرقاً بكيفية:', opts: ['يعلمها الله تعالى', 'مثل الأحياء تماماً', 'لا يقع عليهم سؤال', 'بالحواس الدنيوية'], correct: 0 },
-  { q: 'قال ابن عباس رضي الله عنهما في تفسير {فِي الْحَيَاةِ الدُّنْيَا وَفِي الْآخِرَةِ}: المراد بالآخرة هنا:', opts: ['الميزان', 'القبر عند الشهادة', 'الصراط', 'الجنة والنار'], correct: 1 },
-  { q: 'صحابي حديث «استغفروا لأخيكم وسلوا له التثبيت فإنه الآن يُسأل» هو:', opts: ['أبو هريرة', 'عثمان بن عفان', 'ابن عمر', 'البراء بن عازب'], correct: 1 },
-  { q: 'الحياة التي يعود بها الميت في القبر للجواب هي حياة:', opts: ['دنيوية كاملة', 'برزخية متوسطة', 'روحانية بلا جسد', 'ملكية'], correct: 1 },
-  { q: 'يقول المؤمن عند سؤال الملكين في القبر عن النبي ﷺ:', opts: ['لا أدري', 'هو محمد رسول الله ﷺ', 'هو رجل صالح', 'كنت أقول ما يقوله الناس'], correct: 1 },
-  { q: 'يقول الكافر أو المنافق عند سؤال الملكين في القبر:', opts: ['ربي الله', 'لا أدري! كنت أقول ما يقول الناس', 'الله ورسوله', 'لا إجابة لديه إطلاقاً'], correct: 1 },
-  { q: 'الإيمان بنعيم القبر وعذابه:', opts: ['سنة', 'واجب', 'جائز', 'مباح'], correct: 1 },
-  { q: 'حكم منكر نعيم القبر وعذابه:', opts: ['كافر خروجاً من الملة', 'مبتدع وضال', 'مأجور', 'صح عقيدته'], correct: 1 },
-  { q: 'الاستدلال بقوله تعالى {وَلَا تَحْسَبَنَّ الَّذِينَ قُتِلُوا فِي سَبِيلِ اللَّهِ أَمْوَاتًا...} على:', opts: ['عذاب القبر', 'نعيم القبر للشهداء', 'شروط الصلاة', 'أحكام الزكاة'], correct: 1 },
-  { q: 'وجه الدلالة من آية آل فرعون {النَّارُ يُعْرَضُونَ عَلَيْهَا غُدُوًّا وَعَشِيًّا} أن العرض يكون في:', opts: ['الدنيا قبل الموت', 'القبر (البرزخ)', 'يوم القيامة فقط', 'المحشر'], correct: 1 },
-  { q: 'سبب تعذيب أحد صاحبَي القبرين في حديث ابن عباس أنه كان:', opts: ['يسرق الأموال', 'يمشي بالنميمة', 'يشرب الخمر', 'يقطع الطريق'], correct: 1 },
-  { q: 'سبب تعذيب صاحب القبر الثاني في حديث ابن عباس أنه كان:', opts: ['لا يستبرئ من بوله', 'يأكل الربا', 'يكذب كثيراً', 'يغتاب العلماء'], correct: 0 },
-  { q: 'نعيم القبر وعذابه يقعان عند أهل السنة على:', opts: ['الروح فقط', 'الجسد فقط', 'الروح والجسد جميعاً', 'لا هذا ولا ذاك'], correct: 2 },
-  { q: 'المرحلة الفاصلة بين الحياة الدنيا والحياة الآخرة تسمى:', opts: ['الحياة الملكوتية', 'الحياة البرزخية', 'الحياة السرمدية', 'الحياة الدنيوية'], correct: 1 },
-  { q: 'حال الميت في القبر من حيث الشعور بالنعيم أو الألم يشبه حال:', opts: ['المستيقظ', 'النائم الذي يحلم', 'المغمى عليه', 'المريض بالحمى'], correct: 1 },
-  { q: 'معنى "البعث والنشر":', opts: ['الموت والانعدام', 'إحياء الله الموتى وإخراجهم من قبورهم', 'النوم الطويل', 'دخول الجنة فوراً'], correct: 1 },
-  { q: 'حكم الإيمان بالبعث والنشر:', opts: ['واجب وهو ركن من أركان الإيمان', 'سنة مستحبة', 'أمر جائز عقلاً فقط', 'فضيلة'], correct: 0 },
-  { q: 'حكم منكر البعث والنشر:', opts: ['مبتدع', 'فاسق', 'كافر خارج من الملة', 'معذور بجهله'], correct: 2 },
-  { q: 'الدليل العقلي على البعث يستند إلى أن الإعادة بالنسبة للقدرة الإلهية:', opts: ['مستحيلة', 'أسهل وأهون من الإيجاد الأول', 'مساوية للعدم', 'غير ممكنة'], correct: 1 },
-  { q: 'الآية الدالة على البداية والإعادة {وَهُوَ الَّذِي يَبْدَأُ الْخَلْقَ ثُمَّ يُعِيدُهُ وَهُوَ...}:', opts: ['أشد عليه', 'أهون عليه', 'صعيب عليه', 'يستحيل عليه'], correct: 1 },
-  { q: 'المشرك الذي جاء إلى النبي ﷺ بعظم رميم وفَتَّه بيده هو:', opts: ['أبو جهل', 'أُبيّ بن خلف', 'العاص بن وائل', 'أبو لهب'], correct: 1 },
-  { q: 'قال النبي ﷺ لأبيّ بن خلف عندما فتّ العظم الرميم:', opts: ['صدقت!', 'نعم ويبعثك ويدخلك النار', 'لا أدري!', 'الله يتولاك'], correct: 1 },
-  { q: 'السمعيات سميت بذلك لأن العقل:', opts: ['ينفرد بإدراكها', 'لا يستقل بإدراكها وطريقها السماع', 'ينكرها بالكلية', 'يحدد أوقاتها'], correct: 1 },
-  { q: 'الآية الكريمة {زَعَمَ الَّذِينَ كَفَرُوا أَنْ لَنْ يُبْعَثُوا...} وردت في سورة:', opts: ['التغابن', 'البقرة', 'يس', 'الفاتحة'], correct: 0 },
-  { q: 'قوله تعالى {قَالَ مَنْ يُحْيِي الْعِظَامَ وَهِيَ رَمِيمٌ} ردّ عليه القرآن بقوله:', opts: ['الله غفور رحيم', 'قل يحييها الذي أنشأها أول مرة', 'إن الساعة آتية', 'سبحان الله'], correct: 1 },
-  { q: 'الغدو والعشي المذكوران في آية آل فرعون معناهما:', opts: ['الصباح والمساء', 'الليل والنهار', 'الصيف والشتاء', 'الدنيا والآخرة'], correct: 0 },
-  { q: 'النميمة التي كانت سبباً في عذاب القبر معناها:', opts: ['الكذب على الناس', 'نقل الكلام بين الناس لإفساد ذات البين', 'السرقة', 'عدم الصلاة'], correct: 1 },
-  { q: 'قوله ﷺ «فإنه الآن يُسأل» فيه دليل صريح على إثبات:', opts: ['الصراط', 'سؤال القبر', 'الحساب النهائي', 'دخول الجنة'], correct: 1 },
-  { q: 'إعادة الأرواح إلى الأجسام يوم القيامة تسمى:', opts: ['الموت الأول', 'البعث والنشر', 'الفناء', 'التكليف'], correct: 1 },
-  { q: 'العقل بالنسبة لأمور السمعيات يراها من قسم:', opts: ['المستحيلات', 'الجائزات العقليّة', 'الواجبات الذاتية', 'الممتنعات'], correct: 1 },
-  { q: 'أركان الإيمان الستة تضم الإيمان باليوم الآخر ومنه:', opts: ['سؤال القبر والبعث', 'الصلاة فقط', 'الصوم فقط', 'البيوع'], correct: 0 },
-  { q: 'قوله تعالى {وَأَنَّ السَّاعَةَ آتِيَةٌ لَا رَيْبَ فِيهَا وَأَنَّ اللَّهَ يَبْعَثُ مَنْ فِي...}:', opts: ['الأرض', 'القبور', 'السماء', 'القصور'], correct: 1 },
-  { q: 'يتلخص موقف المسلم من الغيبيات والسمعيات في:', opts: ['التكذيب والشك', 'التصديق والإيمان القاطع', 'البحث بالحواس', 'التوقف والرفض'], correct: 1 },
-  { q: 'من مات حرقاً وتشتت رماده في الهواء:', opts: ['يسقط عنه السؤال', 'يُجمعه الله ويُسأل بكيفية يعلمها الله', 'يدخل الجنة مباشرة', 'لا روح له'], correct: 1 },
-  { q: 'معنى كلمة "رَمِيمٌ" في قوله تعالى {وَهِيَ رَمِيمٌ}:', opts: ['جديدة قوية', 'بالية ومفتتة', 'صلبة كالحديد', 'خضراء'], correct: 1 },
-  { q: 'الحكمة من السؤال والتثبيت في القبر:', opts: ['إظهار كرامة المؤمن وزيادة حسرة الكافر', 'التعذيب فقط', 'التسلية', 'التجربة'], correct: 0 },
-  { q: 'قوله تعالى {وَمِنْ وَرَائِهِمْ بَرْزَخٌ} معنى البرزخ:', opts: ['حاجز وفصل بين الدنيا والآخرة', 'نهر في الجنة', 'جبل في المحشر', 'صحيفة الأعمال'], correct: 0 },
-  { q: 'الإيمان بالبعث يجعل الإنسان في الدنيا:', opts: ['مستهتراً بالعادلة', 'حريصاً على الطاعة والعمل الصالح', 'ييأس من الرحمة', 'يترك العمل'], correct: 1 },
-  { q: 'الجمع بين الروح والجسد في القبر يحدث للجواب على الملكين بحياة:', opts: ['كاملة كالدنيا', 'برزخية تناسب القبر', 'نباتية', 'غير موجودة'], correct: 1 },
-  { q: 'من أنكر أمراً معلوماً من الدين بالضرورة وبشكل قطعي صريح كالبعث فهو:', opts: ['كافر', 'مسلم مقصر', 'مجتهد ومأجور', 'ولي'], correct: 0 },
-  { q: 'يستمر نعيم المؤمن وعذاب الكافر في البرزخ إلى:', opts: ['قيام الساعة والبعث', 'يومين فقط', 'سنة واحدة', 'انقضاء الدنيا'], correct: 0 },
-  { q: 'حديث البراء بن عازب في سؤال القبر حكمه من حيث الصحة:', opts: ['متفق عليه (صحيح)', 'ضعيف', 'موضوع', 'لا أصل له'], correct: 0 },
-  { q: '"لا دريت ولا تليت" عبارة يقال للميت الكافر/المنافق والمقصود بها:', opts: ['الدعاء عليه بالخيبة والضلال وعدم الفهم', 'الثناء عليه', 'الترحيب به', 'لا شيء'], correct: 0 },
-  { q: 'المصدران الأساسيان لعقيدة التوحيد في السمعيات هما:', opts: ['الكتب الفلسفية', 'القرآن الكريم والسنة النبوية', 'الرؤى والأحلام', 'العادات والتقاليد'], correct: 1 }
+/* ═══ MCQ DATA ═══ */
+var quizData = [
+  { q:'الأمور التي لا تؤخذ إلا بطريق الإخبار النبوي ولا يستقل العقل بإدراكها هي:', o:['الإلهيات','النبوات','السمعيات','المعقولات'], c:2, exp:'السمعيات هي الغيبيات التي تتوقف معرفتها على السماع والخبر الصادق من النبي ﷺ. الإلهيات فيها مساحة للعقل والبرهان، والنبوات تُعرف بدلائل المعجزات، والمعقولات ما يدرك بمحض العقل.' },
+  { q:'تثبت السمعيات عن طريق:', o:['العقل وحده','التجربة والقياس','الكتاب والسنة معاً','الإلهام والمشاهدة'], c:2, exp:'النقل الصحيح من القرآن الكريم والسنة النبوية هو المصدر الوحيد الجازم لإثبات المغيبات والسمعيات.' },
+  { q:'حكم الإيمان بالسمعيات كالإيمان بالغيب:', o:['مستحب','واجب','جائز','مكروه'], c:1, exp:'الإيمان بالغيب والسمعيات أصل من أصول الدين وواجب شرعي على كل مكلف.', trap:'لا تظن أنه مستحب أو جائز — هو أصل من أصول العقيدة.' },
+  { q:'الملكان الموكلان بسؤال الميت في القبر هما:', o:['جبريل وميكائيل','رقيب وعتيد','منكر ونكير','مالك ورضوان'], c:2, exp:'جبريل للوحي، ميكائيل للمطر، رقيب وعتيد لكتابة الأعمال، مالك خازن النار، رضوان خازن الجنة. وسؤال القبر لمنكر ونكير.' },
+  { q:'سُمي سؤال القبر بهذا الاسم لأن:', o:['السؤال لا يقع إلا تحت الأرض','الدفن في القبر هو الغالب في الموتى','غير المدفون لا يُسأل مطلقاً','الميت يعود جسداً كاملاً فقط'], c:1, exp:'التسمية جرت على الغالب الشائع بين البشر، ولكن الحكم يشمل كل الموتى حتى من لم يُدفن.', trap:'"خرج مخرج الغالب" — عبارة مهمة جداً في الامتحان.' },
+  { q:'من مات غريقاً أو أحرق وصار رماداً:', o:['يسقط عنه السؤال','يُسأل بكيفية يعلمها الله تعالى','يُعفى من الحساب','يتأجل سؤاله ليوم القيامة'], c:1, exp:'القدرة الإلهية لا تتوقف على هيئة الجسد المادي أو مكان وجوده، بل يوصل الله له الوعي والسؤال.' },
+  { q:'حكم الإيمان بسؤال القبر:', o:['واجب','سنة','مباح','فضيلة'], c:0, exp:'لثبوته بالنصوص الصحيحة الصريحة وإجماع علماء الأمة.' },
+  { q:'حكم منكر سؤال القبر (مع إقراره بالجزاء الأخروي):', o:['كافر مخرج من الملة','فاسق فقط','مبتدع وضال','لا شيء عليه'], c:2, exp:'لا يُكفَّر على الراجح لأنه لم ينكر أصل الجزاء وإنما أنكر التوقيت لشبهة تأويل.', trap:'الفرق حاسم بين منكر سؤال القبر (مبتدع) وبين منكر البعث (كافر).' },
+  { q:'الآية الدالة على سؤال القبر وتثبيت المؤمنين هي:', o:['{وَهُوَ الَّذِي يَبْدَأُ الْخَلْقَ ثُمَّ يُعِيدُهُ}','{يُثَبِّتُ اللَّهُ الَّذِينَ آمَنُوا بِالْقَوْلِ الثَّابِتِ}','{إِنَّ النَّفْسَ لأَمَّارَةٌ بِالسُّوءِ}','{كُلُّ نَفْسٍ ذَائِقَةُ الْمَوْتِ}'], c:1, exp:'تفسير الآية كما قال ابن عباس والبراء بن عازب يتعلق بالإجابة والثبات عند سؤال القبر.' },
+  { q:'قال النبي ﷺ عقب دفن الميت: "استغفروا لأخيكم وسلوا له التثبيت فإنه..."', o:['الآن يُحاسب','الآن يُسأل','الآن يُبعث','الآن يُنشر'], c:1, exp:'الحديث الصحيح الذي رواه أبو داود وصححه الحاكم صريح في إثبات لحظة السؤال عقب الدفن مباشرة.' },
+  { q:'النعيم والعذاب في القبر عند أهل السنة يقعان على:', o:['الروح فقط','الجسد فقط','الروح والجسد جميعاً','العقل فقط'], c:2, exp:'هذا هو مذهب أهل السنة والجماعة خلافاً لمن زعم أنه روحاني فقط.', trap:'رد مباشر على الفلاسفة والمعتزلة.' },
+  { q:'تشبه الحياة البرزخية في تقريب المعنى للإنسان الحي حال:', o:['السكران','النائم الذي يرى رؤيا أو كابوساً','المغمى عليه','الشديد المرض'], c:1, exp:'النائم يشعر باللذة أو الألم في منامه بينما جليسه لا يشعر به، وهو أقرب مثال حسي للحياة البرزخية.' },
+  { q:'الاستدلال بقوله تعالى: {النَّارُ يُعْرَضُونَ عَلَيْهَا غُدُوًّا وَعَشِيًّا} ينصبّ على إثبات:', o:['سؤال القبر','عذاب القبر','البعث والنشر','الحشر'], c:1, exp:'لأن العرض بالغدو والعشي (الصباح والمساء) يكون في البرزخ قبل قيام الساعة إذ لا صباح ولا مساء في القيامة.', trap:'هذا هو المطب البلاغي الأشهر في الامتحانات!' },
+  { q:'المعصيتان اللتان وردتا في حديث القبرين للنبي ﷺ هما:', o:['السرقة والقتل','النميمة وعدم الاستبراء من البول','الكذب والغيبة','عقوق الوالدين وشهادة الزور'], c:1, exp:'صريح حديث ابن عباس متفق عليه: "أما أحدهما فكان يمشي بالنميمة، وأما الآخر فكان لا يستبرئ من بوله".' },
+  { q:'الحكم الشرعي للإيمان بنعيم القبر وعذابه:', o:['واجب','مستحب','مباح','مكروه'], c:0, exp:'ثبوتهما بالكتاب والسنة وإجماع السلف يجعل الإيمان بهما فرضاً واجباً.' },
+  { q:'حكم منكر نعيم القبر وعذابه:', o:['كافر','مبتدع وضال','مخلد في النار','معذور مطلقاً'], c:1, exp:'لا يُكفَّر عند جمهور أهل السنة إذا كان مقراً بأصل الجزاء الأخروي.' },
+  { q:'قوله تعالى في حق الشهداء: {بل أحياء عند ربهم يرزقون} دليل صريح على:', o:['عذاب القبر','نعيم القبر','إثبات النبوة','أحكام الجهاد'], c:1, exp:'إثبات الحياة والرزق والفرح للشهداء في البرزخ هو عين النعيم.' },
+  { q:'معنى الإعادة وإحياء الموتى بعد فنائهم وتجمع أجزائهم هو:', o:['الحشر','البعث والنشر','الحساب','الصراط'], c:1, exp:'البعث والنشر هو إحياء الموتى وإخراجهم من قبورهم بعد جمع الأجزاء.' },
+  { q:'الإيمان بالبعث والنشر يُعتبر:', o:['فضيلة مستحبة','ركناً من أركان الإيمان','أدباً إسلامياً','أمراً ثانوياً'], c:1, exp:'الإيمان باليوم الآخر والبعث ركن أساسي لا يصح إيمان عبد بدونه.' },
+  { q:'حكم منكر البعث والنشر:', o:['فاسق','مبتدع','كافر مخرج من الملة','عاصٍ فقط'], c:2, exp:'لأنه أنكر معلوماً من الدين بالضرورة وجحد نص القرآن القطعي.', trap:'انتبه: منكر البعث (كافر)، ومنكر سؤال ونعيم القبر (مبتدع).' },
+  { q:'الدليل العقلي على إمكانية البعث والنشر يرتكز على أن:', o:['الإعادة أسهل في العقل من البدء الأول','العقل لا يتصور الموت','المادة لا تفنى ولا تتغير','الدنيا أبدية لا تنتهي'], c:0, exp:'من قدر على خلق الشيء من عدم لأول مرة، قادر على إعادته بعد فنائه بسهولة ويسر.' },
+  { q:'الصحابي أو المشرك الذي جاء بعظم بالي وفته أمام النبي ﷺ هو:', o:['أبو جهل','أمية بن خلف','أبيّ بن خلف','العاص بن وائل'], c:2, exp:'هو أبيّ بن خلف الجُمحي المشرك الذي قال: "من يحيي العظام وهي رميم".' },
+  { q:'رد النبي ﷺ على المشرك الذي فتت العظم الرميم بقوله:', o:['الله أرحم بك','نعم ويبعثك ويدخلك النار','لا أدري ما يفعل بك','استغفر لربك'], c:1, exp:'جزم النبي ﷺ بالبعث ومصير هذا المشرك المعاند.' },
+  { q:'نزلت الآيات {وَضَرَبَ لَنَا مَثَلا وَنَسِيَ خَلْقَهُ...} في سورة:', o:['البقرة','يس','آل عمران','الكهف'], c:1, exp:'أواخر سورة يس تتناول قصة أبيّ بن خلف وإثبات القدرة على الإحياء.' },
+  { q:'الفارق الجوهري في حكم التكفير بين منكر عذاب القبر ومنكر البعث:', o:['منكر عذاب القبر أنكر معلوماً بالضرورة','منكر البعث أنكر ركناً معلوماً من الدين بالضرورة صريحاً في القرآن بينما منكر عذاب القبر تأول النصوص مع إقراره بالجزاء','لا فارق — كلاهما كافر','كلاهما مبتدع فقط'], c:1, exp:'البعث قطعي الثبوت، أما عذاب القبر ففيه شبهة التأويل في الموعد والجهة دون جحود أصل العقاب.' },
+  { q:'النميمة التي وردت في حديث القبرين هي:', o:['قول الزور في المحاكم','نقل الكلام بين الناس على جهة الإفساد','أكل أموال الناس بالباطل','التفاخر بالأنساب'], c:1, exp:'هذا هو التعريف الشرعي الدقيق للنميمة الموجبة لعذاب القبر.' },
+  { q:'معنى "لا يستبرئ من بوله" أي:', o:['لا يتطهر ولا يتحرز من رذاذ النجاسة','يبول في الماء الراكد فقط','يتأخر عن الصلاة','لا يتوضأ لكل صلاة'], c:0, exp:'عدم التنزه والتحرز من البول سبب رئيسي لعذاب القبر.' },
+  { q:'يثبت البعث والنشر بـ:', o:['أدلة القرآن الكريم','أدلة السنة النبوية','إجماع الأمة والعقل','جميع ما سبق'], c:3, exp:'تضافرت الأدلة النقلية والعقلية والإجماع على إثبات البعث.' },
+  { q:'ينكر أصل البعث والنشر:', o:['أهل السنة','المعتزلة','الملاحدة والمشركون الكافرون','الأشاعرة'], c:2, exp:'المسلمون بجميع فرقهم متفقون على إثبات البعث، وإنما ينكره الجاحدون الكافرون.' },
+  { q:'الحياة التي يمر بها الإنسان في القبر تسمى:', o:['الحياة الدنيا','الحياة البرزخية','الحياة الأخروية النهائية','الحياة النباتية'], c:1, exp:'البرزخ هو الحاجز والفاصل بين الدنيا والآخرة.' },
+  { q:'قوله تعالى: {زَعَمَ الَّذِينَ كَفَرُوا أَنْ لَنْ يُبْعَثُوا قُلْ بَلَى وَرَبِّي لَتُبْعَثُنَّ} دليل على:', o:['وجوب الصلاة','إثبات البعث والنشر والرد على الكفار','تحريم الخمر','أحكام الزكاة'], c:1, exp:'الآية صريحة في قسم النبي بربه على وقوع البعث للرد على زعم الكافرين.' },
+  { q:'قوله تعالى {وَمِنْ وَرَائِهِمْ بَرْزَخٌ إِلَى يَوْمِ يُبْعَثُونَ} يدل على:', o:['التوبة بعد الموت','فترة البرزخ والحياة القبرية إلى يوم البعث','خروج الكفار من النار','شفاعة المشركين'], c:1, exp:'تثبت الآية وجود البرزخ كحاجز زماني ومكاني مستمر حتى يوم البعث.' },
+  { q:'يُستفاد من حديث "سلوا له التثبيت" بعد الدفن:', o:['أن الميت يتأثر بسؤال الملكين في القبر','استحباب الدعاء والتثبيت للميت بعد الدفن','أن السؤال يقع فور الانتهاء من الدفن','جميع ما سبق'], c:3, exp:'الحديث يتضمن كافة هذه الأحكام الجليلة والتربوية.' },
+  { q:'أصل أجزاء الإنسان التي لا تبلى وتُعاد منها الخلقة:', o:['عجب الذنب','ظفر القدم','شعر الرأس','جلد البطن'], c:0, exp:'ورد في الحديث الصحيح أن عجب الذنب هو الجزيء الذي يركب منه الخلق يوم القيامة ولا يبلى.' },
+  { q:'من صفات منكر ونكير أنهما:', o:['يظهران للمؤمن والكافر بنفس الصورة المرعبة','ملكان يجلسان الميت ويسألانه بقدرة الله','بشران من بني آدم','لا يعلمان شيئاً عن العبد'], c:1, exp:'هما ملكان كلفهما الله بسؤال العباد في القبور.' },
+  { q:'العقول البشرية بالنسبة للغيبيات والسمعيات:', o:['حاطة بجميع تفاصيلها','قادرة على إدراك إمكانها وتصديق النقل الصادق عنها','ترفضها وتستحيلها بالكلية','تستطيع إثباتها بدون أنبياء'], c:1, exp:'دور العقل الجزم بعدم استحالته وتصديق الخبر الصادق الصادر عن المعصوم.' },
+  { q:'أجمع السلف الصالح على إثبات نعيم القبر وعذابه قبل ظهور:', o:['الصحابة','أهل البدع والأهواء','الأئمة الأربعة','العلماء المعاصرين'], c:1, exp:'إجماع السلف كان مستقراً وثابتاً قبل نشوء الفرق المخالفة كالمعتزلة.' },
+  { q:'الإيمان بأن الله يجمع الموتى للحساب والجزاء يغرس في نفس المسلم:', o:['الخوف والرجاء والمراقبة المستمرة','الإحباط واليأس','التكاسل عن العمل','حب الدنيا والتعلق بها'], c:0, exp:'استحضار البعث والحساب يدفع المسلم للعمل الصالح والاستقامة.' },
+  { q:'قوله تعالى {قُلِ الَّذِي فَطَرَكُمْ أَوَّلَ مَرَّةٍ} فيه رد على الشبهة بـ:', o:['القياس الشاهدي والعقلي على البدء الأول','التهديد بالسيف','ترك الجواب','تأجيل الأمر'], c:0, exp:'تذكير الكفار بالنشأة الأولى التي لم ينكروها برهان ساطع على قدرة الإعادة.' },
+  { q:'الإخبار عن عذاب القبر ونعيمه من القضايا التي:', o:['اتفقت عليها جميع الشرائع الإلهية والأخبار النبوية','اختص بها الإسلام فقط','نفاها جميع الأنبياء','لم ترد في أي حديث'], c:0, exp:'الإيمان بالغيب والجزاء البرزخي من أصول الشرائع السماوية.' },
+  { q:'وجه الدلالة من قوله {غُدُوًّا وَعَشِيًّا} في آل فرعون:', o:['دار الدنيا فقط','البرزخ قبل القيامة','دار الجنة','يوم المحشر'], c:1, exp:'تعاقب الغدو والعشي يكون في زمن البرزخ؛ إذ القيامة ليس فيها غدو ولا عشي.' },
+  { q:'عبارة "لا دريت ولا تليت" يقال للميت المنافق/الكافر عند:', o:['دخوله الجنة','عجزه عن إجابة سؤال الملكين','عبوره على الصراط','استلام كتابه باليمين'], c:1, exp:'هي دعوة بالخيبة والخذلان يقولها الملكان للكافر والمنافق حين يجيب بـ "لا أدري".' },
+  { q:'الفرق بين القبر كمكان وبين البرزخ كعالم:', o:['القبر هو الحفرة الترابية والبرزخ هو المرحلة الزمنية والحالة الغيبية للميت أينما كان','القبر للحي والبرزخ للميت','لا فرق بينهما','البرزخ خاص بالشهداء فقط'], c:0, exp:'القبر هو المظروف المكاني الغالب، بينما البرزخ هو الحالة والمرحلة الشاملة لجميع الموتى.' },
+  { q:'الاستدلال بآية {كَيْفَ تَكْفُرُونَ بِاللَّهِ وَكُنْتُمْ أَمْوَاتًا فَأَحْيَاكُمْ...} يدل على:', o:['إثبات الموتتين والحياتين وإثبات البعث النهائي','نفي البعث','إثبات خلود الدنيا','تحريم التفكر'], c:0, exp:'الآية ترتب المراحل: الموت الأول (العدم قبل الخلق)، الحياة الدنيا، الموت الثاني، الحياة الثانية (البعث).' },
+  { q:'السؤال في القبر يكون بلسان:', o:['العربية فقط لجميع الخلق','يفهمه الميت بقدرة الله أياً كانت لغته','الإنجليزية','الإشارة فقط'], c:1, exp:'ينزع الله الفوارق اللغوية الدنيوية ويجعل الوعي يفهم خطاب الملكين مباشرة.' },
+  { q:'التحذير من النميمة وعدم الاستبراء من البول يهدف إلى:', o:['الترهيب من المظالم الاجتماعية والتهاون في الطهارة','منع الناس من التزاور','التضييق على المكلفين','ترك العمل'], c:0, exp:'يربط الإسلام بين السلوك الأخلاقي والعبادي وبين المصير البرزخي.' },
+  { q:'ينعم المؤمن في قبره بـ:', o:['فتح باب له إلى الجنة ويفسح له في قبره مد بصره','النوم بدون وعي','العودة للدنيا فوراً','عدم رؤية شيء'], c:0, exp:'نصت الأحاديث الصحيحة على إفاضة أنواع الرياحين والفسحة للمؤمن في قبره.' },
+  { q:'إنكار البعث يعتبر إبطالاً لـ:', o:['الحكمة الإلهية من الخلق والتكليف والعدل','قوانين الفيزياء فقط','قواعد اللغة العربية','العادات والأعراف'], c:0, exp:'بدون بعث وحساب يستوي المصلح والمفسد والظالم والمظلوم، وهذا ينافي حكمة وعدل الباري.' },
+  { q:'العقل السليم عندما يعرض عليه خبر البعث الصادر عن النبي المعصوم ينتهي إلى:', o:['التسليم والإيمان بإمكانه ووقوعه','الاستحالة العقلية','التردد الدائم','النفي التام'], c:0, exp:'لأن العقل يدرك قدرة الله المطلقة وعدم وجود أي استحالة منطقية في إعادة الخلق.' },
+  { q:'المنهج الأزهر الشريف في تقرير عقيدة السمعيات يرتكز على:', o:['الجمع بين النقل الصحيح والعقل الصريح وتفنيد الشبهات','اعتماد العقل وإلغاء النصوص','الأخذ بالظواهر القشرية دون فهم','قبول آراء الفلاسفة وتكذيب الأحاديث'], c:0, exp:'المنهج الأزهري الأشعري المعتدل يقدم النقل الصحيح ويؤيده بالبرهان العقلي الفطري.' }
 ];
 
-const essayData = [
-  { q: 'ما المقصود بالسمعيات؟ وما طريق ثبوتها؟ وما حكم الإيمان بها؟', a: [
-    '<strong>السمعيات:</strong> هي الأمور التي لا تُدرك بالحواس ولا بالمشاهدة ولا يستقل العقل بإدراكها، وإنما طريق ثبوتها هو السماع والنقل الصحيح عن النبي ﷺ.',
-    '<strong>طريق ثبوتها:</strong> الكتاب والسنة فقط.',
-    '<strong>حكم الإيمان بها:</strong> واجب شرعاً، وهو ركن من أركان الإيمان، قال تعالى: {الَّذِينَ يُؤْمِنُونَ بِالْغَيْبِ}.'
-  ]},
-  { q: 'عرف سؤال القبر، وبين حكم الإيمان به، وحكم منكره مع التعليل.', a: [
-    '<strong>تعريفه:</strong> سؤال الملكين (منكر ونكير) للميت في قبره بعد دفنه عن ربه ودينه ونبيه.',
-    '<strong>حكم الإيمان به:</strong> واجب شرعاً؛ لثبوته بالكتاب والسنة وإجماع أهل العلم وجوازه عقلاً.',
-    '<strong>حكم منكره:</strong> مبتدع وضال وليس بكافر على الراجح؛ لأنه أنكر أمراً يحتاج إلى تأويل ما دام يقر بالجزاء الأخروي العام.'
-  ]},
-  { q: 'علل: تسمية سؤال الميت بـ "سؤال القبر" رغم أن هناك من لا يدفن كالغريق والحريق؟', a: [
-    'سُمي بـ "سؤال القبر" بناءً على الغالب والأكثر في بني آدم وهو الدفن في القبور، وإلا فإن السؤال يقع على كل ميت بأي طريقة كانت بكيفية يعلمها الله تعالى.'
-  ]},
-  { q: 'اذكر دليلين من السنة النبوية الشريفة على ثبوت سؤال القبر.', a: [
-    '<strong>1.</strong> حديث البراء بن عازب أن النبي ﷺ قال: «المسلم إذا سُئل في القبر شهد أن لا إله إلا الله وأن محمداً رسول الله...».',
-    '<strong>2.</strong> حديث عثمان بن عفان رضي الله عنه: كان النبي ﷺ إذا فرغ من دفن الميت وقف عليه وقال: «استغفروا لأخيكم وسلوا له التثبيت فإنه الآن يُسأل».'
-  ]},
-  { q: 'اشرح الكيفية التي يسأل بها الملكان الميت في القبر، وماذا يقول المؤمن وماذا يقول الكافر؟', a: [
-    'يأتيه ملكان (منكر ونكير) فيقعدانه، وتُعاد إليه الروح حياة برزخية متوسطة، فيسألانه: من ربك؟ وما دينك؟ وما تقول في هذا الرجل؟',
-    '<strong>المؤمن يقول:</strong> ربي الله، وديني الإسلام، ونبيي محمد ﷺ، فيقال له: انظر لمقعدك من النار أبدلك الله به مقعداً في الجنة.',
-    '<strong>الكافر/المنافق يقول:</strong> لا أدري! كنت أقول ما يقول الناس، فيقال له: لا دريت ولا تليت ويصيبه العذاب.'
-  ]},
-  { q: 'عرف نعيم القبر وعذابه، وبين حكم الإيمان بهما وحكم إنكرهما.', a: [
-    '<strong>التعريف:</strong> ما يتعرض له الميت في قبره (البرزخ) من النعيم أو العذاب قبل يوم البعث بحسب عمله.',
-    '<strong>حكم الإيمان بهما:</strong> واجب بالكتاب والسنة وإجماع السلف.',
-    '<strong>حكم إنكرهما:</strong> بدعة وضلالة وليس كفراً.'
-  ]},
-  { q: 'استدل من القرآن الكريم على عذاب القبر مع بيان وجه الدلالة.', a: [
-    '<strong>الدليل:</strong> قول الله تعالى في آل فرعون: {النَّارُ يُعْرَضُونَ عَلَيْهَا غُدُوًّا وَعَشِيًّا وَيَوْمَ تَقُومُ السَّاعَةُ أَدْخِلُوا آلَ فِرْعَوْنَ أَشَدَّ الْعَذَابِ}.',
-    '<strong>وجه الدلالة:</strong> أثبتت الآية العرض على النار صباحاً ومساءً في القبر؛ لأن يوم القيامة لا غدو فيه ولا عشي، ثم ذكرت العذاب الأكبر يوم تقوم الساعة.'
-  ]},
-  { q: 'استدل من القرآن الكريم على نعيم القبر.', a: [
-    'قول الله تعالى في حق الشهداء: {وَلَا تَحْسَبَنَّ الَّذِينَ قُتِلُوا فِي سَبِيلِ اللَّهِ أَمْوَاتًا بَلْ أَحْيَاءٌ عِنْدَ رَبِّهِمْ يُرْزَقُونَ}.'
-  ]},
-  { q: 'اذكر الحديث الشريف الدال على عذاب القبر وبين السببان المذكوران فيه للعذاب.', a: [
-    '<strong>الحديث:</strong> عن ابن عباس أن النبي ﷺ مر بقبرين فقال: «إنهما ليعذبان وما يعذبان في كبير... أما أحدهما فكان يمشي بالنميمة، وأما الآخر فكان لا يستبرئ من بوله».',
-    '<strong>السببان:</strong> 1. المشي بين الناس بالنميمة لإفساد العلاقات. 2. عدم الاستبراء والتطهر من البول.'
-  ]},
-  { q: 'هل يقع نعيم القبر وعذابه على الروح فقط أم الجسد والروح معاً؟ وضح ذلك.', a: [
-    'يقعان على الروح والجسد جميعاً عند أهل السنة والجماعة، حيث يفيض الله على الجسد والروح أثر النعيم أو العذاب حتى لو تفتت الجسد بكيفية برزخية لا ندركها بحواسنا.'
-  ]},
-  { q: 'ما المقصود بـ "الحياة البرزخية"؟ وما شبيهها في الحياة الدنيا لتوضيح الفهم؟', a: [
-    '<strong>الحياة البرزخية:</strong> هي المرحلة الفاصلة بين الحياة الدنيا والحياة الآخرة (حياة القبر).',
-    '<strong>الشبيه التوضيحي:</strong> يشبه حال النائم في دنياه، يرى رؤيا مفزعة فيتألم أو يرى نعماً فيفرح، بينما النائم بجواره لا يشعر بما يمر به.'
-  ]},
-  { q: 'عرف البعث والنشر لغة واصطلاحاً، وبين حكم الإيمان به.', a: [
-    '<strong>الاصطلاح:</strong> إحياء الله الموتى وإخراجهم بعد جمع أجزائهم الأصلية من قبورهم يوم القيامة برد أرواحهم إلى أجسامهم.',
-    '<strong>حكم الإيمان به:</strong> واجب وهو ركن من أركان الإيمان الستة.'
-  ]},
-  { q: 'ما حكم منكر البعث والنشر؟ مع التعليل.', a: [
-    '<strong>حكمه:</strong> كافر خارج عن ملة الإسلام.',
-    '<strong>التعليل:</strong> لأنه أنكر أمراً معلوماً من الدين بالضرورة وثابتاً بالقرآن والسنة وإجماع جميع الشرائع السماوية.'
-  ]},
-  { q: 'صغ الدليل العقلي على إمكان البعث والنشر في نقاط مركزة.', a: [
-    '1. ثبت أن الله خلق الإنسان من العدم أول مرة بقدرته.',
-    '2. القدرة التي أنشأت الخلق من لا شيء قادرة على إعادته بعد موته بطريق أولى.',
-    '3. الإعادة في العقل أهون وأسهل من الابتداء، والله تعالى لا يعجزه شيء.'
-  ]},
-  { q: 'اذكر آيتين كريمتين تدلان على البعث والنشر مع الشرح المختصر.', a: [
-    '1. {وَهُوَ الَّذِي يَبْدَأُ الْخَلْقَ ثُمَّ يُعِيدُهُ وَهُوَ أَهْوَنُ عَلَيْهِ}: تبين أن الإعادة مقدورة لله وأسهل في قياس العقول.',
-    '2. {زَعَمَ الَّذِينَ كَفَرُوا أَنْ لَنْ يُبْعَثُوا قُلْ بَلَى وَرَبِّي لَتُبْعَثُنَّ}: أمر إلهي لنبيه بالقسم على وقوع البعث المؤكد.'
-  ]},
-  { q: 'اذكر قصة المشرك أُبيّ بن خلف مع النبي ﷺ وما ينزل فيها من القرآن.', a: [
-    '<strong>القصة:</strong> جاء أُبيّ بن خلف بعظم رميم ونفخه في الهواء وقال للنبي ﷺ: "أترى أن الله يبعث هذا بعدما رمّ؟"، فقال النبي ﷺ: «نعم ويبعثك ويدخلك النار».',
-    '<strong>الآيات النازلة:</strong> {وَضَرَبَ لَنَا مَثَلًا وَنَسِيَ خَلْقَهُ قَالَ مَنْ يُحْيِي الْعِظَامَ وَهِيَ رَمِيمٌ * قُلْ يُحْيِيهَا الَّذِي أَنْشَأَهَا أَوَّلَ مَرَّةٍ...}.'
-  ]},
-  { q: 'قارن بين منكر سؤال القبر ومنكر البعث والنشر من حيث الحكم والعلة.', a: [
-    '<strong>منكر سؤال القبر:</strong> الحكم (مبتدع وضال ولا يكفر) - العلة (لأن الدليل ظني أو يحتاج تأويل مع إقراره بالجزاء الأخروي).',
-    '<strong>منكر البعث والنشر:</strong> الحكم (كافر خارج عن الملة) - العلة (لأنه أنكر ركناً صريحاً ومعلوماً من الدين بالضرورة).'
-  ]},
-  { q: 'علل: العقل يجيز السمعيات والشرع يوجبها.', a: [
-    'لأن العقل لا يجد مانعاً منطقياً من وقوع السمعيات كإعادة الموتى أو السؤال، فيراها ممكنة عقلاً، ثم يأتي خبر الصادق المصدوق ﷺ بالوحي ليقطع هذا الجواز ويجعله واجباً حتمياً.'
-  ]},
-  { q: 'ماذا يحدث للميت الذي أحرق وصار رماداً في الهواء من حيث السؤال والنعيم/العذاب؟', a: [
-    'يجمع الله أجزاءه ويُعيد إليه الروح ويُسأل ويُنعم أو يُعذب بكيفية غيبية يعلمها الله تعالى، لا تمنعها تفتت الأجزاء.'
-  ]},
-  { q: 'ما أثر الإيمان بالسمعيات والبعث على سلوك المسلم في الدنيا؟', a: [
-    'يورث في قلب المسلم الخوف من الله، والرغبة في الطاعة، والابتعاد عن الظلم والمعاصي، والاستعداد لليوم الآخر بالعمل الصالح، والاطمئنان لعدل الله.'
-  ]},
-  { q: 'ضع علامة (صح) أو (خطأ) مع تصويب الخطأ: (منكر نعيم القبر كافر).', a: [
-    'العبارة <strong>خاطئة (X)</strong>. التصويب: منكر نعيم القبر مبتدع وضال وليس بكافر.'
-  ]},
-  { q: 'ضع علامة (صح) أو (خطأ) مع تصويب الخطأ: (طريق ثبوت السمعيات هو العقل والتجربة).', a: [
-    'العبارة <strong>خاطئة (X)</strong>. التصويب: طريق ثبوت السمعيات هو الكتاب والسنة فقط.'
-  ]},
-  { q: 'ضع علامة (صح) أو (خطأ) مع تصويب الخطأ: (نعيم القبر وعذابه يقعان على الروح فقط).', a: [
-    'العبارة <strong>خاطئة (X)</strong>. التصويب: يقعان على الروح والجسد جميعاً عند أهل السنة.'
-  ]},
-  { q: 'ضع علامة (صح) أو (خطأ) مع تصويب الخطأ: (من أنكر البعث والنشر فهو كافر).', a: [
-    'العبارة <strong>صحيحة (√)</strong>.'
-  ]},
-  { q: 'ضع علامة (صح) أو (خطأ) مع تصويب الخطأ: (سؤال الملكين يكون في القبر للمؤمن فقط).', a: [
-    'العبارة <strong>خاطئة (X)</strong>. التصويب: يكون للمؤمن والكافر والمنافق.'
-  ]},
-  { q: 'بين معنى المفردات الآتية: (رَمِيمٌ - لا دريت ولا تليت).', a: [
-    '<strong>رَمِيمٌ:</strong> العظم البالي المتفتت.',
-    '<strong>لا دريت ولا تليت:</strong> دعاء على الكافر/المنافق بالخيبة والجهل وعدم التوفيق لتعلم الخير وقراءة القرآن.'
-  ]},
-  { q: 'علل: عدم رؤيتنا للملكين ولا سماعنا لصوت السؤال عند قبر الميت.', a: [
-    'لأن حياة القبر حياة برزخية غيبية من عالم الغيب، وحواسنا البشرية في الدنيا مصممة لعالم الشهادة فقط فلا تدرك أحوال البرزخ إلا بنص الوحي.'
-  ]},
-  { q: 'ما المعنى الحرفي لاسم الملكين (منكر ونكير)؟ ولماذا سميا بذلك؟', a: [
-    'سميا بذلك لأن الميت لم يرهما من قبل ولم يعتد على صورتهما وهيبتهما، فهما غير معروفين لديه في صورهما وشكلهما.'
-  ]},
-  { q: 'اكتب الآية الكريمة من سورة الحج التي تدل على البعث وأنه لا ريب فيه.', a: [
-    '{ذَلِكَ بِأَنَّ اللَّهَ هُوَ الْحَقُّ وَأَنَّهُ يُحْيِي الْمَوْتَى وَأَنَّهُ عَلَى كُلِّ شَيْءٍ قَدِيرٌ * وَأَنَّ السَّاعَةَ آتِيَةٌ لَا رَيْبَ فِيهَا وَأَنَّ اللَّهَ يَبْعَثُ مَنْ فِي الْقُبُورِ}.'
-  ]},
-  { q: 'دلل من السنة على أن الميت يسمع قَرع نعال أصحابه إذا تولوا عنه.', a: [
-    'ثبت في الصحيحين عن النبي ﷺ أن العبد إذا وُضع في قبره وتولى عنه أصحابه، إنه ليسمع قَرْعَ نعالهم حين ينصرفون.'
-  ]},
-  { q: 'علل: توجيه النبي ﷺ أصحابه بالتثبيت للميت عقب الدفن مباشرة.', a: [
-    'لقوله ﷺ «فإنه الآن يُسأل»، ولأن الميت في هذه اللحظة العصيبة بحاجة إلى دعاء إخوانه له بالتثبيت والرحمة ليوفق في إجابة الملكين.'
-  ]},
-  { q: 'ما الفرق بين الحياة الدنيوية والحياة البرزخية والحياة الأخروية؟', a: [
-    '<strong>الحياة الدنيوية:</strong> حياة التكليف والعمل بحواس الدنيا.',
-    '<strong>الحياة البرزخية:</strong> حياة متوسطة بين الدنيا والآخرة في القبر تجري فيها أحكام السؤال والنعيم/العذاب للروح والجسد.',
-    '<strong>الحياة الأخروية:</strong> حياة الجزاء والخلود الأبدي في الجنة أو النار.'
-  ]},
-  { q: 'هل النميمة وعدم الاستنزاه من البول هما السببان الوحيدان لعذاب القبر؟ وضح.', a: [
-    'لا، ليسا السببين الوحيدين، ولكن النبي ﷺ ذكرهما للتنبيه على خطورتهما وتساهل كثير من الناس فيهما، وإلا فكل معصية بلا توبة قد تكون سبباً للعذاب.'
-  ]},
-  { q: 'ما مراد العلماء بقولهم "ما عُلِمَ من الدين بالضرورة"؟ وما حكم إنكاره؟', a: [
-    '<strong>المراد:</strong> الأمور البديهية التي يعلمها الصغير والكبير من المسلمين بلا عناء مثل وجوب الصلاة وحرمة الزنا والبعث.',
-    '<strong>حكم إنكاره:</strong> الكفر؛ لأنه تكذيب صريح لما ثبت بالدين يقيناً.'
-  ]},
-  { q: 'بين السر في قوله تعالى {فَهُوَ فِي عِيشَةٍ رَاضِيَةٍ} بالنسبة للمؤمن في قبره وآخرته.', a: [
-    'التعبير بـ "راضية" للمبالغة في سروره ونعيمه، حتى كأن العيشة نفسها هي التي ترضى من كثرة ما فيها من الخير والبهجة.'
-  ]},
-  { q: 'صغ نصيحة لطالب الأزهر الشريف لتجنب الأخطاء في إجابة أسئلة التوحيد.', a: [
-    'التركيز على حفظ التعاريف بدقة، والتفرقة بين حكم الإيمان وحكم الإنكار (كفر أم بدعة)، وحفظ وجه الدلالة من الآيات والأحاديث.'
-  ]},
-  { q: 'استخرج من الآية {قُلْ يُحْيِيهَا الَّذِي أَنْشَأَهَا أَوَّلَ مَرَّةٍ} القاعدة العقلية المتبعة في الرد على المنكرين.', a: [
-    'القاعدة العقلية هي: قياس الإعادة على الابتداء، فمن قدر على الإنشاء الأول فهو قادر على الإنشاء الثاني بطريق أولى.'
-  ]},
-  { q: 'اكتب ما تعرفه عن خطورة عدم الاستبراء من البول وأثره على الصلاة والقبر.', a: [
-    'عدم الاستبراء ينجس الثياب والبدن، مما يبطل الصلاة التي هي عماد الدين، وتارك الطهارة يستحق العذاب في القبر كما جاء في الحديث الصحيح.'
-  ]},
-  { q: 'علل: أجمع السلف الصالح على إثبات نعيم القبر وعذابه.', a: [
-    'لكثرة النصوص القرآنية والأحاديث المتواترة الصحيحة الدالة عليهما دلالة واضحة لا تحتمل التكذيب.'
-  ]},
-  { q: 'ما الشبهة التي يثيرها بعض الملاحدة حول عذاب القبر؟ وكيف نرد عليهم؟', a: [
-    '<strong>الشبهة:</strong> يقولون ينبش القبر فلا نرى ناراً ولا ملاكاً!',
-    '<strong>الرد:</strong> أن أحوال البرزخ من عالم الغيب وليست من عالم الشهادة، والروح أثرها غيبي، كالنائم يرى أهوالاً ولا يراها الجالس بجواره.'
-  ]},
-  { q: 'ماذا يرى المؤمن بعد إجابته الصحيحة على الملكين؟', a: [
-    'يُقال له انظر إلى مقعدك من النار قد أبدلك الله به مقعداً من الجنة فيراهما جميعاً، ويفسح له في قبره مد بصره وينور له فيه.'
-  ]},
-  { q: 'ما المراد بـ "الشهادة" في قول ابن عباس "عند الشهادة يسألون عنها في قبورهم"؟', a: [
-    'المراد بـ الشهادة: شهادة أن لا إله إلا الله وأن محمداً رسول الله، أي الثبات على التوحيد.'
-  ]},
-  { q: 'اكتب بأسلوبك موجزاً عن درس "البعث والنشر".', a: [
-    'يتناول إحياء الله للموتى يوم القيامة برد أرواحهم لأجسادهم بعد الفناء، وهو ركن واجب الإيمان ومنكره كافر، ودليله العقلي القدرة على الإيجاد الأول.'
-  ]},
-  { q: 'أكمل العبارة: "المسلم إذا سئل في القبر شهد أن ..... وأن ..... فذلك قوله: {يُثَبِّتُ اللَّهُ الَّذِينَ آمَنُوا...}".', a: [
-    'شهد أن (لا إله إلا الله) وأن (محمداً رسول الله).'
-  ]},
-  { q: 'علل: لا يجوز تكفير من أنكر عذاب القبر إذا كان متأولاً.', a: [
-    'لأن دليله عند المتأولين يحتمل الشبهة والـتأويل مع إقراره بالحساب الأخروي العام، فلا يكفر بل يعتبر مبتدعاً.'
-  ]},
-  { q: 'ما الواجب على المسلم تجاه السمعيات كلها؟', a: [
-    'الواجب التسليم والتصديق القاطع بما جاء عن الله ورسوله دون تحريف أو إنكار.'
-  ]},
-  { q: 'دلل من القرآن على أن البعث أمر يسير على الله تعالى.', a: [
-    'قوله تعالى: {زَعَمَ الَّذِينَ كَفَرُوا أَنْ لَنْ يُبْعَثُوا قُلْ بَلَى وَرَبِّي لَتُبْعَثُنَّ ثُمَّ لَتُنَبَّؤُنَّ بِمَا عَمِلْتُمْ وَذَلِكَ عَلَى اللَّهِ يَسِيرٌ}.'
-  ]},
-  { q: 'ماذا يستفيد المجتمع من إيمان أفراده بنعيم القبر وعذابه والبعث؟', a: [
-    'ينتشر الأمان والعدل، ويتجنب الناس الجرائم كالنميمة والظلم والسرقة، لتيقنهم من الحساب والجزاء العادل.'
-  ]},
-  { q: 'اذكر ثلاثة من الدروس المستفادة من دراسة وحدة السمعيات (الدروس الثلاثة الأولى).', a: [
-    '1. الإيمان العميق بالغيبيات والتسليم لوحي الله.',
-    '2. الحرص على الطهارة واللجوء للعمل الصالح والدعاء بالتثبيت.',
-    '3. الاستعداد لليوم الآخر والبعث بالعمل الصالح والتوبة.'
-  ]},
-  { q: 'ختاماً، ما الفرق الرئيسي بين العلوم العقلية والعلوم السمعية؟', a: [
-    '<strong>العلوم العقلية:</strong> يدركها العقل بالنظر والتفكر والتجربة.',
-    '<strong>العلوم السمعية:</strong> لا يدرك تفاصيلها العقل بل يتوقف ثبوتها على السماع والنقل عن المعصوم ﷺ.'
-  ]}
+/* ═══ ESSAY DATA ═══ */
+var essayData = [
+  { q:'عَرّف السمعيات لغة واصطلاحاً، واذكر طريق ثبوتها، مع بيان حكم الإيمان بها.', a:['<strong>السمعيات اصطلاحاً:</strong> هي الأمور التي لا تؤخذ ولا تُعلم إلا بطريق السماع والإخبار الصادق عن النبي ﷺ، ولا يستقل العقل بإدراكها.','<strong>طريق ثبوتها:</strong> الكتاب والسنة.','<strong>حكم الإيمان بها:</strong> واجب شرعاً؛ لأنها تدخل في أصل الإيمان بالغيب.'], note:'يخطئ الطلاب بدخول العقل كمصدر مستقل للسمعيات؛ الواجب بيان أن دور العقل هو الفهم والإثبات للإمكان وليس الإنشاء.' },
+  { q:'ما المراد بسؤال القبر؟ ولماذا خص القبر بالذكر دون غيره؟', a:['سؤال القبر هو سؤال الملكين (منكر ونكير) للميت عقب دفنه أو موته عن ربه ودينه ونبيه.','وخُص القبر بالذكر؛ نظراً لأن غالب الموتى يُدفنون في القبور، وإلا فإن السؤال شامل لكل ميت وإن لم يُدفن.'], note:'ركز على عبارة "خرج مخرج الغالب" فهي العبارة الفقهية الدقيقة المعتمدة في الإجابات.' },
+  { q:'بيّن حكم الإيمان بسؤال القبر، وما حكم منكره مع التوجيه والتعليل؟', a:['<strong>حكم الإيمان به:</strong> واجب شرعاً.','<strong>حكم منكره:</strong> مبتدع وضال، ولا يُكفَّر على الراجح؛ لأنه لم ينكر أصل الجزاء الأخروي وإنما تأول التوقيت والآلية بشبهة فاسدة.'], note:'انتبه! الفرق حاسم بين منكر سؤال القبر (مبتدع) وبين منكر البعث (كافر).' },
+  { q:'اذكر دليلين صريحين أحدهما من القرآن والآخر من السنة على ثبوت سؤال القبر.', a:['<strong>من القرآن:</strong> قوله تعالى: {يُثَبِّتُ اللَّهُ الَّذِينَ آمَنُوا بِالْقَوْلِ الثَّابِتِ فِي الْحَيَاةِ الدُّنْيَا وَفِي الْآخِرَةِ}.','<strong>من السنة:</strong> قوله ﷺ عقب دفن الميت: «استغفروا لأخيكم وسلوا له التثبيت فإنه الآن يُسأل».'], note:'احرص على ذكر وجه الدلالة المرفق بالآية والحديث لضمان الدرجة النهائية.' },
+  { q:'كيف يُجيب المؤمن الموفق في القبر؟ وماذا يقال له؟', a:['يقول: "ربي الله، وديني الإسلام، ونبيي محمد ﷺ".','فيقال له: "قد علمنا إن كنت لمؤمناً، انظر إلى مقعدك من النار قد أبدلك الله به مقعداً من الجنة"، فيراهما جميعاً ويفسح له في قبره.'], note:'النكتة البلاغية هنا هي رؤية المقعدين ليزداد المؤمن شكراً وفرحاً بما نجاه الله منه.' },
+  { q:'كيف تكون حالة المنافق أو الكافر عند السؤال في القبر؟', a:['يقول اضطراباً وخذلاناً: "هاه هاه لا أدري! كنت أقول ما يقوله الناس!".','فيقال له: "لا دريت ولا تليت"، ثم يضرب بمطرق من حديد فيصيبه من العذاب ما قُدر له.'], note:'عبارة "لا دريت ولا تليت" هي دعوة بالخيبة والجهل التام.' },
+  { q:'هل يقع سؤال القبر على الغريق والمحروق ومن أكلته السباع؟ وضح كيفية ذلك.', a:['نعم، يقع السؤال على كل ميت مهما كانت هيئة موته أو تناثر أجزائه.','<strong>والكيفية:</strong> يوصل الله القدرة والوعي والروح للجسد أو أجزائه بكيفية يعلمها الله تمكنه من الفهم ورد الجواب.'], note:'القدرة الإلهية غير مقيدة بقوانين المادة الأرضية والتفكك الجزئي.' },
+  { q:'عَرّف نعيم القبر وعذابه، وبيّن حكم الإيمان بهما عند أهل السنة.', a:['<strong>نعيم القبر وعذابه:</strong> هو ما يلقاه العبد في قبره وفي حياته البرزخية من النعيم أو العذاب بحسب حاله من الطاعة أو المعصية.','<strong>حكم الإيمان بهما:</strong> واجب شرعاً بثبوتهما بالكتاب والسنة والإجماع.'], note:'احذر من نسيان كلمة "البرزخية" في التعريف لشمول الوقت قبل البعث.' },
+  { q:'لمن يقع نعيم القبر وعذابه؟ هل للروح فقط أم للجسد والروح معاً؟', a:['مذهب أهل السنة والجماعة أن النعيم والعذاب يقعان على "الروح والجسد جميعاً".','حيث يوصل الله أثر النعيم أو الألم للجسد ولو تحلل أو تفتت فيشعر به مع الروح.'], note:'هذا رد مباشر على الفلاسفة والمعتزلة الذين زعموا وقوعه على الروح فقط.' },
+  { q:'استدل من القرآن الكريم بآية صريحة على عذاب القبر مع توضيح وجه الدلالة.', a:['<strong>الدليل:</strong> قوله تعالى في آل فرعون: {النَّارُ يُعْرَضُونَ عَلَيْهَا غُدُوًّا وَعَشِيًّا وَيَوْمَ تَقُومُ السَّاعَةُ أَدْخِلُوا آلَ فِرْعَوْنَ أَشَدَّ الْعَذَابِ}.','<strong>وجه الدلالة:</strong> أثبتت الآية عرضاً على النار بالغدو والعشي، وهذا يحدث قطعاً في البرزخ؛ لأن يوم القيامة لا غدو فيه ولا عشي، ثم عطفت الآية بقولها {وَيَوْمَ تَقُومُ السَّاعَةُ أَدْخِلُوا...} مما يدل على أن العرض الأول سابق على القيامة.'], note:'وجه الدلالة هذا هو أشهر سؤال في امتحانات الأزهر الشريف — احفظه جيداً!' },
+  { q:'استدل من القرآن الكريم على نعيم القبر مع الشرح.', a:['<strong>الدليل:</strong> قوله تعالى في حق الشهداء: {وَلا تَحْسَبَنَّ الَّذِينَ قُتِلُوا فِي سَبِيلِ اللَّهِ أَمْوَاتًا بَلْ أَحْيَاءٌ عِنْدَ رَبِّهِمْ يُرْزَقُونَ * فَرِحِينَ بِمَا آتَاهُمُ اللَّهُ مِنْ فَضْلِهِ}.','<strong>الشرح:</strong> أثبتت الآية للشهداء حياة برزخية حقيقية يرزقون فيها ويفرحون، وهذا هو عين نعيم القبر والبرزخ.'], note:'الحي يرزق ويفرح في البرزخ، وهذا نص قطعي على إثبات النعيم البرزخي.' },
+  { q:'اذكر حديثاً نبوياً شريفاً يثبت عذاب القبر، واذكر المعصيتين الواردتين فيه.', a:['<strong>الحديث:</strong> عن ابن عباس رضي الله عنهما أن النبي ﷺ مر بقبرين فقال: «إنهما ليعذبان وما يعذبان في كبير... أما أحدهما فكان يمشي بالنميمة، وأما الآخر فكان لا يستبرئ من بوله».','<strong>المعصيتان:</strong> 1. النميمة (نقل الكلام بين الناس للإفساد). 2. عدم الاستبراء والتنزه من البول.'], note:'يصح أن تقول في المعصية الثانية "لا يستتر من بوله" أو "لا يستنزف".' },
+  { q:'ما المقصود بـ "الحياة البرزخية"؟ وكيف نقرّب فهمها بحال النائم؟', a:['<strong>الحياة البرزخية:</strong> هي المرحلة الفاصلة المتوسطة بين الحياة الدنيا والحياة الأخروية (تبدأ بالموت وتنتهي بالبعث).','<strong>التقريب بحال النائم:</strong> النائم يرى في نومه أنه ينعم ويفرح في بستان أو يتألم ويصرخ في كابوس، ويشعر باللذة أو الألم يقيناً، بينما الشخص النائم بجواره لا يحس بشيء من حاله، فكذلك الميت في برزخه.'], note:'التقريب بالنائم يرفع الشبهة العقلية عن كيفية الشعور مع سكون الجسد الظاهري.' },
+  { q:'عَرّف البعث والنشر اصطلاحاً.', a:['البعث والنشر: هو إحياء الله تعالى الموتى، وإخراجهم من قبورهم بعد جمع أجزائهم الأصلية، لإعادتهم إلى أجسادهم يوم القيامة للحساب والجزاء.'], note:'تأكد من ذكر "جمع أجزائهم الأصلية" لإبراز التمايز عن الإيجاد الأول.' },
+  { q:'ما حكم الإيمان بالبعث والنشر؟ وما حكم منكره مع التعليل؟', a:['<strong>حكم الإيمان به:</strong> واجب شرعاً وهو ركن من أركان الإيمان.','<strong>حكم منكره:</strong> كافر مخرج من الملة.','<strong>العلة:</strong> لأنه أنكر أمراً معلوماً من الدين بالضرورة وثابتاً بالنصوص القطعية الصريحة في القرآن والسنة وأجمعت عليه كل الشرائع الإلهية.'], note:'التكفير هنا حتمي؛ لأن جحود البعث إبطال للدين والقرآن والعدل الإلهي.' },
+  { q:'وضّح البرهان العقلي الذي يثبت إمكانية البعث والقدرة عليه.', a:['1. قياس الإعادة على الإيجاد الأول: القادر على خلق الإنسان من العدم أول مرة بلا مثال سابق، قادر على إعادته وتجميعه بعد موته بطريق الأولوية {وَهُوَ الَّذِي يَبْدَأُ الْخَلْقَ ثُمَّ يُعِيدُهُ وَهُوَ أَهْوَنُ عَلَيْهِ}.','2. مشاهدة إحياء الأرض الميتة بالنبات بعد نزول المطر؛ فالقادر على إحياء الأرض قادر على إحياء الأجساد.'], note:'استخدام عبارة "وهو أهون عليه" بحسب مفهوم البشر والعقل الشاهدي، وإلا فالقدرة الإلهية واحدة.' },
+  { q:'اكتب العبارة الشارحة لقصة أبيّ بن خلف مع النبي ﷺ في شأن البعث، مع ذكر الآيات التي نزلت.', a:['<strong>القصة:</strong> جاء أبيّ بن خلف بعظم بالٍ ففتّه بيده ونفخه في الهواء وقال: "يا محمد أترى أن الله يبعث هذا بعدما رمّ؟"، فقال النبي ﷺ: «نعم، ويبعثك الله ويدخلك النار».','<strong>الآيات:</strong> نزلت أواخر سورة يس: {وَضَرَبَ لَنَا مَثَلا وَنَسِيَ خَلْقَهُ قَالَ مَنْ يُحْيِي الْعِظَامَ وَهِيَ رَمِيمٌ * قُلْ يُحْيِيهَا الَّذِي أَنْشَأَهَا أَوَّلَ مَرَّةٍ وَهُوَ بِكُلِّ خَلْقٍ عَلِيمٌ}.'], note:'اسم المشرك "أبيّ بن خلف" يأتيك في أسئلة "من القائل أو صاحب الواقعة".' },
+  { q:'قارن في جدول بين "منكر سؤال القبر" و "منكر البعث والنشر" من حيث الحكم والعلة.', a:['<strong>منكر سؤال القبر:</strong> حكمه (مبتدع وضال ولا يكفر). العلة: لأنه لم ينكر أصل الجزاء وإنما تأول التوقيت والآلية بشبهة.','<strong>منكر البعث والنشر:</strong> حكمه (كافر مخرج من الملة). العلة: لأنه أنكر ركناً من أركان الإيمان وأمراً معلوماً من الدين بالضرورة.'], note:'المقارنة هذه موضع أسئلة الامتحانات الذكية.' },
+  { q:'ما معنى قوله تعالى {فَلا تُزَكُّوا أَنْفُسَكُمْ هُوَ أَعْلَمُ بِمَنِ اتَّقَى} وعلاقتها بالتحذير من الغرور في البرزخ؟', a:['<strong>المعنى:</strong> النهي عن مدح الإنسان لنفسه والجزم لها بالنجاة والنعيم مطلقاً؛ لأن العبرة بالخواتيم وبما يعلمه الله من السرائر والتثبيت عند السؤال في القبر.'], note:'تظهر هذه اللطيفة في أسئلة الفهم والربط السلوكي.' },
+  { q:'علل: لا يُعتبر أكل السباع للميت أو احتراقه مانعاً من السؤال والنعيم والعذاب.', a:['لأن القدرة الإلهية المطلقة تسري في أجزاء الميت أينما وُجدت وتوصل إليها الوعي والشحنة الحية الكافية لإدراك الخطاب وجواب الملكين والنعيم أو الألم، ولا تُقاس قدرة الخالق بقدرة العبد المحدودة.'], note:'الإجابة ترتكز على الشمول والقدرة المطلقة.' },
+  { q:'بيّن سر التعبير بقوله تعالى {غُدُوًّا وَعَشِيًّا} في آية آل فرعون.', a:['<strong>سر التعبير:</strong> هو تحديد الزمان البرزخي؛ فالغدو (الصباح) والعشي (المساء) يعتقبان في الدنيا والبرزخ قبل قيام الساعة، أما يوم القيامة فليس فيه صباح ولا مساء، فدل على أن العرض المذكور هو عذاب القبر.'], note:'إشارة زمنية دقيقة جداً استنبط منها العلماء إثبات عذاب البرزخ.' },
+  { q:'ما الحكم لو أنكر شخص السمعيات جملة وتفصيلاً؟ مع التعليل.', a:['<strong>الحكم:</strong> كافر مخرج من الملة.','<strong>العلة:</strong> لأن إنكار السمعيات جملة هو تكذيب صريح للقرآن الكريم وللنبي ﷺ وإنكار لركن الإيمان بالغيب.'], note:'السمعيات كليات وجزئيات، إنكار الجملة كفر صريح.' },
+  { q:'اذكر ثمرتين تربويتين وسلوكيتين للإيمان بعذاب القبر ونعيمه في حياة المسلم.', a:['1. الاستقامة على طاعة الله والحذر من المعاصي والآثام (كالنميمة والتفريط في الطهارة) خوفاً من عذاب البرزخ.','2. الاستبشار والطمأنينة وابتغاء مرضاة الله ظاهراً وباطناً للفوز بنعيم القبر والفسحة فيه.'], note:'أسئلة الثمرات المترتبة تتكرر في أسئلة "ما الدرس المستفاد".' },
+  { q:'علل: تسديد السؤال للميت في قبره من الملكين "منكر ونكير".', a:['لاختبار إيمان العبد وصدق عقيدته التي عاش عليها في الدنيا، حيث لا ينطق لسان المنافق بالحق وإنما ينطق بمَكنون قلبه الحقيقي.'], note:'الثبات في القبر ليس بحفظ المعلومات بل بحقيقة الإيمان في القلب.' },
+  { q:'ما معنى قوله ﷺ: "فإنه الآن يُسأل"؟', a:['<strong>المراد:</strong> المبادرة الفورية بوقوع سؤال الملكين للميت عقب الفراغ من دفنه وانصراف الناس عنه، ولذلك شُرع الاستغفار وطلب التثبيت له في هذه اللحظة الحرجة.'], note:'الظرفية الزمنية "الآن" تدل على المباشرة عقب الدفن.' },
+  { q:'وضّح كيف يرد المسلم على من يقول: "نفتح القبر ونجد أجزاء الميت كما هي لم تتغير فكيف يُعذب أو يُنعم؟"', a:['نرد بأن أحوال البرزخ من الأمور الغيبية التي لا تخضع لقوانين الحس المادي البشري، وأن النعيم والعذاب يتعلقان بالروح والجسد بطريقة برزخية لا يراها الحي المادي، كحال النائم الذي يعاني الكابوس أو يتنعم بالرؤيا دون أن يدرك جليسه شيئاً من ذلك.'], note:'إجابة عقائدية وعقلية مفحمة تجسر الفجوة بين الحس والغيب.' },
+  { q:'ما الأجزاء التي يجمعها الله عند البعث والنشر؟', a:['يجمع الله "الأجزاء الأصلية" للإنسان التي تكونت منها بنيته الأساسية في الدنيا (ومنها عجب الذنب) ليعاد تركيب الجسد عليها ردّاً للروح.'], note:'التفرقة بين الأجزاء الأصلية والزائدة تعكس دقة علماء التوحيد.' },
+  { q:'دلل من القرآن الكريم على أن الإعادة أسهل في القياس العقلي من البدء.', a:['قوله تعالى: {وَهُوَ الَّذِي يَبْدَأُ الْخَلْقَ ثُمَّ يُعِيدُهُ وَهُوَ أَهْوَنُ عَلَيْهِ} [الروم: 27].'], note:'الآية تثبت القاعدة الحاكمة في المنطق البشري والعقلي.' },
+  { q:'ما أسباب عذاب القبر كما وردت في الآثار والأحاديث الشريفة؟', a:['1. عدم الاستبراء والتنزه من البول.','2. المشي بالنميمة بين الناس للإفساد.','3. الكذب والغيبة والغلول وعصيان أوامر الله.'], note:'التركيز على النص الشريف في حديث القبرين أولاً ثم العمومات.' },
+  { q:'ما حقيقة "عجب الذنب" الوارد في أحاديث البعث؟', a:['عجب الذنب هو جزء لطيف جداً في أصل صلب الإنسان (نهاية العمود الفقري) لا يبلى ولا تأكله الأرض، ومنه يُركّب الخلق يوم القيامة.'], note:'تم إثباتها حديثاً في المجهريات وتسمى الشريط الأولي.' },
+  { q:'هل البعث خاص بالإنس والجن أم يشمل الحيوانات أيضاً؟', a:['يحشر الله الخلائق والحيوانات والدواب ليقتص للشاة الجلحاء من الشاة القرناء إظهاراً لكمال العدل الإلهي، ثم يقال للبهائم كوني تراباً.'], note:'شمول الحشر لغير المكلفين لإظهار مطلق العدل الإلهي.' },
+  { q:'كيف يرفع الإيمان بالسمعيات مستوى المراقبة لدى الطالب والأثر النفسي عليه؟', a:['يجعله يستشعر أن كل عمل وكلمة مسجلة ومرصودة وأن هناك برزخاً وبعثاً وحساباً، فيبتعد عن الغش والغيبة والظلم ويتخلق بالصلاح والطهارة.'], note:'الأسئلة التذوقية والسلوكية تعزز الدرجة في امتحانات الأزهر.' },
+  { q:'ما المراد بالقول الثابت في قوله تعالى {يُثَبِّتُ اللَّهُ الَّذِينَ آمَنُوا بِالْقَوْلِ الثَّابِتِ}؟', a:['القول الثابت هو شهادة أن لا إله إلا الله وأن محمداً رسول الله، والثبات عليها عند سؤال الملكين في القبر.'], note:'نقل تفسير ابن عباس والبراء بن عازب.' },
+  { q:'علل: تسمية الملكين بـ "منكر ونكير".', a:['لأن الميت يراهما في صورة غريبة غير مألوفة له في حياته الدنيا، ينكرها حسه المادي المعتاد.'], note:'التسمية وصف للرؤية وليس ذماً للملكين الكرام.' },
+  { q:'رد على شبهة: "البعث محال لأن أجساد الموتى تحولت إلى عناصر كيميائية ونباتات".', a:['<strong>الرد:</strong> الذرات والعناصر الكيميائية حافلة بشفرات دقيقة محددة في علم الله وقدرته المطلقة، وإعادة تجميعها ليس بأصعب من إيجادها أول مرة من العدم المحض، فالعليم القدير لا يعجزه شيء في الأرض ولا في السماء.'], note:'استحضار العلم المطلق مع القدرة المطلقة.' },
+  { q:'اذكر حكم من قال: "إن عذاب القبر مجرد مجاز ولا وجود له في الحقيقة".', a:['<strong>الحكم:</strong> مبتدع وضال ومخالف لما أجمع عليه السلف الصالح وجمهور أهل السنة والجماعة، ولا يُكفَّر طالما لم ينكر الجزاء الأخروي النهائي.'], note:'التأويل الفاسد يُخرج صاحبه إلى البدعة والضلال لا إلى الكفر المخرج.' },
+  { q:'بيّن معاني المفردات التالية من حديث القبرين: (لا يستبرئ - النميمة - كبير).', a:['- <strong>لا يستبرئ:</strong> لا يتحرز ولا يتطهر من رذاذ البول.','- <strong>النميمة:</strong> نقل الحديث بين الناس على جهة الإفساد والشر.','- <strong>كبير:</strong> أي ليس كبيراً في زعمهم أو ليس شاقاً ومهولاً في الممارسة بل كان بمقدورهم تركه بسهولة.'], note:'تفسير "كبير" بدقة يمنع التناقض مع قوله "بلى إنه كبير".' },
+  { q:'ما الحكم العقلي للإيمان بالبعث والنشر؟', a:['<strong>جائز عقلاً وواجب شرعاً؛</strong> فالبعث أمر ممكن لا يحيل العقل وقوعه، بل يوجبه الشرع الشريف.'], note:'التفرقة بين الحكم العقلي (الجواز والإمكان) والحكم الشرعي (الوجوب).' },
+  { q:'ما الفرق بين علم الإلهيات وعلم السمعيات من حيث المصدر والإثبات؟', a:['- <strong>الإلهيات:</strong> مصدرها العقل والنقل معاً، ويمكن إثبات وجود الله وصفاته بالبرهان العقلي المباشر.','- <strong>السمعيات:</strong> مصدرها النقل الصريح (الكتاب والسنة) فقط، ولا يستقل العقل بابتكارها أو معرفة تفاصيلها دون وحي.'], note:'التمييز بين أبواب التوحيد الثلاثة أساس التأسيس العقائدي.' },
+  { q:'استدل بآية من سورة التغابن على البعث موضحاً القسم الوارد فيها.', a:['قوله تعالى: {زَعَمَ الَّذِينَ كَفَرُوا أَنْ لَنْ يُبْعَثُوا قُلْ بَلَى وَرَبِّي لَتُبْعَثُنَّ ثُمَّ لَتُنَبَّؤُنَّ بِمَا عَمِلْتُمْ وَذَلِكَ عَلَى اللَّهِ يَسِيرٌ}.','<strong>القسم:</strong> أمر الله نبيه أن يقسم بذاته العلية {قُلْ بَلَى وَرَبِّي لَتُبْعَثُنَّ} تأكيداً لحتمية وقوع البعث.'], note:'القسم في القرآن يأتي في المواضع العظيمة لقطع الشك.' },
+  { q:'ما هي الحالة البرزخية للشخص المغتصب أو المقتول ظلماً؟', a:['يُسأل في قبره وتوصل إليه نفحات النعيم والرضوان، ويقتص الله له يوم القيامة بجمع أجزائه وإعادة حقه كاملاً من الظالم.'], note:'ربط البرزخ بالعدالة الإلهية المطلقة.' },
+  { q:'ما المقصود بعبارة "خرج مخرج الغالب" في قواعد العقائد؟', a:['<strong>معناها:</strong> أن اللفظ يُذكر بناءً على الحالة الأكثر انتشاراً بين الناس (كأن يُدفن الميت في القبر)، ولكن الحكم الشرعي لا يقتصر على هذه الحالة فقط بل يعم كل الأفراد والحالات الأخرى.'], note:'قاعدة أصولية وفقهية هامة جداً تجيب عن سؤال القبر لكل الموتى.' },
+  { q:'ما موقف العلماء من تحديد كيفية نعيم وعذاب القبر بالتفصيل الدقيق؟', a:['موقفهم هو الإيمان بالتفاصيل التي وردت في النصوص الصحيحة، والتفويض أو الكف عما لم يرد فيه نص، مع الجزم بوقوع النعيم والعذاب حقاً على الروح والجسد.'], note:'منهج أهل السنة هو الاتباع وترك التكلف فيما لم يرد به نص.' },
+  { q:'كيف يُستدل بالنشأة الأولى على البعث في قوله تعالى {كَمَا بَدَأْنَا أَوَّلَ خَلْقٍ نُعِيدُهُ}؟', a:['<strong>وجه الاستدلال:</strong> أن البدء الأول حقيقة مشاهدة ومسلم بها، والقادر على البدء قاطبة قادر على الإعادة بنفس الكيفية والنظام {وَعْدًا عَلَيْنَا إِنَّا كُنَّا فَاعِلِينَ}.'], note:'ربط البداية بالنهاية حجة قرآنية قاطعة.' },
+  { q:'علل: صدور سؤال القبر للمؤمن والمنافق بلغة واحدة يفهمها كلاهما.', a:['لأن القدرة الإلهية تجعل الإدراك والوعي في البرزخ ينفذ إلى قلب وروح الميت مباشرة دون حاجة للوسائط اللغوية البشرية المعتادة.'], note:'الغيب يكسر القوانين المادية المعاصرة.' },
+  { q:'اذكر ثلاثة أحاديث نبوية مختلفة أشارت إلى حقيقة القبر والبرزخ.', a:['1. «استغفروا لأخيكم وسلوا له التثبيت فإنه الآن يُسأل».','2. «إنما القبر روضة من رياض الجنة أو حفرة من حفر النار».','3. «إنهما ليعذبان وما يعذبان في كبير...».'], note:'حفظ أطراف الأحاديث الشريفة يثبت الإجابة المقالية.' },
+  { q:'بيّن حكم الاستهانة برذاذ البول وعلاقتها بطهارة الصلاة وعذاب القبر.', a:['الاستهانة بالبول تؤدي إلى بطلان طهارة الثوب والبدن وبالتالي بطلان الصلاة، وهي معصية تسبب عذاب القبر كما نص الحديث الشريف، ولذا وجب الاستبراء والتنزه الشديد.'], note:'الربط بين الفقه والعقيدة والسلوك.' },
+  { q:'هل يتكرر سؤال الملكين للميت في القبر أكثر من مرة؟', a:['الظاهر من النصوص الصريحة أن السؤال يقع مرة واحدة عقيب الدفن والموت لاختبار العقيدة والثبات، ثم يترتب عليه النعيم أو العذاب المستمر في البرزخ.'], note:'عدم التكرار هو المعتمد عند جمهور المتكلمين.' },
+  { q:'ما الواجب على المسلم تجاه شبهات المنكرين للغيبيات في العصر الحديث؟', a:['الواجب هو الثبات على النصوص الصحيحة من الكتاب والسنة، وتعلم الأدلة العقلية والفطرية المبرهنة على إمكانها، ورد الشبهات بالأمثلة العصرية مع اليقين بقدرة الله المطلقة.'], note:'بناء الحصانة الفكرية والعقائدية لدى الطالب.' },
+  { q:'ملخص شامل: كيف توضح للدارس العلاقة بين دروس السمعيات الثلاثة؟', a:['العلاقة تسلسلية منطقية وشرعية حتمية:','1. تبدأ بمقدمة السمعيات لتثبيت المصدر النظري والإيماني (النقل الصدق عن الغيب).','2. ثم يتطرق للبرزخ فور الموت بوقوع "سؤال القبر".','3. ثم يترتب على السؤال مباشرة المكمن البرزخي بـ "نعيم القبر أو عذابه".','4. ثم تنتقل الروح والجسد في نهاية المطاف البرزخي إلى "البعث والنشر" للانتقال للدار الأخروية والحساب النهائي.'], note:'هذا السؤال الشامل يختبر خريطة الفهم والربط الذهني لدى الطالب لكامل الوحدة.' }
 ];
 
-/* ═══════════════════════════════════════════ */
-/* Render Quiz */
-/* ═══════════════════════════════════════════ */
-let quizAnswers = {};
-
+/* ═══ Render MCQ ═══ */
+var answers = {};
 function renderQuiz() {
-  const container = document.getElementById('quizContainer');
-  container.innerHTML = '';
-  
-  mcqData.forEach((item, idx) => {
-    const div = document.createElement('div');
-    div.className = 'quiz-item';
-    div.dataset.idx = idx;
-    
-    let optsHtml = '';
-    item.opts.forEach((opt, oi) => {
-      optsHtml += `<button class="quiz-option" data-opt="${oi}" data-qidx="${idx}">${opt}</button>`;
-    });
-    
-    div.innerHTML = `
-      <div class="quiz-question">
-        <span class="q-num">${idx + 1}</span>
-        <span>${item.q}</span>
-      </div>
-      <div class="quiz-options">${optsHtml}</div>
-      <div class="quiz-feedback" id="feedback-${idx}"></div>
-    `;
-    
-    container.appendChild(div);
-  });
-  
-  document.querySelectorAll('.quiz-option').forEach(btn => {
-    btn.addEventListener('click', () => handleQuizAnswer(btn));
-  });
-  
-  updateQuizScore();
-}
-
-function handleQuizAnswer(btn) {
-  const qIdx = parseInt(btn.dataset.qidx);
-  const optIdx = parseInt(btn.dataset.opt);
-  
-  if (quizAnswers[qIdx] !== undefined) return;
-  
-  const item = mcqData[qIdx];
-  const isCorrect = optIdx === item.correct;
-  
-  quizAnswers[qIdx] = { optIdx, isCorrect };
-  
-  const itemDiv = document.querySelector(`.quiz-item[data-idx="${qIdx}"]`);
-  const allOpts = itemDiv.querySelectorAll('.quiz-option');
-  
-  allOpts[item.correct].classList.add('correct');
-  
-  if (!isCorrect) btn.classList.add('wrong');
-  
-  allOpts.forEach(o => o.classList.add('disabled'));
-  
-  const fb = document.getElementById(`feedback-${qIdx}`);
-  if (isCorrect) {
-    fb.className = 'quiz-feedback correct show';
-    fb.innerHTML = '✅ <strong>إجابة صحيحة!</strong> أحسنت.';
-  } else {
-    fb.className = 'quiz-feedback wrong show';
-    fb.innerHTML = `❌ <strong>إجابة خاطئة.</strong> الإجابة الصحيحة: <strong>${item.opts[item.correct]}</strong>`;
+  var box = document.getElementById('quizBox');
+  var html = '';
+  for (var i = 0; i < quizData.length; i++) {
+    var item = quizData[i];
+    var opts = '';
+    for (var oi = 0; oi < item.o.length; oi++) {
+      opts += '<button class="q-opt" data-q="' + i + '" data-o="' + oi + '">' + item.o[oi] + '</button>';
+    }
+    html += '<div class="q-item" data-i="' + i + '">'
+      + '<div class="q-text"><span class="q-num">' + (i+1) + '</span><span>' + item.q + '</span></div>'
+      + '<div class="q-opts">' + opts + '</div>'
+      + '<div class="q-exp" id="exp-' + i + '"></div>'
+      + '</div>';
   }
-  
-  itemDiv.classList.add(isCorrect ? 'correct' : 'wrong');
-  updateQuizScore();
+  box.innerHTML = html;
+  var btns = box.querySelectorAll('.q-opt');
+  for (var k = 0; k < btns.length; k++) {
+    btns[k].addEventListener('click', handleAnswer);
+  }
+  updateScore();
 }
 
-function updateQuizScore() {
-  const answered = Object.keys(quizAnswers).length;
-  const correct = Object.values(quizAnswers).filter(a => a.isCorrect).length;
-  const wrong = answered - correct;
-  
-  document.getElementById('qProgress').textContent = answered;
-  document.getElementById('qCorrect').textContent = correct;
-  document.getElementById('qWrong').textContent = wrong;
+function handleAnswer(e) {
+  var btn = e.currentTarget;
+  var qi = +btn.getAttribute('data-q');
+  var oi = +btn.getAttribute('data-o');
+  if (answers[qi] !== undefined) return;
+  var item = quizData[qi];
+  var ok = oi === item.c;
+  answers[qi] = { oi: oi, ok: ok };
+  var itemDiv = document.querySelector('.q-item[data-i="' + qi + '"]');
+  var allOpts = itemDiv.querySelectorAll('.q-opt');
+  allOpts[item.c].classList.add('correct');
+  if (!ok) btn.classList.add('wrong');
+  for (var i = 0; i < allOpts.length; i++) allOpts[i].classList.add('locked');
+  var exp = document.getElementById('exp-' + qi);
+  exp.className = 'q-exp ' + (ok ? 'ok' : 'no') + ' show';
+  var html = '<div class="q-exp-label">' + (ok ? '✅ إجابة صحيحة' : '❌ إجابة خاطئة') + ' — الصحيحة: <strong>' + item.o[item.c] + '</strong></div>'
+    + '<div><strong>الشرح:</strong> ' + item.exp + '</div>';
+  if (item.trap) html += '<div class="q-trap">' + item.trap + '</div>';
+  exp.innerHTML = html;
+  itemDiv.classList.add(ok ? 'correct' : 'wrong');
+  updateScore();
 }
 
-function resetQuiz() {
-  quizAnswers = {};
+function updateScore() {
+  var keys = Object.keys(answers);
+  var done = keys.length;
+  var correct = 0;
+  for (var i = 0; i < keys.length; i++) if (answers[keys[i]].ok) correct++;
+  document.getElementById('qProg').textContent = done;
+  document.getElementById('qOk').textContent = correct;
+  document.getElementById('qNo').textContent = done - correct;
+}
+
+function resetQ() {
+  answers = {};
   renderQuiz();
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-/* ═══════════════════════════════════════════ */
-/* Render Essay */
-/* ═══════════════════════════════════════════ */
+/* ═══ Render Essay ═══ */
 function renderEssay() {
-  const container = document.getElementById('essayContainer');
-  container.innerHTML = '';
-  
-  essayData.forEach((item, idx) => {
-    const div = document.createElement('div');
-    div.className = 'essay-item';
-    
-    let answerHtml = '';
-    item.a.forEach(line => {
-      answerHtml += `<p>${line}</p>`;
+  var box = document.getElementById('essayBox');
+  var html = '';
+  for (var i = 0; i < essayData.length; i++) {
+    var item = essayData[i];
+    var aHtml = '';
+    for (var j = 0; j < item.a.length; j++) aHtml += '<p>' + item.a[j] + '</p>';
+    var noteHtml = item.note ? '<div class="essay-note">💡 ' + item.note + '</div>' : '';
+    html += '<div class="essay-item" data-i="' + i + '">'
+      + '<div class="essay-q"><span><span class="q-num" style="display:inline-flex;vertical-align:middle;">' + (i+1) + '</span> ' + item.q + '</span><span class="essay-toggle">⌄</span></div>'
+      + '<div class="essay-a"><div class="essay-a-content">' + aHtml + noteHtml + '</div></div>'
+      + '</div>';
+  }
+  box.innerHTML = html;
+  var heads = box.querySelectorAll('.essay-q');
+  for (var k = 0; k < heads.length; k++) {
+    heads[k].addEventListener('click', function() {
+      this.parentElement.classList.toggle('open');
     });
-    
-    div.innerHTML = `
-      <div class="essay-question">
-        <div class="essay-q-text">
-          <span class="q-num">${idx + 1}</span>
-          <span>${item.q}</span>
-        </div>
-        <div class="essay-toggle">⌄</div>
-      </div>
-      <div class="essay-answer">
-        <div class="essay-answer-content">${answerHtml}</div>
-      </div>
-    `;
-    
-    div.querySelector('.essay-question').addEventListener('click', () => {
-      div.classList.toggle('open');
-    });
-    
-    container.appendChild(div);
-  });
+  }
 }
 
-/* ═══════════════════════════════════════════ */
-/* Init */
-/* ═══════════════════════════════════════════ */
+/* ═══ Init ═══ */
 renderQuiz();
 renderEssay();
 </script>
